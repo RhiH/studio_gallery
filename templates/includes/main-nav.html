@@ -16,8 +16,8 @@
                 New Art
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="art-link">
-                <a href="" class="dropdown-item">Current Artists</a>
-                <a href="" class="dropdown-item">Featured Artist</a>
+                <a href="{% url 'products' %}?category=current-artists" class="dropdown-item">Current Artists</a>
+                <a href="{% url 'products' %}?category=featured-artist" class="dropdown-item">Featured Artist</a>
             </div>
         </li>
 
@@ -26,9 +26,9 @@
                 Popular Prints
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="print-link">
-                <a href="" class="dropdown-item">Photography</a>
-                <a href="" class="dropdown-item">Art</a>
-                <a href="" class="dropdown-item">Stationery</a>
+                <a href="{% url 'products' %}?category=photography" class="dropdown-item">Photography</a>
+                <a href="{% url 'products' %}?category=art" class="dropdown-item">Art</a>
+                <a href="{% url 'products' %}?category=stationery" class="dropdown-item">Stationery</a>
             </div>
         </li>
 
@@ -37,7 +37,7 @@
                 Special Pieces
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=specials" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
