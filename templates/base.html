@@ -37,7 +37,7 @@
     <title>Studio Gallery {% block extra_title %}{% endblock %}</title>
 </head>
 <body>
-  <header class="container-fluid fixed-top">
+  <header class="container-fluid">
     <div class="row">
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
             <a href="{% url 'home' %}" class="nav-link main-logo-link">
@@ -110,7 +110,8 @@
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-black text-white">
                 <h4 class="logo-font my-1">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>                
-            </div>        
+            </div> 
+        </div>       
     </div>
 </header>
 
