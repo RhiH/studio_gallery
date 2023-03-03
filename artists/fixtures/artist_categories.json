@@ -1,0 +1,1 @@
+[{"pk": 1, "model": "artists.category", "fields": {"name": "current-artists", "friendly_name": "Current Artists"}}, {"pk": 2, "model": "artists.category", "fields": {"name": "art", "friendly_name": "Art"}}] 
