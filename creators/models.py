@@ -1,7 +1,9 @@
 from django.db import models
 
 # Create your models here.
-class Category(models.Model):
+
+
+class ArtistsCategory(models.Model):
 
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
@@ -13,12 +15,11 @@ class Category(models.Model):
         return self.friendly_name
 
 
-class Artists(models.Model):
-    #artists = models.ForeignKey('', null=True, blank=True, on_delete=models.SET_NULL)
-    sku = models.CharField(max_length=254, null=True, blank=True)
+class ArtistsInfo(models.Model):
+    creators = models.ForeignKey('', null=True,
+            blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=254)
-    description = models.TextField()
-    image = models.ImageField(null=True, blank=True)
+    biography = models.TextField()
 
     def __str__(self):
         return self.name

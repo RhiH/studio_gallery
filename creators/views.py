@@ -3,9 +3,10 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Category, Artists
+from .models import ArtistsCategory, ArtistsInfo
 
 # Create your views here.
+
 
 def all_artists(request):
     """ A view to show all artists"""
@@ -56,6 +57,7 @@ def all_artists(request):
 
     return render(request, 'artists/artists.html', context)
 
+
 def artists_detail(request, product_id):
     """ A view to show individual product details """
 
@@ -66,3 +68,16 @@ def artists_detail(request, product_id):
     }
 
     return render(request, 'artists/artist_detail.html', context)
+
+
+def artists_about_us(request):
+    """ A view to show iabout the site """
+
+    product = get_object_or_404(Product, pk=product_id)
+
+    context = {
+        'artist': artist,
+    }
+
+    return render(request, 'artists/artist_detail.html', context)
+
