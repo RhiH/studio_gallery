@@ -10,28 +10,21 @@
                 <a href="{%  url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
-
-        <li class="nav-item dropdown">
-            <div class="dropdown-menu border-0" aria-labelledby="artists-link">
-                <a href="" class="dropdown-item">Our Artists</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="about-us-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                About Us
+        <li>
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="about-us-link" aria-haspopup="true" aria-expanded="false">
+                Contact Us
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="about-us-link">
+            <div class="dropdown-menu border-0" aria-labelledby="contact">
                 <a href="" class="dropdown-item">About Us</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Pieces
+                Our Artists
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=specials" class="dropdown-item">All Specials</a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-artists">
+                <a href="" class="dropdown-item">All Artists</a>
             </div>
         </li>
     </ul>

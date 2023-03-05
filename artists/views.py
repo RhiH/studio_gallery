@@ -1,5 +1,4 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
-
+from django.shortcuts import render, get_object_or_404, HttpResponse
 
 
 def index(request):
