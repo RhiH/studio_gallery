@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import ArtistsCategory, ArtistsInfo
+from .models import Category, ArtistsInfo
 
 # Create your views here.
 

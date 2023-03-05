@@ -1,25 +1,11 @@
-from django.db import models
+from django.shortcuts import render
+from django.contrib import messages
 
-# Create your models here.
+from products.models import Product
 
+# Create your views here.
 
-class ArtistsCategory(models.Model):
+def view_artists(request):
+    """ A view that renders the artists page """
 
-    name = models.CharField(max_length=254)
-    friendly_name = models.CharField(max_length=254, null=True, blank=True)
-
-    def __str__(self):
-        return self.name
-
-    def get_friendly_name(self):
-        return self.friendly_name
-
-
-class ArtistsInfo(models.Model):
-    creators = models.ForeignKey('', null=True,
-            blank=True, on_delete=models.SET_NULL)
-    name = models.CharField(max_length=254)
-    biography = models.TextField()
-
-    def __str__(self):
-        return self.name
+    return render(request, 'artists/artists.html')
