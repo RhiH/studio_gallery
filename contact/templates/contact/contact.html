@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+{% block contact_us %}
+    <h1>Contact Us</h1>
+    <p>
+        Please write your name, email address and a message below if you have any questions.
+        One of our members will be happy to contact you directly and answer your questions as soon as possible. 
+    </p>
+    <form method="post">
+    {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}
