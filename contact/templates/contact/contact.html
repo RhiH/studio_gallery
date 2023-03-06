@@ -20,10 +20,11 @@
                 Please write your name, email address and a message below if you have any questions.
                 One of our members will be happy to contact you directly and answer your questions as soon as possible. 
                 </p>
-                <form method="post">
-                {% csrf_token %}
-                    {{form.as_p}}
-                <button type="submit">Submit</button>
+                <form method="POST" action="{% url 'contact_form' %}" class="form mb-2">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <a class="btn btn-outline-black rounded-0" href="">Cancel</a>
+                    <button class="btn btn-black rounded-0" type="submit">Send Message</button>
                 </form>
             </div>
         </div>
