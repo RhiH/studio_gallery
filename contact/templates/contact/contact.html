@@ -8,16 +8,25 @@
         </div>
     </div>
 {% endblock %}
-{% block contact_us %}
-    <h1>Contact Us</h1>
-    <p>
-        Please write your name, email address and a message below if you have any questions.
-        One of our members will be happy to contact you directly and answer your questions as soon as possible. 
-    </p>
-    <form method="post">
-    {% csrf_token %}
-        {{form.as_p}}
-        <button type="submit">Submit</button>
-    </form>
-</div>
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                {% block contact_us %}
+                <h1>Contact Us</h1>
+                <p>
+                Please write your name, email address and a message below if you have any questions.
+                One of our members will be happy to contact you directly and answer your questions as soon as possible. 
+                </p>
+                <form method="post">
+                {% csrf_token %}
+                    {{form.as_p}}
+                <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
 {% endblock %}
