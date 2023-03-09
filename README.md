@@ -1,35 +1,35 @@
 # Studio Gallery
 
-## Studio Gallery is a online store enabling the public to buy prints of artwork directly from the artists. They are able to search the site and see what art is currently available to purchase, and are able to purchase as many prints within certain limitations, paying with their card via Stripe functionality.
+### Studio Gallery is a online store enabling the public to buy prints of artwork directly from the artists. They are able to search the site and see what art is currently available to purchase, and are able to purchase as many prints within certain limitations, paying with their card via Stripe functionality.
 
-Users are also able to create a profile for faster purchasing and to see their previous orders.
+###Users are also able to create a profile for faster purchasing and to see their previous orders.
 
 Table of Contents
 UX
 
-Goals
-Project Goals
-Visitor Goals
-User Stories
-Design Choices
-Wireframes
-Features
-Future Goals
+- Goals
+- Project Goals
+- Visitor Goals
+- User Stories
+- Design Choices
+- Wireframes
+- Features
+- Future Goals
 
-Technology Used
+- Technology Used
 
-Testing
+- Testing
 
-UI
+- UI
 
-Navigation
+- Navigation
 
 
-Deployment
+- Deployment
 
-Credits
+- Credits
 
-UX
+- UX
 
 Goals
 
