@@ -9,13 +9,13 @@
 
 ## Table of Contents
 
-- Project Goals
-- Artist Goals
-- Customer Stories
-- Design Choices
-- Wireframes
-- Features
-- Future Goals
+- [Project Goals] (#project-goals)
+- [Artist Goals] (#artist-goals)
+- [Customer Goals] (#customer-goals)
+- [Site User Goals] (#site-user-goals)
+- [Design Choices] (#design-choices)
+- [Wireframes] (#wireframes)
+- [Future Goals] (#future-goals)
 
 - Technology Used
 
@@ -36,7 +36,7 @@
 
 The overall project goal is to ensure that consumers can easily purchase printed art direct from the artists themselves, cutting out the need for artists to involve third parties who would charge commission. The art needs to be displayed in a simple manner so as not to distract the customer when thinking of making a purchase.
 
-Artist Goals
+**Artist Goals**
 
 * As an artist I want to be able to display my work to the public and sell prints of it at a price I can set myself.
 * To sell affordable pieces to increase my revenue streams.
@@ -45,7 +45,7 @@ Artist Goals
 * As an artist I want to be able to have an account which enables me to log in, edit, create and delete work when I want to do so.
 * As an artist I want to be able to control the numbers of prints I sell.
 
-Customer Goals
+**Customer Goals**
 
 * As a buyer I want to be able to view all the art at once.
 * As a buyer I want to bw able to learn more about the artists and their work.
@@ -61,7 +61,7 @@ Customer Goals
 * As a buyer I want to be able to amend the items in my basket.
 * As a buyer I want to be able to remove items from my basket.
 
-User stories
+**Site User Goals**
 
 To be able to view art and purchase prints of the art and have confirmation of my order sent to me.
 To be able to amend the quantities of my basket prior to checkout.
@@ -69,11 +69,11 @@ To be able to view an individual's art on the same page.
 To be able to purchase multiple prints and get free delivery.
 To have my info saved so I can make easier purchases and look up past purchases.
 
-- Design Choices
+## Design Choices
 
-It was deciced to keep the project as simple as possible, given this was the first time Django had been used. Ensuring things were kept as simple as possible meant that the focus could remain on the site as a whole. As the site is to display art in most appealing way, vivd colours were not used as these could easily detract from the work, and put off the consumer.
+It was decided to keep the project as simple as possible, given this was the first time Django had been used. Ensuring things were kept as simple as possible meant that the focus could remain on the site as a whole. As the site is to display art in most appealing way, vivd colours were not used as these could easily detract from the work, and put off the consumer.
 
-- Wireframes
+## Wireframes
 
 Wireframes were used to create an idea of how the site should look on different devices.
 
@@ -82,19 +82,19 @@ Wireframes were used to create an idea of how the site should look on different 
 ![Studio_Gallery](media/wireframes/tablet_wireframe.png)
 ![Studio_Gallery](media/wireframes/mobile_wireframe.png)
 
-- Future Goals
+## Future Goals
 
 There are various improvements I would like to undertake in future. Uploading more work by more artists. The option to search by a particular colour or theme, creating a profile page for each artist are some of the ideas I have for the site's future. 
 
-- Technology Used
--
+## Technology Used
+
 HTML
 CSS
 Javascript
 Python
 
 
-- Deployment
+# Deployment
 
 Django was used throughout the project. It is necessary to install Django to create the apps reuired to run the site.
 
@@ -110,7 +110,7 @@ Ensure all necessary keys - secret and public are stored in config vars on Herok
 
 Add new webhook endpoint to Stripe for Heroku. 
 
-- Credits
+# Credits
 
 This work was based on the Boutique Ado project by Code Institute, without which this project would not have gotten as far as it did.
 
