@@ -91,6 +91,11 @@ Other future goals include:
 * Javascript
 * Python
 
+## Testing
+
+The project was tested during the process of creating it and errors were fixed along the way during the creation of the site. Unfortunately thorough testing did not go ahead after deployment due to time constraints.
+
+
 # Deployment
 
 Django was used throughout the project. It is necessary to install Django to create the apps reuired to run the site.
