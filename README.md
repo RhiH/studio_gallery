@@ -86,10 +86,10 @@ Other future goals include:
 
 ## Technology Used
 
--HTML
--CSS
--Javascript
--Python
+* HTML
+* CSS
+* Javascript
+* Python
 
 # Deployment
 
