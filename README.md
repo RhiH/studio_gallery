@@ -1,6 +1,6 @@
-Studio Gallery
+# Studio Gallery
 
-Studio Gallery is a online store enabling the public to buy prints of artwork directly from the artists. They are able to search the site and see what art s currently available to purchase, and are able to purchase as many prints within certain limitations, paying with their card via Stripe functionality.
+## Studio Gallery is a online store enabling the public to buy prints of artwork directly from the artists. They are able to search the site and see what art is currently available to purchase, and are able to purchase as many prints within certain limitations, paying with their card via Stripe functionality.
 
 Users are also able to create a profile for faster purchasing and to see their previous orders.
 
@@ -24,10 +24,7 @@ UI
 
 Navigation
 
-Add a Recipe
-Edit a Recipe
-Delete a Recipe
-Recipe Instructions
+
 Deployment
 
 Credits
@@ -55,6 +52,10 @@ As a buyer I want to be able to buy art at affordable prices
 As a buyer I want to be able to support the artists directly
 As a buyer I want to be able to amend the items in my basket.
 As a buyer I want to be able to remove items from my basket.
+
+Project Goals
+
+The overall project goal is to ensure that consumers can easily purchase printed art direct from the artists themselves, cutting out the 
 
 
 
