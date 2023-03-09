@@ -9,28 +9,21 @@
 
 ## Table of Contents
 
-- [Project Goals] (#project-goals)
-- [Artist Goals] (#artist-goals)
-- [Customer Goals] (#customer-goals)
-- [Site User Goals] (#site-user-goals)
-- [Design Choices] (#design-choices)
-- [Wireframes] (#wireframes)
-- [Future Goals] (#future-goals)
+- [Project Goals](#project-goals)
+- [Artist Goals](#artist-goals)
+- [Customer Goals](#customer-goals)
+- [Site User Goals](#site-user-goals)
+- [Design Choices](#design-choices)
+- [Wireframes](#wireframes)
+- [Future Goals](#future-goals)
 
-- Technology Used
+- [Technology Used](#technology-used)
 
-- Testing
+- [Testing](#testing)
 
-- UI
+- [Deployment](#deployment)
 
-- Navigation
-
-- Deployment
-
-- Credits
-
-- UX
-
+- [Credits](#credits)
 
 ## Project Goals
 
