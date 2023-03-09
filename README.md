@@ -1,4 +1,7 @@
-[Studio Gallery](media/wireframes/studio-gallery_responsive.png)
+![Studio_Gallery](media/wireframes/studio-gallery_responsive.png)
+
+
+# Studio Gallery
 
 ### Studio Gallery is a online store enabling the public to buy prints of artwork directly from the artists. They are able to search the site and see what art is currently available to purchase, and are able to purchase as many prints within certain limitations, paying with their card via Stripe functionality.
 
