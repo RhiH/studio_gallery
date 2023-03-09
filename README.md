@@ -93,8 +93,7 @@ Other future goals include:
 
 ## Testing
 
-The project was tested during the process of creating it and errors were fixed along the way during the creation of the site. Unfortunately thorough testing did not go ahead after deployment due to time constraints.
-
+The project was tested during the process of creating it and errors were fixed along the way during the creation of the site, except for the Contact page which worked and then at a later point failed to work. As such it was decided to leave this and continue on with the overall functionality. Unfortunately this, some CSS elements which were not displaying correctly and more thorough testing did not go ahead after deployment due to time constraints.
 
 # Deployment
 
