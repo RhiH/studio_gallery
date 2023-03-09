@@ -78,7 +78,12 @@ It was deciced to keep the project as simple as possible, given this was the fir
 
 - Future Goals
 
+There are various improvements I would like to undertake in future. Uploading more work by more artists. The option to search by a particular colour or theme, creating a profile page for each artist are some of the ideas I have for the site's future.
+
 - Technology Used
+
+Django
+
 
 - Testing
 
@@ -87,6 +92,18 @@ It was deciced to keep the project as simple as possible, given this was the fir
 - Navigation
 
 - Deployment
+
+Set up Elephant SQL for project
+
+Set up Heroku for project
+
+Link Elephant SQL with Heroku project area. 
+
+Set up AWS with necessary S3 bucket for static files, policy, group, user and link with appropriate keys to heroku.
+
+Ensure all necessary keys - secret and public are stored in config vars on Heroku.
+
+Add new webhook endpoint to Stripe for Heroku. 
 
 - Credits
 
