@@ -75,6 +75,11 @@ It was deciced to keep the project as simple as possible, given this was the fir
 
 - Wireframes
 
+![Studio_Gallery](media/wireframes/desktop_wireframe.png)
+![Studio_Gallery](media/wireframes/product_desktop.png)
+![Studio_Gallery](media/wireframes/tablet_wireframe.png)
+![Studio_Gallery](media/wireframes/mobile_wireframe.png)
+
 
 - Features
 
