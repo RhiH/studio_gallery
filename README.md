@@ -75,31 +75,28 @@ It was deciced to keep the project as simple as possible, given this was the fir
 
 - Wireframes
 
+Wireframes were used to create an idea of how the site should look on different devices.
+
 ![Studio_Gallery](media/wireframes/desktop_wireframe.png)
 ![Studio_Gallery](media/wireframes/product_desktop.png)
 ![Studio_Gallery](media/wireframes/tablet_wireframe.png)
 ![Studio_Gallery](media/wireframes/mobile_wireframe.png)
 
-
-- Features
-
-
 - Future Goals
 
-There are various improvements I would like to undertake in future. Uploading more work by more artists. The option to search by a particular colour or theme, creating a profile page for each artist are some of the ideas I have for the site's future.
+There are various improvements I would like to undertake in future. Uploading more work by more artists. The option to search by a particular colour or theme, creating a profile page for each artist are some of the ideas I have for the site's future. 
 
 - Technology Used
+-
+HTML
+CSS
+Javascript
+Python
 
-Django
-
-
-- Testing
-
-- UI
-
-- Navigation
 
 - Deployment
+
+Django was used throughout the project. It is necessary to install Django to create the apps reuired to run the site.
 
 Set up Elephant SQL for project
 
