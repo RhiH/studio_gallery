@@ -77,15 +77,19 @@ Wireframes were used to create an idea of how the site should look on different 
 
 ## Future Goals
 
-There are various improvements I would like to undertake in future. Uploading more work by more artists. The option to search by a particular colour or theme, creating a profile page for each artist are some of the ideas I have for the site's future. 
+There are various improvements I would like to undertake in future. Unfortunately due to time constraints a number of ideas I wished to undertake did not come to fruition. There is code in the artists folder for example ready for future development. This was originally intended to be part of the project but it was decided to have the site working rather than spending time on additional functionality.
+
+Other future goals include:
+      - Uploading more work by more artists.
+      - The option to search by a particular colour or theme.
+      - Creating a profile page for each artist. 
 
 ## Technology Used
 
-HTML
-CSS
-Javascript
-Python
-
+-HTML
+-CSS
+-Javascript
+-Python
 
 # Deployment
 
