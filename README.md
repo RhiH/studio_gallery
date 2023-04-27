@@ -27,14 +27,14 @@
 
 ## Project Goals
 
-The overall project goal is to ensure that consumers can easily purchase printed art direct from the artists themselves, cutting out the need for artists to involve third parties who would charge commission. The art needs to be displayed in a simple manner so as not to distract the customer when thinking of making a purchase.
+The overall project goal is to ensure that consumers can easily purchase printed art direct from the artists themselves, cutting out the need for artists to involve third parties who would charge commission, sometimes as much as 60% of the overall price. The art needs to be displayed in a simple manner so as not to distract the customer when thinking of making a purchase.
 
 **Artist Goals**
 
 * As an artist I want to be able to display my work to the public and sell prints of it at a price I can set myself.
-* To sell affordable pieces to increase my revenue streams.
+* As an artist I want to be able to sell affordable pieces to increase my revenue streams.
 * As an artist I want to be able to create new income streams by displaying my work alongside other artists.
-* As an artist I want to be able to set the prices to the RRP so I can have the full benefit of sales of my work rather than have any comission taken, other than running costs for the site itself, which I can share with other artists.
+* As an artist I want to be able to set the prices to the RRP so I can have the full benefit of sales of my work rather than have any commission taken, other than running costs for the site itself, which I can share with other artists.
 * As an artist I want to be able to have an account which enables me to log in, edit, create and delete work when I want to do so.
 * As an artist I want to be able to control the numbers of prints I sell.
 
@@ -56,15 +56,15 @@ The overall project goal is to ensure that consumers can easily purchase printed
 
 **Site User Goals**
 
-To be able to view art and purchase prints of the art and have confirmation of my order sent to me.
-To be able to amend the quantities of my basket prior to checkout.
-To be able to view an individual's art on the same page.
-To be able to purchase multiple prints and get free delivery.
-To have my info saved so I can make easier purchases and look up past purchases.
+* To be able to view art and purchase prints of the art and have confirmation of my order sent to me.
+* To be able to amend the quantities of my basket prior to checkout.
+* To be able to view an individual's art on the same page.
+* To be able to purchase multiple prints and get free delivery.
+* To have my info saved so I can make easier purchases and look up past purchases.
 
 ## Design Choices
 
-It was decided to keep the project as simple as possible, given this was the first time Django had been used. Ensuring things were kept as simple as possible meant that the focus could remain on the site as a whole. As the site is to display art in most appealing way, vivd colours were not used as these could easily detract from the work, and put off the consumer.
+It was decided to keep the project as simple as possible, given this was the first time Django had been used. Ensuring things were kept as simple as possible meant that the focus could remain on the site as a whole. As the site is to display art in most appealing way, vivid colours were not used as these could easily detract from the work, and put off the consumer.
 
 ## Wireframes
 
@@ -80,9 +80,9 @@ Wireframes were used to create an idea of how the site should look on different 
 There are various improvements I would like to undertake in future. Unfortunately due to time constraints a number of ideas I wished to undertake did not come to fruition. There is code in the artists folder for example ready for future development. This was originally intended to be part of the project but it was decided to have the site working rather than spending time on additional functionality.
 
 Other future goals include:
-      - Uploading more work by more artists.
-      - The option to search by a particular colour or theme.
-      - Creating a profile page for each artist. 
+      * Uploading more work by more artists.
+      * The option to search by a particular colour or theme.
+      * Creating a profile page for each artist. 
 
 ## Technology Used
 
@@ -90,6 +90,10 @@ Other future goals include:
 * CSS
 * Javascript
 * Python
+
+## Testing
+
+The project was tested during the process of creating it and errors were fixed along the way during the creation of the site, except for the Contact page which worked and then at a later point failed to work. As such it was decided to leave this and continue on with the overall functionality. Unfortunately this, some CSS elements which were not displaying correctly and more thorough testing did not go ahead after deployment due to time constraints.
 
 # Deployment
 
