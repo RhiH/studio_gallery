@@ -39,7 +39,7 @@
                             </select>
                         </div>
                         <div class="col-12 col-md-6 order-md-first">
-                            <p class="text-bold mt-3 text-center text-md-left">
+                            <p class="text-dark mt-3 text-center text-md-left">
                                 {% if search_term or current_categories or current_sorting != 'None_None' %}
                                     <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
                                 {% endif %}
@@ -69,7 +69,7 @@
                                             <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0">
-                                                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                                <a class="text-dark" href="{% url 'products' %}?category={{ product.category.name }}">
                                                     <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                                 </a>
                                             </p>
