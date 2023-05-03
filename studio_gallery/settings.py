@@ -136,7 +136,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-    'default': dj_database_url.parse('postgres://hyvlgwgq:JH1_RDi-5RSiJecVSMAWy1iWL-yyquIr@trumpet.db.elephantsql.com/hyvlgwgq')
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
