@@ -3,6 +3,7 @@ from . models import Contact
 
 # Create your forms here.
 
+
 class ContactForm(forms.Form):
 	first_name = forms.CharField(max_length = 75)
 	last_name = forms.CharField(max_length = 75)

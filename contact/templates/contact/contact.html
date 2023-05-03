@@ -20,7 +20,7 @@
                 Please write your name, email address and a message below if you have any questions.
                 One of our members will be happy to contact you directly and answer your questions as soon as possible. 
                 </p>
-                <form method="POST" action="{% url 'contact_form' %}" class="form mb-2">
+                <form method="POST" action="{% url 'contact' %}" class="form mb-2">
                     {% csrf_token %}
                     {{ form | crispy }}
                     <a class="btn btn-outline-black rounded-0" href="">Cancel</a>
