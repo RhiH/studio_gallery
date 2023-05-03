@@ -63,6 +63,7 @@ body {
 
 .text-black {
     color: #000 !important;
+    font-size: medium;
 }
 
 .border-black {
