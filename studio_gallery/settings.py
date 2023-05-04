@@ -122,8 +122,6 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'studio_gallery.wsgi.application'
 
-ACCOUNT_EMAIL_VERIFICATION = 'none'
-
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
