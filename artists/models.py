@@ -4,8 +4,8 @@ from products.models import Category
 # Create your models here.
 
 
-class Creator(models.Model):
-    name = models.ForeignKey(Category, null=False, blank=False, on_delete=models.CASCADE)
+#class Creator(models.Model):
+#    name = models.ForeignKey(Category, null=False, blank=False, on_delete=models.CASCADE)
 
 # class Biography(models.Model):
 #   bio = models.CharField(max_length=200)
@@ -27,13 +27,11 @@ class Category(models.Model):
         return self.friendly_name
 
 
-class Product(models.Model):
+class Artists(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
-    sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
-    description = models.TextField()
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    image = models.ImageField(null=True, blank=True)
+    friendly_name = models.CharField(max_length=254)
+    biography = models.CharField(max_length=500)
 
     def __str__(self):
         return self.name

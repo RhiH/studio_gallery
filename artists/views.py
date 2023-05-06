@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, HttpResponse
-from .models import Creator
+from .models import Artists
 from products.models import Category
 
 

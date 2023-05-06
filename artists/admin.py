@@ -1,15 +1,14 @@
 from django.contrib import admin
-from .models import Creator
+from .models import Artists
 
 # Register your models here.
 
 
-class CreatorAdmin(admin.ModelAdmin):
+class ArtistsAdmin(admin.ModelAdmin):
     list_display = (
         'name',
-        'friendly_name',
-        'biography,'
+        'biography',
     )
 
 
-admin.site.register(Creator, CreatorAdmin)
+admin.site.register(Artists, ArtistsAdmin)
