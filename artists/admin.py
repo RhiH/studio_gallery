@@ -1,6 +1,15 @@
 from django.contrib import admin
-
-# Register your models here.
 from .models import Creator
 
-admin.site.register(Creator)
+# Register your models here.
+
+
+class CreatorAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'friendly_name',
+        'biography,'
+    )
+
+
+admin.site.register(Creator, CreatorAdmin)
