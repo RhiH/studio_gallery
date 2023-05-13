@@ -7,7 +7,7 @@ from .models import Artists
 
 class ArtistsAdmin(admin.ModelAdmin):
     list_display = (
-        'artist',
+        'name',
         'biography',
     )
 

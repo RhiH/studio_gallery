@@ -3,7 +3,7 @@
         "model": "artists.artists",
         "fields": {
             "category":1,
-            "artist": "Fredrica Handy",
+            "name": "Fredrica Handy",
             "biography": "Fredrica Handy is a abstract artist working in multple fields, she finds inspiration in the bizarre and unusual."
         }
     },
@@ -12,7 +12,7 @@
         "model": "artists.artists",
         "fields": {
             "category":2,
-            "artist": "Jared Pottle",
+            "name": "Jared Pottle",
             "biography": "Jared Pottle is an artist inspired by the human form. His work questions the very nature of humanity and how we perceive it."
         }
     }, {
@@ -20,7 +20,7 @@
         "model": "artists.artists",
         "fields": {
             "category":3,
-            "artist": "Ceris Lightler",
+            "name": "Ceris Lightler",
             "biography": "Ceris Lightler describes her work as 'the abstract in the everyday',  Ceris sees the limimal space as ones that reveal a world beyond the normal."
         }
     }, {
@@ -28,7 +28,7 @@
         "model": "artists.artists",
         "fields": {
             "category": 4,
-            "artist": "Luc Drir",
+            "name": "Luc Drir",
             "biography": "Luc Drir bases his work in nature and the natural world. Never happier than when he is out on location photographing the world around him."
         }
     }, {
@@ -36,7 +36,7 @@
         "model": "artists.artists",
         "fields": {
             "category": 5,
-            "artist": "Alan 'Red' Bushe",
+            "name": "Alan 'Red' Bushe",
             "biography": "Alan 'Red' Bushe is a fascinated by the decaying world, his work often designed to incorporate uneasy elements of death and decay."
         }
     }, {
@@ -44,7 +44,7 @@
         "model": "artists.artists",
         "fields": {
             "category": 6,
-            "artist": "Portia Towe",
+            "name": "Portia Towe",
             "biography": "Portia Towe is our newest member, and her work is aimed at re-defining and elevating everyday objects into true works of art, upscaling beyond what the viewer would expect."
         }
     }, {
@@ -52,7 +52,7 @@
         "model": "artists.artists",
         "fields": {
             "category":7,
-            "artist": "Bethany Floode",
+            "name": "Bethany Floode",
             "biography": "Bethany Floode is inspired by liminal spaces andd their uses. Her work is often seen as bleak and uncompromising, with a stark beauty that permeates her every piece."
         }
     }
