@@ -83,7 +83,7 @@ As the site currently only offers prints of artists' work, more options of the t
 
 Site growth options:
 
-In terms of what the site offers, increasing the number of artists, and artworks are the simplest way of growing the site.  Also improving search functionality to consider colour or theme as search options to increase the level of customer satisfaction. Adding in other options such as a sign up newsletter, featured artist of the month with an interview of the artist - perhaps even a short videoclip of them talking about their processes could help customer engagement. 
+In terms of what the site offers, increasing the number of artists, and artworks are the simplest way of growing the site.  Also improving search functionality to consider colour or theme as search options to increase the level of customer satisfaction. Adding in other options such as a sign up newsletter utilising a marketing automation platform such as Mailchimp, creating a featured artist of the month with an interview of the artist - perhaps including a short videoclip of them talking about their processes could help customer engagement. 
 
 ## Technology Used
 
@@ -92,13 +92,35 @@ In terms of what the site offers, increasing the number of artists, and artworks
 * Javascript
 * Python
 
+## Tools
+
+- fontawesome (https://fontawesome.com/icons)
+- django (https://www.djangoproject.com/)
+- Am I Responsive (https://ui.dev/amiresponsive)
+- Balsamiq (https://balsamiq.com/)
+- Bootstrap (https://getbootstrap.com/)
+- Chrome dev tools (https://developer.chrome.com/docs/devtools/)
+- GitHub (https://github.com/)
+- Google Fonts (https://fonts.google.com/)
+- Heroku (https://heroku.com)
+- AWS (https://aws.amazon.com/)
+- jQuery (https://jquery.com/)
+- ElephantSQL (https://www.elephantsql.com/)
+
+
+Validation:
+WC3 Validator (https://validator.w3.org/)
+JShint (https://jshint.com/)
+Lighthouse (https://www.webpagetest.org/lighthouse)
+Wave Validator (https://wave.webaim.org/)
+
 ## Testing
 
 The project was tested during the process of creating it and errors were fixed along the way during the creation of the site, except for the Contact page which worked and then at a later point failed to work. As such it was decided to leave this and continue on with the overall functionality. Unfortunately this, some CSS elements which were not displaying correctly and more thorough testing did not go ahead after deployment due to time constraints.
 
 # Deployment
 
-Django was used throughout the project. It is necessary to install Django to create the apps reuired to run the site.
+Django was used throughout the project. It is necessary to install Django to create the apps required to run the site.
 
 Set up Elephant SQL for project
 
