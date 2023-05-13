@@ -3,9 +3,9 @@
 
 # Studio Gallery
 
-### Studio Gallery is a online store enabling the public to buy prints of artwork directly from the artists. They are able to search the site and see what art is currently available to purchase, and are able to purchase as many prints within certain limitations, paying with their card via Stripe functionality.
+Studio Gallery is a online store enabling the public to buy prints of artwork directly from the artists. They are able to search the site and see what art is currently available to purchase, and are able to purchase as many prints within certain limitations, paying with their card via Stripe functionality.
 
-### Users are also able to create a profile for faster purchasing and to see their previous orders.
+Users are also able to create a profile for faster purchasing and to see their previous orders.
 
 ## Table of Contents
 
@@ -77,12 +77,13 @@ Wireframes were used to create an idea of how the site should look on different 
 
 ## Future Goals
 
-There are various improvements I would like to undertake in future. Unfortunately due to time constraints a number of ideas I wished to undertake did not come to fruition. There is code in the artists folder for example ready for future development. This was originally intended to be part of the project but it was decided to have the site working rather than spending time on additional functionality.
+Product growth options:
 
-Other future goals include:
-      * Uploading more work by more artists.
-      * The option to search by a particular colour or theme.
-      * Creating a profile page for each artist. 
+As the site currently only offers prints of artists' work, more options of the type of products could be available. This could vary between original pieces to canvas, textile and other products such as phone cases or notebooks could be printed with the art and shipped to the customer. This could be linked via services which already offer this business model, meaning the work could be sold globally and be created within the country/region to ensure shipping times and taxes would be kept to a minimum, whilst increasing the returns for the artists at a low cost.
+
+Site growth options:
+
+In terms of what the site offers, increasing the number of artists, and artworks are the simplest way of growing the site.  Also improving search functionality to consider colour or theme as search options to increase the level of customer satisfaction. Adding in other options such as a sign up newsletter, featured artist of the month with an interview of the artist - perhaps even a short videoclip of them talking about their processes could help customer engagement. 
 
 ## Technology Used
 
