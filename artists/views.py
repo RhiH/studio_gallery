@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404, HttpResponse
 from .models import Artists
-# from .forms import ProductForm
 
 
 def artists(request):
