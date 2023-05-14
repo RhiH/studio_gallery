@@ -120,24 +120,9 @@ The project was tested during the process of creating it and errors were fixed a
 
 # Deployment
 
-Django was used throughout the project. It is necessary to install Django to create the apps required to run the site.
-
-Set up Elephant SQL for project
-
-Set up Heroku for project
-
-Link Elephant SQL with Heroku project area. 
-
-Set up AWS with necessary S3 bucket for static files, policy, group, user and link with appropriate keys to heroku.
-
-Ensure all necessary keys - secret and public are stored in config vars on Heroku.
-
-Add new webhook endpoint to Stripe for Heroku. 
-
-
 Deployment Requirements
 
-This site was developed using a [GitPod](https://gitpod.io/ "Link to GitPod") workspace. The code was commited to [Git](https://git-scm.com/ "Link to Git") and pushed to [GitHub](https://github.com/ "Link to GitHub") using the terminal.
+This site was developed using a [GitPod](https://gitpod.io/ "Link to GitPod") workspace. The code was commited to [Git](https://git-scm.com/ "Link to Git") and pushed to [GitHub](https://github.com/ "Link to GitHub") using the terminal. Django was used throughout the project. It is necessary to install Django to create the apps required to run the site.
 
 python Documentation is based on Python v3.8
 PIP package installer
@@ -194,16 +179,24 @@ python manage.py loaddata products/fixtures/categories.json
 python manage.py loaddata products/fixtures/products.json
 python manage.py loaddata artists/fixtures/artist_categories.json
 
+For deployment the following will be required:
+
+Elephant SQL
+Heroku
+AWS
+
+Link Elephant SQL with Heroku project area. 
+
+Set up AWS with necessary S3 bucket for static files, policy, group, user and link with appropriate keys to heroku.
+
 Deploying to Heroku
 
-To run this application in an online environment you will need to deploy the code to Heroku. Before moving on to this section please ensure you have followed the instructions for local deployment and this has been successful
+To run this application in an online environment you will need to deploy the code to Heroku. Before moving on to this section please ensure you have followed the instructions for local deployment and this has been successfu
 
-Either create an account at Heroku or log in to your account
-Set up a new app under a unique name
-In the resources section, in the addons field type the below command and select the free cost option
-heroku Postgres
 in the settings tab select Reveal Config Vars and copy the pre populated DATABASE_URL into your settings.py file in your project
 in the Config Vars in Heroku you will need to populate with the following keys
+
+Ensure all necessary keys - secret and public are stored in config vars on Heroku.
 
 Key	Value
 
