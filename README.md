@@ -15,6 +15,7 @@ Users are also able to create a profile for faster purchasing and to see their p
 - [Site User Goals](#site-user-goals)
 - [Design Choices](#design-choices)
 - [Wireframes](#wireframes)
+- [Information Architecture](#information-architecture)
 - [Future Goals](#future-goals)
 
 - [Technology Used](#technology-used)
@@ -74,6 +75,37 @@ Wireframes were used to create an idea of how the site should look on different 
 ![Studio_Gallery](media/wireframes/product_desktop.png)
 ![Studio_Gallery](media/wireframes/tablet_wireframe.png)
 ![Studio_Gallery](media/wireframes/mobile_wireframe.png)
+
+### Information Architecture
+
+**Product Data**
+
+| Title            | Key In Database | Form Validation      | Data Type   |
+|------------------|-----------------|----------------------|-------------|
+| Product ID       | SKU             | No Validation        | Primary Key |
+| Product Name     | name            | max_length 254       | Charfield   |
+| Product Category | category        | max_length 254       | Charfield   |
+| Price            | price           | decimal places 2     | Decimalfield|
+| Image            | image           | Null True, blank True| ImageField  |
+| Description      | description     | max_length 1000      | Charfield   |
+
+
+**User Table**
+
+|Title            |	Key In Database         |	Form Validation     |	Data Type     |
+|-----------------|-------------------------|---------------------|---------------|
+|Account id       |	_id                     | No Validation       |	Primary Key   |
+|First Name       |	first_name              |	max length 20       |	CharField     |
+|Last Name        |	last_name               |	hashed min length 8 |	CharField     |
+|E-mail Address   |	email                   |	Must contain @ etc	| Email         |
+|Street Address   |	default_street_address1 |	max length 128      |	CharField     |
+|Street Address 2 |	default_street_address2 |	max length 128      |	CharField     |
+|City Or Town     |	default_city_town	max   | length 128          |	CharField     |
+|County/State     |	default_county_state    |	max length 64       |	CharField     |
+|Postal Code      |	default_postcode_zi     |	max length 12       |	CharField     |
+|Contact Number   |	default_telephone_number|	Number max length 20|	CharField     |
+|Country	        |country                  |	pycountry select    |	Option        |
+
 
 ## Future Goals
 
