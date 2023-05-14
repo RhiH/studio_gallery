@@ -89,12 +89,31 @@ Wireframes were used to create an idea of how the site should look on different 
 | Image            | image           | Null True, blank True| ImageField  |
 | Description      | description     | max_length 1000      | Charfield   |
 
+**Category Data**
+
+This is currently an underutilised table - and will be updated as the site grows
+
+| Title            | Key In Database | Form Validation      | Data Type   |
+|------------------|-----------------|----------------------|-------------|
+| Category ID      | name            | No Validation        | Primary Key |
+| Friendly Name    | friendly_name   | max_length 254       | Charfield   |
+| Identifier       | identifier      | max_length 5         | Charfield   |
+
+**Artist Data**
+
+| Title            | Key In Database | Form Validation      | Data Type   |
+|------------------|-----------------|----------------------|-------------|
+| Category ID      | PK              | No Validation        | Primary Key |
+| Name             | name            | max_length 254       | Charfield   |
+| category         | category        | Null true, blank true| Foreign Key |
+| Biography        | biography       | max_length 1000      | Charfield   |
+
 
 **User Table**
 
 |Title            |	Key In Database         |	Form Validation     |	Data Type     |
 |-----------------|-------------------------|---------------------|---------------|
-|Account id       |	_id                     | No Validation       |	Primary Key   |
+|Account ID       |	_id                     | No Validation       |	Primary Key   |
 |First Name       |	first_name              |	max length 20       |	CharField     |
 |Last Name        |	last_name               |	hashed min length 8 |	CharField     |
 |E-mail Address   |	email                   |	Must contain @ etc	| Email         |
@@ -105,6 +124,30 @@ Wireframes were used to create an idea of how the site should look on different 
 |Postal Code      |	default_postcode_zi     |	max length 12       |	CharField     |
 |Contact Number   |	default_telephone_number|	Number max length 20|	CharField     |
 |Country	        |country                  |	pycountry select    |	Option        |
+
+**Orders Table**
+
+|Title             |	Key In Database |	Form Validation     |	Data Type     |
+|------------------|------------------|---------------------|---------------|          
+|Order Number      |	order_number    |	No Validation       |	Primary Key   |         
+|User Profile      |	user_profile    |	text                |	Foreign Key   |                 
+|First Name        |	first_name      |	max length 100      |	CharField     |       
+|Last Name         |	last_name       |	max length 100      |	CharField     |
+|Email             |	email           |	max length 100      |	CharField     |
+|telephone Number  |	telephone_number|	max length 20       |	CharField     |
+|Street address 1  |	street_address1 |	max length 100      |	CharField     |
+|Street address 2  |	street_address2 |	max length 100      |	CharField     |
+|City Town         |	city_town       |	max length 100      |	CharField     |
+|County/State      |	county_state    |	max length 100      |	CharField     |
+|Postcode Zip      |	postcode_zip    |	max length 8	      | CharField     |
+|Country           |	country         |	country select	    | Option        |
+|Order Date        |	order_date      |	datetime.date.today |	DateField     |
+|Total Order       |	total_order     |	max digits 10	      | DecimalField  |
+|Delivery Charge   |	delivery_charge |	max digits 5        |	DecimalField  | 
+|Grand total       |	grand_total     |	max digits 10       |	DecimalField  |
+
+
+
 
 
 ## Future Goals
