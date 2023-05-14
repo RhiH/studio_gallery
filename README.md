@@ -226,9 +226,9 @@ The project was tested during the process of creating it and errors were fixed a
 
 Deployment Requirements
 
-This site was developed using a [GitPod](https://gitpod.io/ "Link to GitPod") workspace. The code was commited to [Git](https://git-scm.com/ "Link to Git") and pushed to [GitHub](https://github.com/ "Link to GitHub") using the terminal. Django was used throughout the project. It is necessary to install Django to create the apps required to run the site.
+This site was developed using a [GitPod](https://gitpod.io/ "Link to GitPod") workspace. The code was commited to [Git](https://git-scm.com/ "Link to Git") and pushed to [GitHub](https://github.com/ "Link to GitHub") using the terminal. Django was used throughout the project. It is necessary to install Django to create the apps required to run the site. Nb python3 was the command used here, please choose the most appropriate for you.
 ```
-Python 
+Python3 
 PIP package installer
 Stripe Payment infrastructure
 ```
@@ -252,7 +252,7 @@ os.environ["DATABASE_URL"] = "[Your DB URL]"
 ```
 Database setup
 
-To set up your database you will first need to run the following command. Nb python3 was the commd used her, please choose the most appropriate for you.
+To set up your database you will first need to run the following command. 
 ```
 python3 manage.py migrate
 ```
@@ -306,7 +306,7 @@ USE_AWS	TRUE
 
 Now this has been configured you will now migrate the local database to the cloud database using the migrate command as below
 ```
-python manage.py migrate
+python3 manage.py migrate
 ```
 Next you will need to create a super user and populate the database as described in the database set up section
 When the migrations and data has been loaded, in your Heroku dashboard select the Deploy tab
