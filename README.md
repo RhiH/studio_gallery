@@ -123,11 +123,11 @@ The project was tested during the process of creating it and errors were fixed a
 Deployment Requirements
 
 This site was developed using a [GitPod](https://gitpod.io/ "Link to GitPod") workspace. The code was commited to [Git](https://git-scm.com/ "Link to Git") and pushed to [GitHub](https://github.com/ "Link to GitHub") using the terminal. Django was used throughout the project. It is necessary to install Django to create the apps required to run the site.
-
+```
 python Documentation is based on Python v3.8
 PIP package installer
 Stripe Payment infrastructure
-
+```
 Deploying Locally
 
 Clone a copy of the repository by clicking code at the top of the page and selecting 'Download Zip' when this has downloaded, extract the files to your folder of choice. Alternatively if you have git installed on your client you can run the following command from the terminal.
@@ -136,55 +136,42 @@ Open up your local IDE and open the working folder.
 
 Ideally you will want to work within a virtual environment to allow all packages to be kept within the project, this can be installed using the following command (please note some IDE's require pip3 instead of pip, please check with the documentation for your chosen IDE)
 
-pip install pipenv
-
-In your root dir, create a new folder called .venv (ensure you have the .)
-
-To activate the virtual environment navigate to the below dir and run activate.bat
-
-[folderinstalled]\scripts\activate\activate.bat
-If you're using Linux or Mac use the below command
-
-source .venv/bin/activate
-
-Next we need to install all modules required by the project to run, use the follow
-pipenv install -r requirements.txt
-
 Create a new folder within the root dir called env.py. Within this file add the following lines to set up the environmental variables.
 import os
-
+```
 os.environ["SECRET_KEY"] = "[Your Secret Key]"
 os.environ["DEV"] = "1"
 os.environ["HOSTNAME"] = "0.0.0.0"
 os.environ["STRIPE_PUBLIC_KEY"] = "[Your Stripe Key]"
 os.environ["STRIPE_SECRET_KEY"] = "[Your Stripe Secret Key]"
 os.environ["DATABASE_URL"] = "[Your DB URL]"
-
+```
 Database setup
 
 To set up your database you will first need to run the following command
-
+```
 python3 manage.py migrate
-
+```
 To create a super user to allow you to access the admin panel run the following command in your terminal and complete the required information as prompted
+```
 python3 manage.py createsuperuser
-
+```
 From there you should now be able to run the server using the following command
-
+```
 python manage.py runserver
-
+```
 Next close the server in your terminal using ctrl+c (cmd+c on mac) and run the following commands to populate the database
-
+```
 python manage.py loaddata products/fixtures/categories.json
 python manage.py loaddata products/fixtures/products.json
 python manage.py loaddata artists/fixtures/artist_categories.json
-
+```
 For deployment the following will be required:
-
+```
 Elephant SQL
 Heroku
 AWS
-
+```
 Link Elephant SQL with Heroku project area. 
 
 Set up AWS with necessary S3 bucket for static files, policy, group, user and link with appropriate keys to heroku.
@@ -199,7 +186,7 @@ in the Config Vars in Heroku you will need to populate with the following keys
 Ensure all necessary keys - secret and public are stored in config vars on Heroku.
 
 Key	Value
-
+```
 AWS_ACCESS_KEY_ID	[your value]
 AWS_SECRET_ACCESS_KEY	[your value]
 SECRET_KEY	[your value]
@@ -211,12 +198,12 @@ STRIPE_PUBLIC_KEY	[your value]
 STRIPE_SECRET_KEY	[your value]
 STRIPE_WH_SECRET [your value]
 USE_AWS	TRUE
-
+```
 
 Now this has been configured you will now migrate the local database to the cloud database using the migrate command as below
-
+```
 python manage.py migrate
-
+```
 Next you will need to create a super user and populate the database as described in the database set up section
 When the migrations and data has been loaded, in your Heroku dashboard select the Deploy tab
 
