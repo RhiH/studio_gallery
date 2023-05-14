@@ -77,11 +77,11 @@ Wireframes were used to create an idea of how the site should look on different 
 
 ## Future Goals
 
-Product growth options:
+**Product growth options:
 
 As the site currently only offers prints of artists' work, more options of the type of products could be available. This could vary between original pieces to canvas, textile and other products such as phone cases or notebooks could be printed with the art and shipped to the customer. This could be linked via services which already offer this business model, meaning the work could be sold globally and be created within the country/region to ensure shipping times and taxes would be kept to a minimum, whilst increasing the returns for the artists at a low cost.
 
-Site growth options:
+**Site growth options:
 
 In terms of what the site offers, increasing the number of artists, and artworks are the simplest way of growing the site.  Also improving search functionality to consider colour or theme as search options to increase the level of customer satisfaction. Adding in other options such as a sign up newsletter utilising a marketing automation platform such as Mailchimp, creating a featured artist of the month with an interview of the artist - perhaps including a short videoclip of them talking about their processes could help customer engagement. 
 
@@ -94,29 +94,58 @@ In terms of what the site offers, increasing the number of artists, and artworks
 
 ## Tools
 
-- fontawesome (https://fontawesome.com/icons)
-- django (https://www.djangoproject.com/)
-- Am I Responsive (https://ui.dev/amiresponsive)
-- Balsamiq (https://balsamiq.com/)
-- Bootstrap (https://getbootstrap.com/)
-- Chrome dev tools (https://developer.chrome.com/docs/devtools/)
-- GitHub (https://github.com/)
-- Google Fonts (https://fonts.google.com/)
-- Heroku (https://heroku.com)
-- AWS (https://aws.amazon.com/)
-- jQuery (https://jquery.com/)
-- ElephantSQL (https://www.elephantsql.com/)
+- [Fontawesome] (https://fontawesome.com/icons)
+- [Django] (https://www.djangoproject.com/)
+- [Am I Responsive] (https://ui.dev/amiresponsive)
+- [Balsamiq] (https://balsamiq.com/)
+- [Bootstrap] (https://getbootstrap.com/)
+- [Chrome dev tools] (https://developer.chrome.com/docs/devtools/)
+- [GitHub] (https://github.com/)
+- [Google Fonts] (https://fonts.google.com/)
+- [Heroku] (https://heroku.com)
+- [AWS] (https://aws.amazon.com/)
+- [ElephantSQL] (https://www.elephantsql.com/)
 
 
 Validation:
-WC3 Validator (https://validator.w3.org/)
-JShint (https://jshint.com/)
-Lighthouse (https://www.webpagetest.org/lighthouse)
-Wave Validator (https://wave.webaim.org/)
+- [WC3 Validator] (https://validator.w3.org/)
+- [JShint] (https://jshint.com/)
+- [Lighthouse] (https://www.webpagetest.org/lighthouse)
+- [Wave Validator] (https://wave.webaim.org/)
 
 ## Testing
 
 The project was tested during the process of creating it and errors were fixed along the way during the creation of the site, except for the Contact page which worked and then at a later point failed to work. As such it was decided to leave this and continue on with the overall functionality. Unfortunately this, some CSS elements which were not displaying correctly and more thorough testing did not go ahead after deployment due to time constraints.
+
+---
+* issue: url not linking correctly to contacts page
+* cause: url not correctly formatted
+* resolution: url updated, link working
+---
+* issue: artist page not generating properly
+* cause: under investigation
+* resolution: temporary 'all artists biographies' page created as holding page until issue is discovered and resolved
+---
+* issue: font is difficult to read on most pages
+* cause: Lato slim chosen as font, combined with text-muted, creating text that is difficult to see
+* resolution: text-muted replaced with text-black, Lato slim replaced with Lato regular
+---
+* issue: artist model not working
+* cause: under investigation
+* resolution: amendment to model not successful - ongoing
+---
+* contact page not sending emails
+* cause: fault caused by line not removed for default setting for emails in settings.py
+* resolution: settings.py updated - emails now successfully sending
+---
+* issue: artist model still not updating correctly
+* cause: under investigation
+* resolution: delete migrations and re migrate model. Not successful - ongoing
+---
+* issue: artist model still not updating correctly
+* cause: under investigation
+* resolution: temporary links added to temporary all artist biographies page to link to products while investigation is ongoing
+---
 
 # Deployment
 
@@ -124,7 +153,7 @@ Deployment Requirements
 
 This site was developed using a [GitPod](https://gitpod.io/ "Link to GitPod") workspace. The code was commited to [Git](https://git-scm.com/ "Link to Git") and pushed to [GitHub](https://github.com/ "Link to GitHub") using the terminal. Django was used throughout the project. It is necessary to install Django to create the apps required to run the site.
 ```
-python Documentation is based on Python v3.8
+Python 
 PIP package installer
 Stripe Payment infrastructure
 ```
@@ -148,7 +177,7 @@ os.environ["DATABASE_URL"] = "[Your DB URL]"
 ```
 Database setup
 
-To set up your database you will first need to run the following command
+To set up your database you will first need to run the following command. Nb python3 was the commd used her, please choose the most appropriate for you.
 ```
 python3 manage.py migrate
 ```
@@ -158,13 +187,13 @@ python3 manage.py createsuperuser
 ```
 From there you should now be able to run the server using the following command
 ```
-python manage.py runserver
+python3 manage.py runserver
 ```
 Next close the server in your terminal using ctrl+c (cmd+c on mac) and run the following commands to populate the database
 ```
-python manage.py loaddata products/fixtures/categories.json
-python manage.py loaddata products/fixtures/products.json
-python manage.py loaddata artists/fixtures/artist_categories.json
+python3 manage.py loaddata products/fixtures/categories.json
+python3 manage.py loaddata products/fixtures/products.json
+python3 manage.py loaddata artists/fixtures/artist_categories.json
 ```
 For deployment the following will be required:
 ```
