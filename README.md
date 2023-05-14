@@ -94,15 +94,15 @@ In terms of what the site offers, increasing the number of artists, and artworks
 
 ## Tools
 
-- [Fontawesome] (https://fontawesome.com/icons)
-- [Django] (https://www.djangoproject.com/)
-- [Am I Responsive] (https://ui.dev/amiresponsive)
-- [Balsamiq] (https://balsamiq.com/)
-- [Bootstrap] (https://getbootstrap.com/)
-- [Chrome dev tools] (https://developer.chrome.com/docs/devtools/)
-- [GitHub] (https://github.com/)
-- [Google Fonts] (https://fonts.google.com/)
-- [Heroku] (https://heroku.com)
+- [Fontawesome](https://fontawesome.com/icons)
+- [Django](https://www.djangoproject.com/)
+- [Am I Responsive](https://ui.dev/amiresponsive)
+- [Balsamiq](https://balsamiq.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Chrome dev tools](https://developer.chrome.com/docs/devtools/)
+- [GitHub](https://github.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Heroku](https://heroku.com)
 - [AWS] (https://aws.amazon.com/)
 - [ElephantSQL] (https://www.elephantsql.com/)
 
