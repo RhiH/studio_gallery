@@ -77,11 +77,11 @@ Wireframes were used to create an idea of how the site should look on different 
 
 ## Future Goals
 
-Product growth options:
+**Product growth options:
 
 As the site currently only offers prints of artists' work, more options of the type of products could be available. This could vary between original pieces to canvas, textile and other products such as phone cases or notebooks could be printed with the art and shipped to the customer. This could be linked via services which already offer this business model, meaning the work could be sold globally and be created within the country/region to ensure shipping times and taxes would be kept to a minimum, whilst increasing the returns for the artists at a low cost.
 
-Site growth options:
+**Site growth options:
 
 In terms of what the site offers, increasing the number of artists, and artworks are the simplest way of growing the site.  Also improving search functionality to consider colour or theme as search options to increase the level of customer satisfaction. Adding in other options such as a sign up newsletter utilising a marketing automation platform such as Mailchimp, creating a featured artist of the month with an interview of the artist - perhaps including a short videoclip of them talking about their processes could help customer engagement. 
 
@@ -94,45 +94,154 @@ In terms of what the site offers, increasing the number of artists, and artworks
 
 ## Tools
 
-- fontawesome (https://fontawesome.com/icons)
-- django (https://www.djangoproject.com/)
-- Am I Responsive (https://ui.dev/amiresponsive)
-- Balsamiq (https://balsamiq.com/)
-- Bootstrap (https://getbootstrap.com/)
-- Chrome dev tools (https://developer.chrome.com/docs/devtools/)
-- GitHub (https://github.com/)
-- Google Fonts (https://fonts.google.com/)
-- Heroku (https://heroku.com)
-- AWS (https://aws.amazon.com/)
-- jQuery (https://jquery.com/)
-- ElephantSQL (https://www.elephantsql.com/)
+- [Fontawesome](https://fontawesome.com/icons)
+- [Django](https://www.djangoproject.com/)
+- [Am I Responsive](https://ui.dev/amiresponsive)
+- [Balsamiq](https://balsamiq.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Chrome dev tools](https://developer.chrome.com/docs/devtools/)
+- [GitHub](https://github.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Heroku](https://heroku.com)
+- [AWS](https://aws.amazon.com/)
+- [ElephantSQL](https://www.elephantsql.com/)
 
 
 Validation:
-WC3 Validator (https://validator.w3.org/)
-JShint (https://jshint.com/)
-Lighthouse (https://www.webpagetest.org/lighthouse)
-Wave Validator (https://wave.webaim.org/)
+- [WC3 Validator](https://validator.w3.org/)
+- [JShint](https://jshint.com/)
+- [Lighthouse](https://www.webpagetest.org/lighthouse)
+- [Wave Validator](https://wave.webaim.org/)
 
 ## Testing
 
 The project was tested during the process of creating it and errors were fixed along the way during the creation of the site, except for the Contact page which worked and then at a later point failed to work. As such it was decided to leave this and continue on with the overall functionality. Unfortunately this, some CSS elements which were not displaying correctly and more thorough testing did not go ahead after deployment due to time constraints.
 
+---
+* issue: url not linking correctly to contacts page
+* cause: url not correctly formatted
+* resolution: url updated, link working
+---
+* issue: artist page not generating properly
+* cause: under investigation
+* resolution: temporary 'all artists biographies' page created as holding page until issue is discovered and resolved
+---
+* issue: font is difficult to read on most pages
+* cause: Lato slim chosen as font, combined with text-muted, creating text that is difficult to see
+* resolution: text-muted replaced with text-black, Lato slim replaced with Lato regular
+---
+* issue: artist model not working
+* cause: under investigation
+* resolution: amendment to model not successful - ongoing
+---
+* contact page not sending emails
+* cause: fault caused by line not removed for default setting for emails in settings.py
+* resolution: settings.py updated - emails now successfully sending
+---
+* issue: artist model still not updating correctly
+* cause: under investigation
+* resolution: delete migrations and re migrate model. Not successful - ongoing
+---
+* issue: artist model still not updating correctly
+* cause: under investigation
+* resolution: temporary links added to temporary all artist biographies page to link to products while investigation is ongoing
+---
+
 # Deployment
 
-Django was used throughout the project. It is necessary to install Django to create the apps required to run the site.
+Deployment Requirements
 
-Set up Elephant SQL for project
+This site was developed using a [GitPod](https://gitpod.io/ "Link to GitPod") workspace. The code was commited to [Git](https://git-scm.com/ "Link to Git") and pushed to [GitHub](https://github.com/ "Link to GitHub") using the terminal. Django was used throughout the project. It is necessary to install Django to create the apps required to run the site.
+```
+Python 
+PIP package installer
+Stripe Payment infrastructure
+```
+Deploying Locally
 
-Set up Heroku for project
+Clone a copy of the repository by clicking code at the top of the page and selecting 'Download Zip' when this has downloaded, extract the files to your folder of choice. Alternatively if you have git installed on your client you can run the following command from the terminal.
 
+Open up your local IDE and open the working folder.
+
+Ideally you will want to work within a virtual environment to allow all packages to be kept within the project, this can be installed using the following command (please note some IDE's require pip3 instead of pip, please check with the documentation for your chosen IDE)
+
+Create a new folder within the root dir called env.py. Within this file add the following lines to set up the environmental variables.
+import os
+```
+os.environ["SECRET_KEY"] = "[Your Secret Key]"
+os.environ["DEV"] = "1"
+os.environ["HOSTNAME"] = "0.0.0.0"
+os.environ["STRIPE_PUBLIC_KEY"] = "[Your Stripe Key]"
+os.environ["STRIPE_SECRET_KEY"] = "[Your Stripe Secret Key]"
+os.environ["DATABASE_URL"] = "[Your DB URL]"
+```
+Database setup
+
+To set up your database you will first need to run the following command. Nb python3 was the commd used her, please choose the most appropriate for you.
+```
+python3 manage.py migrate
+```
+To create a super user to allow you to access the admin panel run the following command in your terminal and complete the required information as prompted
+```
+python3 manage.py createsuperuser
+```
+From there you should now be able to run the server using the following command
+```
+python3 manage.py runserver
+```
+Next close the server in your terminal using ctrl+c (cmd+c on mac) and run the following commands to populate the database
+```
+python3 manage.py loaddata products/fixtures/categories.json
+python3 manage.py loaddata products/fixtures/products.json
+python3 manage.py loaddata artists/fixtures/artist_categories.json
+```
+For deployment the following will be required:
+```
+Elephant SQL
+Heroku
+AWS
+```
 Link Elephant SQL with Heroku project area. 
 
 Set up AWS with necessary S3 bucket for static files, policy, group, user and link with appropriate keys to heroku.
 
+Deploying to Heroku
+
+To run this application in an online environment you will need to deploy the code to Heroku. Before moving on to this section please ensure you have followed the instructions for local deployment and this has been successfu
+
+in the settings tab select Reveal Config Vars and copy the pre populated DATABASE_URL into your settings.py file in your project
+in the Config Vars in Heroku you will need to populate with the following keys
+
 Ensure all necessary keys - secret and public are stored in config vars on Heroku.
 
-Add new webhook endpoint to Stripe for Heroku. 
+Key	Value
+```
+AWS_ACCESS_KEY_ID	[your value]
+AWS_SECRET_ACCESS_KEY	[your value]
+SECRET_KEY	[your value]
+DATABASE_URL [your value]
+DEFAULT_FROM_EMAIL [your value]
+EMAIL_HOST_PASS [your value]
+EMAIL_HOST_USER [your value]
+STRIPE_PUBLIC_KEY	[your value]
+STRIPE_SECRET_KEY	[your value]
+STRIPE_WH_SECRET [your value]
+USE_AWS	TRUE
+```
+
+Now this has been configured you will now migrate the local database to the cloud database using the migrate command as below
+```
+python manage.py migrate
+```
+Next you will need to create a super user and populate the database as described in the database set up section
+When the migrations and data has been loaded, in your Heroku dashboard select the Deploy tab
+
+From here select the Github option and connect the repository from GitHub and select the branch (Master) to deploy from.
+
+It is advised to select automatic deployment to ensure for each push to Github the hosted version is up to date.
+
+When it is deployed, you can launch the site via the link in Heroku.
+
 
 # Credits
 
