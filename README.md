@@ -103,15 +103,15 @@ In terms of what the site offers, increasing the number of artists, and artworks
 - [GitHub](https://github.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [Heroku](https://heroku.com)
-- [AWS] (https://aws.amazon.com/)
-- [ElephantSQL] (https://www.elephantsql.com/)
+- [AWS](https://aws.amazon.com/)
+- [ElephantSQL](https://www.elephantsql.com/)
 
 
 Validation:
-- [WC3 Validator] (https://validator.w3.org/)
-- [JShint] (https://jshint.com/)
-- [Lighthouse] (https://www.webpagetest.org/lighthouse)
-- [Wave Validator] (https://wave.webaim.org/)
+- [WC3 Validator](https://validator.w3.org/)
+- [JShint](https://jshint.com/)
+- [Lighthouse](https://www.webpagetest.org/lighthouse)
+- [Wave Validator](https://wave.webaim.org/)
 
 ## Testing
 
