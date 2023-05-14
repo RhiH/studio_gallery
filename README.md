@@ -134,6 +134,106 @@ Ensure all necessary keys - secret and public are stored in config vars on Herok
 
 Add new webhook endpoint to Stripe for Heroku. 
 
+
+Deployment Requirements
+
+This site was developed using a [GitPod](https://gitpod.io/ "Link to GitPod") workspace. The code was commited to [Git](https://git-scm.com/ "Link to Git") and pushed to [GitHub](https://github.com/ "Link to GitHub") using the terminal.
+
+python Documentation is based on Python v3.8
+PIP package installer
+Stripe Payment infrastructure
+
+Deploying Locally
+
+Clone a copy of the repository by clicking code at the top of the page and selecting 'Download Zip' when this has downloaded, extract the files to your folder of choice. Alternatively if you have git installed on your client you can run the following command from the terminal.
+
+Open up your local IDE and open the working folder.
+
+Ideally you will want to work within a virtual environment to allow all packages to be kept within the project, this can be installed using the following command (please note some IDE's require pip3 instead of pip, please check with the documentation for your chosen IDE)
+
+pip install pipenv
+
+In your root dir, create a new folder called .venv (ensure you have the .)
+
+To activate the virtual environment navigate to the below dir and run activate.bat
+
+[folderinstalled]\scripts\activate\activate.bat
+If you're using Linux or Mac use the below command
+
+source .venv/bin/activate
+
+Next we need to install all modules required by the project to run, use the follow
+pipenv install -r requirements.txt
+
+Create a new folder within the root dir called env.py. Within this file add the following lines to set up the environmental variables.
+import os
+
+os.environ["SECRET_KEY"] = "[Your Secret Key]"
+os.environ["DEV"] = "1"
+os.environ["HOSTNAME"] = "0.0.0.0"
+os.environ["STRIPE_PUBLIC_KEY"] = "[Your Stripe Key]"
+os.environ["STRIPE_SECRET_KEY"] = "[Your Stripe Secret Key]"
+os.environ["DATABASE_URL"] = "[Your DB URL]"
+
+Database setup
+
+To set up your database you will first need to run the following command
+
+python3 manage.py migrate
+
+To create a super user to allow you to access the admin panel run the following command in your terminal and complete the required information as prompted
+python3 manage.py createsuperuser
+
+From there you should now be able to run the server using the following command
+
+python manage.py runserver
+
+Next close the server in your terminal using ctrl+c (cmd+c on mac) and run the following commands to populate the database
+
+python manage.py loaddata products/fixtures/categories.json
+python manage.py loaddata products/fixtures/products.json
+python manage.py loaddata artists/fixtures/artist_categories.json
+
+Deploying to Heroku
+
+To run this application in an online environment you will need to deploy the code to Heroku. Before moving on to this section please ensure you have followed the instructions for local deployment and this has been successful
+
+Either create an account at Heroku or log in to your account
+Set up a new app under a unique name
+In the resources section, in the addons field type the below command and select the free cost option
+heroku Postgres
+in the settings tab select Reveal Config Vars and copy the pre populated DATABASE_URL into your settings.py file in your project
+in the Config Vars in Heroku you will need to populate with the following keys
+
+Key	Value
+
+AWS_ACCESS_KEY_ID	[your value]
+AWS_SECRET_ACCESS_KEY	[your value]
+SECRET_KEY	[your value]
+DATABASE_URL [your value]
+DEFAULT_FROM_EMAIL [your value]
+EMAIL_HOST_PASS [your value]
+EMAIL_HOST_USER [your value]
+STRIPE_PUBLIC_KEY	[your value]
+STRIPE_SECRET_KEY	[your value]
+STRIPE_WH_SECRET [your value]
+USE_AWS	TRUE
+
+
+Now this has been configured you will now migrate the local database to the cloud database using the migrate command as below
+
+python manage.py migrate
+
+Next you will need to create a super user and populate the database as described in the database set up section
+When the migrations and data has been loaded, in your Heroku dashboard select the Deploy tab
+
+From here select the Github option and connect the repository from GitHub and select the branch (Master) to deploy from.
+
+It is advised to select automatic deployment to ensure for each push to Github the hosted version is up to date.
+
+When it is deployed, you can launch the site via the link in Heroku.
+
+
 # Credits
 
 This work was based on the Boutique Ado project by Code Institute, without which this project would not have gotten as far as it did.
