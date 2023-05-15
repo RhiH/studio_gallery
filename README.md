@@ -224,6 +224,9 @@ The project was tested during the process of creating it and errors were fixed a
 * issue: artist model not updating correctly
 * cause: under investigation - table not added correctly
 * resolution: delete dbsqlite3 and remake all migrations. Not successful - followed steps to step back to previous commit
+---
+
+A significant amount of time was spent trying to get the models in the artists app working. Despite various attempts at different solutions, ultimately it was decided to create links on the all artists page which would take the user to the products for each artist, and at a later date the artist_detail page (already created) would be utilised once the source of the exact issue is found and a solution created.
 
 # Deployment
 
