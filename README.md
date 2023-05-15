@@ -98,6 +98,7 @@ This is currently an underutilised table - and will be updated as the site grows
 | Category ID      | name            | No Validation        | Primary Key |
 | Friendly Name    | friendly_name   | max_length 254       | Charfield   |
 | Identifier       | identifier      | max_length 5         | Charfield   |
+| Biography        | biography       | max_length 1000      | Charfield   |
 
 **Artist Data**
 
@@ -145,7 +146,6 @@ This is currently an underutilised table - and will be updated as the site grows
 |Total Order       |	total_order     |	max digits 10	      | DecimalField  |
 |Delivery Charge   |	delivery_charge |	max digits 5        |	DecimalField  | 
 |Grand total       |	grand_total     |	max digits 10       |	DecimalField  |
-
 
 
 
@@ -221,6 +221,9 @@ The project was tested during the process of creating it and errors were fixed a
 * cause: under investigation
 * resolution: temporary links added to temporary all artist biographies page to link to products while investigation is ongoing
 ---
+* issue: artist model not updating correctly
+* cause: under investigation - table not added correctly
+* resolution: delete dbsqlite3 and remake all migrations. Not successful - followed steps to step back to previous commit
 
 # Deployment
 
