@@ -329,7 +329,7 @@ A huge thank you to my mentor Richard without whom I would have not managed to s
 
 Communities on Slack, Stack Overflow and various other websites - too many to recall without whom I would have failed to get anything working at various points.
 
-Regretfully I ran out of time long before this project was finished and my work reflects that. All mistakes are very much my own.
+All mistakes are very much my own.
 
 
 
