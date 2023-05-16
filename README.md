@@ -338,6 +338,8 @@ When it is deployed, you can launch the site via the link in Heroku.
 
 # Credits
 
+Images were sourced from kaggle.com, all artist names, biographies, artwork names and descriptions are my own invention.
+
 This work was based on the Boutique Ado project by Code Institute, without which this project would not have gotten as far as it did.
 
 A huge thank you to my mentor Richard without whom I would have not managed to submit anything. 
