@@ -225,6 +225,18 @@ The project was tested during the process of creating it and errors were fixed a
 * cause: under investigation - table not added correctly
 * resolution: delete dbsqlite3 and remake all migrations. Not successful - followed steps to step back to previous commit
 ---
+* issue: redeployment retains old database not current database
+* cause: elephantsql retains original database
+* resolution: create new instance, loaddata to new database, site deployed successfully
+---
+* issue: site failing at deployment after redeployment
+* cause: answer found on stack overflow - backports info issue.
+* resolution: add python_version<"3.9" to requirements.txt file
+---
+* issue: linking to products via all artist page not working on deployed site, but working on development site
+* cause: observation showed that deployed site converts link whereas development site does not
+* resolution: amend links to deployed site path for products filtering and note that dev site will not link correctly, but deployed site will.
+---
 
 A significant amount of time was spent trying to get the models in the artists app working. Despite various attempts at different solutions, ultimately it was decided to create links on the all artists page which would take the user to the products for each artist, and at a later date the artist_detail page (already created) would be utilised once the source of the exact issue is found and a solution created.
 
