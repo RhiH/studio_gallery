@@ -1,7 +1,8 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render
 from django.contrib import messages
 
 from .forms import ContactForm
+
 
 def contact(request):
     """ contact page """
@@ -11,7 +12,9 @@ def contact(request):
             form.save()
             messages.success(request, 'Thank you for your message')
         else:
-            messages.error(request, 'Failed to send message. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to send message. Please ensure the form is valid.'
+                )
     else:
         form = ContactForm()
 
@@ -19,5 +22,5 @@ def contact(request):
     context = {
         'form': form,
     }
-    
+
     return render(request, template, context)
