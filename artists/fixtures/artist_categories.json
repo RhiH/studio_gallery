@@ -5,7 +5,7 @@
             "category":1,
             "name": "Fredrica Handy",
             "image": "fredrica_handy.jpg",
-            "biography": "Fredrica Handy is a abstract artist working in multple fields, she finds inspiration in the bizarre and unusual."
+            "country": "Fredrica Handy is a French artist currently based in the UK."
         }
     },
     {
@@ -15,7 +15,7 @@
             "category":2,
             "name": "Jared Pottle",
             "image": "jared_pottle.jpg",
-            "biography": "Jared Pottle is an artist inspired by the human form. His work questions the very nature of humanity and how we perceive it."
+            "country": "Jared Pottle was born in the US but raised in Germany for his formative years; something which he says influences him greatly."
         }
     }, {
         "pk": 3,
@@ -24,7 +24,7 @@
             "category":3,
             "name": "Ceris Lightler",
             "image": "ceris_lightler.jpg",
-            "biography": "Ceris Lightler describes her work as 'the abstract in the everyday',  Ceris sees the limimal space as ones that reveal a world beyond the normal."
+            "country": "Ceris Lightler is a British artist, currently based in Suffolk."
         }
     }, {
         "pk": 4,
@@ -33,7 +33,7 @@
             "category": 4,
             "name": "Luc Drir",
             "image": "luc_drir.jpg",
-            "biography": "Luc Drir bases his work in nature and the natural world. Never happier than when he is out on location photographing the world around him."
+            "country": "Luc Drir is a Belgian artist."
         }
     }, {
         "pk": 5,
@@ -42,7 +42,7 @@
             "category": 5,
             "name": "Alan 'Red' Bushe",
             "image": "alan_bushe.jpg",
-            "biography": "Alan 'Red' Bushe is a fascinated by the decaying world, his work often designed to incorporate uneasy elements of death and decay."
+            "country": "Alan 'Red' Bushe is a British artist based in Birmingham."
         }
     }, {
         "pk": 6,
@@ -51,7 +51,7 @@
             "category": 6,
             "name": "Portia Towe",
             "image": "portia_towe.jpg",
-            "biography": "Portia Towe is our newest member, and her work is aimed at re-defining and elevating everyday objects into true works of art, upscaling beyond what the viewer would expect."
+            "country": "Portia Towe is a Scottish artist based in Edinburgh."
         }
     }, {
         "pk": 7,
@@ -60,7 +60,7 @@
             "category":7,
             "name": "Bethany Floode",
             "image": "bethany_floode.jpg",
-            "biography": "Bethany Floode is inspired by liminal spaces andd their uses. Her work is often seen as bleak and uncompromising, with a stark beauty that permeates her every piece."
+            "country": "Bethany Floode is a Welsh artist, currently residing in London."
         }
     }
 ]

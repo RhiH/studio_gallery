@@ -4,7 +4,7 @@ from products.models import Product
 
 # Create your models here.
 
-class Artists(models.Model):
+class Artist(models.Model):
 
     class Meta:
         verbose_name_plural = 'Artists'

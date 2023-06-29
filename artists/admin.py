@@ -8,7 +8,8 @@ from .models import Artists
 class ArtistsAdmin(admin.ModelAdmin):
     list_display = (
         'name',
-        'biography',
+        'country',
+        'image',
     )
 
 
