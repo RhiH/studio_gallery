@@ -5,7 +5,7 @@ from .models import Artists
 
 
 def artists(request):
-    
+
     artists = Artists.objects.all()
     query = None
     categories = None

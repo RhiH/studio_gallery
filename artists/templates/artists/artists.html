@@ -12,42 +12,35 @@
 
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="logo-font">Artists</h2>
-                <hr class="w-50 mb-1">
+    <div class="overlay">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center mt-3">
+                    <h2 class="logo-font">Artists</h2>
+                    <hr class="w-50 mb-1">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="product-container col-10 offset-1">
-                <div class="row mt-1 mb-2"></div>
-                    {% for artist in artists %}
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0">
-                                {% if artist.image %}
-                                <a href="{% url 'artists_image' artist.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ artist.name }}">
-                                </a>
-                                {% else %}
-                                <a href="{% url 'artist_image' artist.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                                </a>
-                                {% endif %}
-                                {% if product.category %}
-                                    <p class="small mt-1 mb-0">
-                                        <a class="text-dark" href="{% url 'products' %}?category={{ product.category.name }}">
-                                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                                        </a>
-                                    </p>
-                                {% endif %}
+            <div class="row">
+                <div class="product-container col-10 offset-1">
+                    <div class="row mt-1 mb-2">
+                        {% for artist in artists %}
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card h-100 border-0">
+                                    {% if artist.image %}
+                                    <a href="{% url 'artists_image' artists.id %}">
+                                        <img class="card-img-top img-fluid" src="{{ artists.image.url }}" alt="{{ artists.name }}">
+                                    </a>
+                                    {% else %}
+                                    <a href="{% url 'artists_image' artists.id %}">
+                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ artists.name }}">
+                                    </a>
+                                    {% endif %}
+                                </div>
                             </div>
-                        </div>
-                    {% endfor %}
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 {% endblock %}
