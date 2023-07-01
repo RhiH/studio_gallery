@@ -1,8 +1,7 @@
 [{
         "pk": 1,
-        "model": "artists.artist",
+        "model": "artists.artists",
         "fields": {
-            "category":1,
             "name": "Fredrica Handy",
             "image": "fredrica_handy.jpg",
             "country": "Fredrica Handy is a French artist currently based in the UK."
@@ -10,54 +9,48 @@
     },
     {
         "pk": 2,
-        "model": "artists.artist",
+        "model": "artists.artists",
         "fields": {
-            "category":2,
             "name": "Jared Pottle",
             "image": "jared_pottle.jpg",
             "country": "Jared Pottle was born in the US but raised in Germany for his formative years; something which he says influences him greatly."
         }
     }, {
         "pk": 3,
-        "model": "artists.artist",
+        "model": "artists.artists",
         "fields": {
-            "category":3,
             "name": "Ceris Lightler",
             "image": "ceris_lightler.jpg",
             "country": "Ceris Lightler is a British artist, currently based in Suffolk."
         }
     }, {
         "pk": 4,
-        "model": "artists.artist",
+        "model": "artists.artists",
         "fields": {
-            "category": 4,
             "name": "Luc Drir",
             "image": "luc_drir.jpg",
             "country": "Luc Drir is a Belgian artist."
         }
     }, {
         "pk": 5,
-        "model": "artists.artist",
+        "model": "artists.artists",
         "fields": {
-            "category": 5,
             "name": "Alan 'Red' Bushe",
             "image": "alan_bushe.jpg",
             "country": "Alan 'Red' Bushe is a British artist based in Birmingham."
         }
     }, {
         "pk": 6,
-        "model": "artists.artist",
+        "model": "artists.artists",
         "fields": {
-            "category": 6,
             "name": "Portia Towe",
             "image": "portia_towe.jpg",
             "country": "Portia Towe is a Scottish artist based in Edinburgh."
         }
     }, {
         "pk": 7,
-        "model": "artists.artist",
+        "model": "artists.artists",
         "fields": {
-            "category":7,
             "name": "Bethany Floode",
             "image": "bethany_floode.jpg",
             "country": "Bethany Floode is a Welsh artist, currently residing in London."
