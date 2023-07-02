@@ -22,7 +22,47 @@
         </div>
         <div class="row">
             <div class="col">
-                {{ artists }}
+                <div class="artists-container col-10 offset-1">
+                    <div class="row mt-1 mb-2">
+                        <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                            {% for artist in artists %}
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="card h-100 border-0">
+                                        <div class="card mb-3" style="max-width: 540px;">
+                                            <div class="row no-gutters">
+                                              <div class="col-md-4">
+                                                {% if artist.image %}
+                                                    <a href="">
+                                                        <img class="card-img-top img-fluid" src="{{ artist.image.url }}" alt="{{ artist.name }}">
+                                                    </a>
+                                                {% else %}
+                                                    <a href="">
+                                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ artist.name }}">
+                                                    </a>
+                                                {% endif %}
+                                              </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                    <h5 class="card-title" title="{{ artists.name }}"></h5>
+                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                    {% if artist.category %}
+                                                    <p class="card-link"><small class="text-muted">
+                                                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                                        </a>
+                                                    </small></p>
+                                                    {% endif %}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
