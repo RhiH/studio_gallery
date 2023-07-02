@@ -13,49 +13,34 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="logo-font">Artists</h2>
-                <hr class="w-50 mb-1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center mt-3">
+                    <h2 class="logo-font">Artists</h2>
+                    <hr class="w-50 mb-1">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="artists-container col-10 offset-1">
-                    <div class="row mt-1 mb-2">
-                        <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
-                            {% for artist in artists %}
-                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                    <div class="card h-100 border-0">
-                                        <div class="card mb-3" style="max-width: 540px;">
-                                            <div class="row no-gutters">
-                                              <div class="col-md-4">
-                                                {% if artist.image %}
-                                                    <a href="">
+            <div class="row">
+                <div class="col">
+                    <div class="artists-container col-10 offset-1">
+                        <div class="row mt-1 mb-2">
+                            <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                                {% for artist in artists %}
+                                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                        <div class="card h-100 border-0">
+                                                <h5 class="card-title">{{ artist.name }} </h5>
+                                                    {% if artist.image %}
                                                         <img class="card-img-top img-fluid" src="{{ artist.image.url }}" alt="{{ artist.name }}">
-                                                    </a>
-                                                {% else %}
-                                                    <a href="">
+                                                    {% else %}
                                                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ artist.name }}">
-                                                    </a>
-                                                {% endif %}
-                                              </div>
-                                                <div class="col-md-8">
-                                                    <div class="card-body">
-                                                    <h5 class="card-title" title="{{ artists.name }}"></h5>
-                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                                    {% if artist.category %}
-                                                    <p class="card-link"><small class="text-muted">
-                                                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                                    {% endif %}
+                                                    <p class="card-text">{{ artist.country }}</p>
+                                                        <a class="text-muted" href="{% url 'artists' %}?category={{ artist.category.name }}">
                                                             <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                                         </a>
                                                     </small></p>
-                                                    {% endif %}
-                                                    </div>
                                                 </div>
                                             </div>
-                                          </div>
                                         </div>
                                     </div>
                                 </div> 
