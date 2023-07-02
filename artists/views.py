@@ -6,11 +6,7 @@ from .models import Artists
 
 def artists(request):
 
-    artists = Artists.objects.all()
-    query = None
-    categories = None
-    sort = None
-    direction = None
+
 
     template = 'artists/artists.html'
 
