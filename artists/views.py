@@ -4,10 +4,13 @@ from .models import Artists
 # Create your views here.
 
 
-def artists(request):
+def all_artists(request):
 
+    artists = Artists.objects.all()
 
+    context = {
 
-    template = 'artists/artists.html'
+        'artists': artists,
+    }
 
-    return render(request, template)
+    return render(request, 'artists/artists.html', context)

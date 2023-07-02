@@ -21,24 +21,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="product-container col-10 offset-1">
-                <div class="row mt-1 mb-2"></div>
-                    {% for artist in artists %}
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0">
-                                {% if artist.image %}
-                                <a href="{% url 'artists_image' artists.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ artists.image.url }}" alt="{{ artists.name }}">
-                                </a>
-                                {% else %}
-                                <a href="{% url 'artists_image' artists.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ artists.name }}">
-                                </a>
-                                {% endif %}
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
+            <div class="col">
+                {{ artists }}
             </div>
         </div>
     </div>
