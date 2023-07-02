@@ -17,31 +17,27 @@
             <div class="row">
                 <div class="col text-center mt-3">
                     <h2 class="logo-font">Artists</h2>
-                    <hr class="w-50 mb-1">
                 </div>
             </div>
+        </div>
             <div class="row">
                 <div class="col">
                     <div class="artists-container col-10 offset-1">
                         <div class="row mt-1 mb-2">
-                            <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
-                                {% for artist in artists %}
-                                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                        <div class="card h-100 border-0">
-                                                <h5 class="card-title">{{ artist.name }} </h5>
-                                                    {% if artist.image %}
-                                                        <img class="card-img-top img-fluid" src="{{ artist.image.url }}" alt="{{ artist.name }}">
-                                                    {% else %}
-                                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ artist.name }}">
-                                                    {% endif %}
-                                                    <p class="card-text">{{ artist.country }}</p>
-                                                        <a class="text-muted" href="{% url 'artists' %}?category={{ artist.category.name }}">
-                                                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                                                        </a>
-                                                    </small></p>
-                                                </div>
-                                            </div>
-                                        </div>
+                            {% for artist in artists %}
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="card h-100 border-0">
+                                    <h5 class="card-title text-center">{{ artist.name }}</h5>
+                                        {% if artist.image %}
+                                            <img class="card-img-top img-fluid" src="{{ artist.image.url }}" alt="{{ artist.name }}">
+                                        {% else %}
+                                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ artist.name }}">
+                                        {% endif %}
+                                        <p class="card-text">{{ artist.country }}</p>
+                                            <a class="text-muted" href="{% url 'artists' %}?category={{ product.category.name }}">
+                                                <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                            </a>
+                                        </p>
                                     </div>
                                 </div> 
                             {% endfor %}
@@ -50,6 +46,5 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 {% endblock %}
