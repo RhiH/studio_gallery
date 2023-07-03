@@ -16,7 +16,7 @@ class ProductForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         artist = ProductArtist.objects.all()
-        friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
+        friendly_names = [(c.id, c.get_friendly_name()) for c in artists]
 
         self.fields['artist'].choices = friendly_names
         for field_name, field in self.fields.items():
