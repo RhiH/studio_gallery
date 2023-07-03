@@ -31,10 +31,11 @@
                                         {% else %}
                                             <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ artist.name }}">
                                         {% endif %}
-                                        <p class="card-text">{{ artist.country }}</p>
-                                            <a class="text-muted" href="{% url 'artists' %}?category={{ product.category.name }}">
-                                                <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                                            </a>
+                                        <p class="card-text">{{ artist.country }}
+                                        </p>
+                                        <a class="text-dark" href="{% url 'products' %}?artist={{ artist.product_artist.name}}">
+                                            <i class="fas fa-tag mr-1"></i>{{ artist.product_artist.friendly_name }}
+                                        </a>
                                         </p>
                                     </div>
                                 </div> 

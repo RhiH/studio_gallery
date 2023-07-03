@@ -10,7 +10,7 @@ class ArtistsAdmin(admin.ModelAdmin):
         'name',
         'country',
         'image',
-        'category',
+        'product_artist',
     )
 
 

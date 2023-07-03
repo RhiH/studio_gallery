@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Product, ProductArtist
 from .forms import ProductForm
 
 # Create your views here.
@@ -15,7 +15,7 @@ def all_products(request):
 
     products = Product.objects.all()
     query = None
-    categories = None
+    artists = None
     sort = None
     direction = None
 
@@ -26,18 +26,18 @@ def all_products(request):
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
-            if sortkey == 'category':
-                sortkey = 'category__name'
+            if sortkey == 'artist':
+                sortkey = 'artist__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
 
-        if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
-            products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
+        if 'artists' in request.GET:
+            artists = request.GET['artists'].split(',')
+            products = products.filter(artist__name__in=artists)
+            artists = ProductArtist.objects.filter(name__in=artists)
 
     if request.GET:
         if 'q' in request.GET:
@@ -57,7 +57,7 @@ def all_products(request):
     context = {
         'products': products,
         'search_term': query,
-        'current_categories': categories,
+        'current_artists': artists,
         'current_sorting': current_sorting,
     }
 
