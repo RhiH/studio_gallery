@@ -150,15 +150,6 @@ This is currently an underutilised table - and will be updated as the site grows
 
 
 
-## Future Goals
-
-**Product growth options:
-
-As the site currently only offers prints of artists' work, more options of the type of products could be available. This could vary between original pieces to canvas, textile and other products such as phone cases or notebooks could be printed with the art and shipped to the customer. This could be linked via services which already offer this business model, meaning the work could be sold globally and be created within the country/region to ensure shipping times and taxes would be kept to a minimum, whilst increasing the returns for the artists at a low cost.
-
-**Site growth options:
-
-In terms of what the site offers, increasing the number of artists, and artworks are the simplest way of growing the site.  Also improving search functionality to consider colour or theme as search options to increase the level of customer satisfaction. Adding in other options such as a sign up newsletter utilising a marketing automation platform such as Mailchimp, creating a featured artist of the month with an interview of the artist - perhaps including a short videoclip of them talking about their processes could help customer engagement. 
 
 ## Technology Used
 
@@ -335,16 +326,52 @@ It is advised to select automatic deployment to ensure for each push to Github t
 
 When it is deployed, you can launch the site via the link in Heroku.
 
+# Future Goals
+
+**Product growth options:
+
+As the site currently only offers prints of artists' work, more options of the type of products could be available. This could vary between original pieces to canvas, textile and other products such as phone cases or notebooks could be printed with the art and shipped to the customer. This could be linked via services which already offer this business model, meaning the work could be sold globally and be created within the country/region to ensure shipping times and taxes would be kept to a minimum, whilst increasing the returns for the artists at a low cost.
+
+**Site growth options:
+
+In terms of what the site offers, increasing the number of artists, and artworks are the simplest way of growing the site.  Also improving search functionality to consider colour or theme as search options to increase the level of customer satisfaction. Adding in other options such as a sign up newsletter utilising a marketing automation platform such as Mailchimp, creating a featured artist of the month with an interview of the artist - perhaps including a short videoclip of them talking about their processes could help customer engagement. 
+
+The site could offer artists stock management options, should artists wish to offer limited edition/one-off pieces, with higher costs. Different delivery options could also be offered as standard, especially for higher price point items, where insurance would be advisable. 
+
 
 # Credits
 
-Images were sourced from kaggle.com, all artist names, biographies, artwork names and descriptions are my own invention.
+**Media
 
-This work was based on the Boutique Ado project by Code Institute, without which this project would not have gotten as far as it did.
+Art images were sourced from [kaggle](https://www.kaggle.com/datasets "Link to Kaggle datasets")
+
+Artist images were sourced from Google Images search.
+
+Tyra Goodley https://www.artsyshark.com/2013/01/27/artists-at-work/
+Andrew F https://natureinart.org.uk/artistinresidence/
+Tom Werner https://www.liveabout.com/what-do-artists-do-1122810
+Unnamed male artist by Unsplash https://www.shopify.com/blog/211990409-how-to-sell-art-online
+Unnamed female artist by Gorodenkoff https://stock.adobe.com/images/talented-innovative-female-artist-draws-with-her-hands-on-the-large-canvas-using-fingers-she-creates-colorful-emotional-sensual-oil-painting-contemporary-painter-creating-abstract-modern-art/298117629
+Unnamed Female standing in front of artwork 
+
+All artist names, biographies, artwork names and descriptions are my own invention.
+
+**Code 
+
+This work was based on the Boutique Ado project by Code Institute, and references from 
+
+Python
+Django
+Bootstrap
+
+
+# Acknowledgements
 
 A huge thank you to my mentor Richard without whom I would have not managed to submit anything. 
 
-Communities on Slack, Stack Overflow and various other websites - too many to recall without whom I would have failed to get anything working at various points.
+Communities on Slack and Stack Overflow were invaluable for assisting with technical problems. I consulted both regularly throughout the project.
+
+A massive thank you to my colleagues, friends and family - who have cheered me on throughout my course. A special thanks to Hayley and Carrie for thoroughly testing my site.
 
 All mistakes are very much my own.
 
