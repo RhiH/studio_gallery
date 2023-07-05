@@ -61,8 +61,20 @@ Marsha and Chris, well-travelled early retirees who appreciate going away on a w
 
 Katie – single, early thirties. She enjoys decorating her home with her own style, dislikes the current trend on colouring all spaces at home in grey. Likes unusual art and enjoys supporting artists when she can, does not have a large disposable income.
 
+Marketing:
 
+The main goal of the site is to assist artists to increase their income while reducing overheads associated with running a website where you can purchase products.
 
+Having a shared site, allows the artists to promote themselves and each other, increasing the potential audience for their work, and as the site does not have a large number of artists, this improves the opportunities of the customer remembering the site and the artist name, meaning they are more likely to revisit in future and promote the site by word of mouth.
+
+A Contact Us page ensures that the customer can communicate if needed with the artists, and the information about each artist, their practice and their pieces means the site has more interest than just a site which displays the work alone.
+
+**Site User Goals**
+
+* As a user I expect the site to be accesible
+* As a user I expect my purchases to be secure
+* As a user I expect the site to be responsive.
+  
 **Artist Goals**
 
 * As an artist I want to be able to display my work to the public and sell prints of it at a price I can set myself.
@@ -88,13 +100,6 @@ Katie – single, early thirties. She enjoys decorating her home with her own st
 * As a buyer I want to be able to amend the items in my basket.
 * As a buyer I want to be able to remove items from my basket.
 
-**Site User Goals**
-
-* To be able to view art and purchase prints of the art and have confirmation of my order sent to me.
-* To be able to amend the quantities of my basket prior to checkout.
-* To be able to view an individual's art on the same page.
-* To be able to purchase multiple prints and get free delivery.
-* To have my info saved so I can make easier purchases and look up past purchases.
 
 ## Design Choices
 
