@@ -96,7 +96,6 @@ A Contact Us page ensures that the customer can communicate if needed with the a
 I created a user story list in terms of priority, with all the goals in numerical order and then sorted in terms of priority.
 
 ![Studio_Gallery](media/site_images/user_story_list.png)
-
 Critical items were seen as essential, these are the secure purchasing, followed by accessible and responsive design. Card payments, superuser login, CRUD functionality, a contact page and the ability to see the prices of the products were listed as needed for the site. The ability to remove, amend and edit items in the basket, along with the option to see all products at were classed as wanted, and finally customer login, sort by price, filter by artist and a way to view information about the artist was seen as nice to have.
 
 ---
@@ -120,7 +119,7 @@ User stories: [1](#site-user-goals), [3](#site-user-goals)
 
 It was decided to keep the project as simple as possible, given this was the first time Django had been used. Ensuring things were kept as simple as possible meant that the focus could remain on the site as a whole. As the site is to display art in most appealing way, vivid colours were not used as these could easily detract from the work, and put off the consumer. 
 
-The colour scheme was kept simple, with sticking to a white background with black text. Grey text weas also used to give the site a slightly softer feeling.
+The colour scheme was kept simple, with sticking to a white background with black text. Grey text was also used to give the site a slightly softer feeling.
 
 ![Studio_Gallery](media/site_images/colour_scheme.png)
 
@@ -131,6 +130,9 @@ The site home page is colourful as it does not display any artist's work, but is
 ![Studio_Gallery](media/studio.jpg)
 
 The image is of a working artist studio, hence it has equipment and supplies ready to use by the artist. Also gap in the wall close to the socket subtly shows the viewer that this is a place where creativity is allowed and the artist does not need to be too precious about their surroundings. This is not a posed image - this is a real studio.
+
+---
+**Mobile Version**
 
 ![Studio_Gallery](media/site_images/mobile_home.png)
 
@@ -162,10 +164,14 @@ All artists page, with information about where the artist is from, and for some 
 User stories: [4](#site-user-goals), [5](#site-user-goals),  [6](#site-user-goals), [7](#site-user-goals) and [14](#site-user-goals)
 
 ---
+**Contact Page**
 
-![Studio_Gallery](media/site_images/contact_us_page)
+![Studio_Gallery](media/site_images/contact_us_page.png)
 Contact us page for customers to send queries or comments about the site directly to the site admin.
-User stories: [13](#site-user-goals),
+User stories: [13](#site-user-goals)
+
+---
+**Shopping on the Site**
 
 ![Studio_Gallery](media/site_images/product_detail.png)
 Viewing the art and selecting more than 1 item.
@@ -180,13 +186,18 @@ User stories: [6](#site-user-goals), [7](#site-user-goals), [8](#site-user-goals
 
 ---
 
+**Checkout Process**
+
 ![Studio_Gallery](media/site_images/checkout_page_not_logged_in.png)
 Checkout option – not logged in.
 Users can choose to pay without registering, as can be seen on the checkout page. There is an option to register their details. As the site uses Stripe for payment this meets the critical criteria of secure payments.
 
+![Studio_Gallery](media/site_images/order_success_page.png)
+Notification success of purchase.
 User stories: [2](#site-user-goals), [12](#site-user-goals)
 
 ---
+**Registering for an Account**
 
 ![Studio_Gallery](media/site_images/register.png)
 Creating a new account page.
@@ -197,6 +208,7 @@ Sign up verification notice – reminding new users to verify their email addres
 User stories: [9](#site-user-goals),
 
 ---
+**Ordering as a Registered User**
 
 ![Studio_Gallery](media/site_images/profile_update_page.png)
 Order confirmation information for logged in user.
@@ -206,12 +218,7 @@ Logged in profile with saved address and previous order history.
 User stories: [9](#site-user-goals)
 
 ---
-
-![Studio_Gallery](media/site_images/order_success_page.png)
-Notification success of purchase.
-User stories: [2](#site-user-goals), [12](#site-user-goals)
-
----
+**Using Site as a Superuser**
 
 ![Studio_Gallery](media/site_images/logged_in_superuser_edit_option.png)
 Filtering products by artist, with biography text underneath artist friendly tag (surname) for logged in superuser.
