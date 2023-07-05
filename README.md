@@ -92,7 +92,9 @@ A Contact Us page ensures that the customer can communicate if needed with the a
 15.	As an artist I want to be able to have an account which enables me to log in.
 16.	As an artist I want to be able to edit, create and delete work when I want to do so.
 
+I created a user story list in terms of priority, 
 
+![Studio_Gallery](media/site_images/user_story_list.png)
 
 ## Wireframes
 
@@ -113,9 +115,28 @@ The colour scheme was kept simple, with sticking to a white background with blac
 
 ![Studio_Gallery](media/site_images/colour_scheme.png)
 
+Hex codes as follows: white: # ffffff, black: # 000000, grey: #555555
 
+The site home page is colourful as it does not display any artist's work, but is a studio space. It was decided to have a colourful landing page as this was more enticing than having the artwork on the home page, and it meant that this could be a static image which could be updated when required, as opposed to featuring an image which might need to be changed at short notice if an artist no longer wished for their work to be displayed.
 
+![Studio_Gallery](media/studio.jpg)
 
+![Studio_Gallery](media/site_images/logged_in_user_previous_order.png)
+![Studio_Gallery](media/site_images/order_success_page.png)
+![Studio_Gallery](media/site_images/profile_update_age.png)
+![Studio_Gallery](media/site_images/checkout_page_not_logged_in.png)
+![Studio_Gallery](media/site_images/update_shopping_bag.png)
+![Studio_Gallery](media/site_images/item_added_to_bag_message.png)
+![Studio_Gallery](media/site_images/product_detail.png)
+![Studio_Gallery](media/site_images/logged_in_superuser_edit_option.png)
+![Studio_Gallery](media/site_images/product_management.png)
+![Studio_Gallery](media/site_images/verify_email_message.png)
+![Studio_Gallery](media/site_images/register.png)
+![Studio_Gallery](media/site_images/all_artists.png)
+![Studio_Gallery](media/site_images/contact_us_page)
+![Studio_Gallery](media/site_images/artist_product_filter.png)
+![Studio_Gallery](media/site_images/product_sorted_price.png)
+![Studio_Gallery](media/site_images/product_sorted_price_with_edit.png)
 
 
 
