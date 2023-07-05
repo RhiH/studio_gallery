@@ -108,7 +108,7 @@ Wireframes were used to create an idea of how the site should look on different 
 ![Studio_Gallery](media/wireframes/tablet_wireframe.png)
 ![Studio_Gallery](media/wireframes/mobile_wireframe.png)
 
-User stories: [2](#2), [3](#3)
+User stories: [2](#site-user-goals), [3](#site-user-goals)
 
 ## Site Design
 
@@ -131,21 +131,56 @@ The image is of a working artist studio, hence it has equipment and supplies rea
 
 
 ![Studio_Gallery](media/site_images/logged_in_user_previous_order.png)
+Logged in profile with saved address and previous order history.
+
 ![Studio_Gallery](media/site_images/order_success_page.png)
-![Studio_Gallery](media/site_images/profile_update_age.png)
+Notification success of adding items to basket.
+
+![Studio_Gallery](media/site_images/profile_update_page.png)
+Order confirmation information for logged in user.
+
 ![Studio_Gallery](media/site_images/checkout_page_not_logged_in.png)
+Checkout option – not logged in.
+
 ![Studio_Gallery](media/site_images/update_shopping_bag.png)
+Bag quantity is 3 items.
+
 ![Studio_Gallery](media/site_images/item_added_to_bag_message.png)
+
 ![Studio_Gallery](media/site_images/product_detail.png)
+Viewing the art and selecting more than 1 item.
+
 ![Studio_Gallery](media/site_images/logged_in_superuser_edit_option.png)
+Filtering products by artist, with biography text underneath artist friendly tag (surname) for logged in superuser.
+
 ![Studio_Gallery](media/site_images/product_management.png)
+Adding product page with drop down list for selecting the artist for logged in superuser. 
+
+
 ![Studio_Gallery](media/site_images/verify_email_message.png)
+Sign up verification notice – reminding new users to verify their email address.
+
 ![Studio_Gallery](media/site_images/register.png)
+Creating a new account page. 
+
 ![Studio_Gallery](media/site_images/all_artists.png)
+All artists page, with information about where the artist is from, and for some where they are currently based with tags to take the user to each artist’s filtered work.!
+
 ![Studio_Gallery](media/site_images/contact_us_page)
+Contact us page for customers to send queries or comments about the site directly to the site admin.
+
+
 ![Studio_Gallery](media/site_images/artist_product_filter.png)
+Filtering products by artist (not logged in).
+
 ![Studio_Gallery](media/site_images/product_sorted_price.png)
+Sorting products by price (low to high), with user not logged in.
+
+
 ![Studio_Gallery](media/site_images/product_sorted_price_with_edit.png)
+
+Products page for logged in superuser to edit and delete items. Currently there is only a login to access all items, a later adaptation will ensure that it is only specific superusers who can edit and delete their own work. This is an option for future improvements.
+
 
 
 
