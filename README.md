@@ -99,6 +99,8 @@ I created a user story list in terms of priority, with all the goals in numerica
 
 Critical items were seen as essential, these are the secure purchasing, followed by accessible and responsive design. Card payments, superuser login, CRUD functionality, a contact page and the ability to see the prices of the products were listed as needed for the site. The ability to remove, amend and edit items in the basket, along with the option to see all products at were classed as wanted, and finally customer login, sort by price, filter by artist and a way to view information about the artist was seen as nice to have.
 
+---
+
 ## Wireframes
 
 Wireframes were used to create an idea of how the site should look on different devices.
@@ -108,7 +110,9 @@ Wireframes were used to create an idea of how the site should look on different 
 ![Studio_Gallery](media/wireframes/tablet_wireframe.png)
 ![Studio_Gallery](media/wireframes/mobile_wireframe.png)
 
-User stories: [2](#site-user-goals), [3](#site-user-goals)
+User stories: [1](#site-user-goals), [3](#site-user-goals)
+
+---
 
 ## Site Design
 
@@ -138,6 +142,8 @@ The mobile version of the site enables the viewer to see the products in  a diff
 
 User stories: [2](#site-user-goals), [3](#site-user-goals)
 
+---
+
 **Site Navigation**
 
 ![Studio_Gallery](media/site_images/all_products.png)
@@ -153,8 +159,9 @@ Sorting products by price (low to high), with user not logged in.
 ![Studio_Gallery](media/site_images/all_artists.png)
 All artists page, with information about where the artist is from, and for some where they are currently based with tags to take the user to each artist’s filtered work.
 
-User stories: [4](#site-user-goals), [5](#site-user-goals),  [6](#site-user-goals) and [7](#site-user-goals)
+User stories: [4](#site-user-goals), [5](#site-user-goals),  [6](#site-user-goals), [7](#site-user-goals) and [14](#site-user-goals)
 
+---
 
 ![Studio_Gallery](media/site_images/contact_us_page)
 Contact us page for customers to send queries or comments about the site directly to the site admin.
@@ -163,18 +170,23 @@ User stories: [13](#site-user-goals),
 ![Studio_Gallery](media/site_images/product_detail.png)
 Viewing the art and selecting more than 1 item.
 
-![Studio_Gallery](media/site_images/update_shopping_bag.png)
-Bag quantity was 4 items.
-
 ![Studio_Gallery](media/site_images/item_added_to_bag_message.png)
-User stories: [8](#site-user-goals),
+Message confirming number of items successfully added to bag, with price and quantity, plus reminder about free shipping.
 
+![Studio_Gallery](media/site_images/update_shopping_bag.png)
+Bag quantity was 3 items, updated to 4 by using +quantity option and clicking update. Total price is updated and free delivery added as amount is over free delivery threshold.
+
+User stories: [6](#site-user-goals), [7](#site-user-goals), [8](#site-user-goals), [10](#site-user-goals) and [11](#site-user-goals).
+
+---
 
 ![Studio_Gallery](media/site_images/checkout_page_not_logged_in.png)
 Checkout option – not logged in.
 Users can choose to pay without registering, as can be seen on the checkout page. There is an option to register their details. As the site uses Stripe for payment this meets the critical criteria of secure payments.
 
-User stories: [2](#site-user-goals),[12](#site-user-goals),
+User stories: [2](#site-user-goals), [12](#site-user-goals)
+
+---
 
 ![Studio_Gallery](media/site_images/register.png)
 Creating a new account page.
@@ -184,25 +196,22 @@ Customers can sign up to save their details. This includes a prompt for email ve
 Sign up verification notice – reminding new users to verify their email address.
 User stories: [9](#site-user-goals),
 
-
-![Studio_Gallery](media/site_images/order_success_page.png)
-Notification success of adding items to basket.
+---
 
 ![Studio_Gallery](media/site_images/profile_update_page.png)
 Order confirmation information for logged in user.
 
 ![Studio_Gallery](media/site_images/logged_in_user_previous_order.png)
 Logged in profile with saved address and previous order history.
-User stories: [9](#site-user-goals),
+User stories: [9](#site-user-goals)
 
+---
 
+![Studio_Gallery](media/site_images/order_success_page.png)
+Notification success of purchase.
+User stories: [2](#site-user-goals), [12](#site-user-goals)
 
-
-
-
-
-
-
+---
 
 ![Studio_Gallery](media/site_images/logged_in_superuser_edit_option.png)
 Filtering products by artist, with biography text underneath artist friendly tag (surname) for logged in superuser.
@@ -211,24 +220,13 @@ Filtering products by artist, with biography text underneath artist friendly tag
 Adding product page with drop down list for selecting the artist for logged in superuser. 
 User stories: [4](#site-user-goals),
 
-
-
-
-
-
-
-
-
-
-
-
-
 ![Studio_Gallery](media/site_images/product_sorted_price_with_edit.png)
 
 Products page for logged in superuser to edit and delete items. Currently there is only a login to access all items, a later adaptation will ensure that it is only specific superusers who can edit and delete their own work. This is an option for future improvements.
 
+User stories: [15](#site-user-goals) and [16](#site-user-goals)
 
-
+---
 
 ### Information Architecture
 
