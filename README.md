@@ -111,7 +111,7 @@ It was decided to keep the project as simple as possible, given this was the fir
 
 The colour scheme was kept simple, with sticking to a white background with black text. Grey text weas also used to give the site a slightly softer feeling.
 
-![Studio_Gallery}(media/site_images/colour_scheme.png)
+![Studio_Gallery](media/site_images/colour_scheme.png)
 
 
 
