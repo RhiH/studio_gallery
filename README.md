@@ -249,9 +249,7 @@ User stories: [15](#site-user-goals) and [16](#site-user-goals)
 | Image            | image           | Null True, blank True| ImageField  |
 | Description      | description     | max_length 1000      | Charfield   |
 
-**Category Data**
-
-This is currently an underutilised table - and will be updated as the site grows
+**Product Artists Data**
 
 | Title            | Key In Database | Form Validation      | Data Type   |
 |------------------|-----------------|----------------------|-------------|
@@ -266,9 +264,9 @@ This is currently an underutilised table - and will be updated as the site grows
 |------------------|-----------------|----------------------|-------------|
 | Category ID      | PK              | No Validation        | Primary Key |
 | Name             | name            | max_length 254       | Charfield   |
-| category         | category        | Null true, blank true| Foreign Key |
-| Biography        | biography       | max_length 1000      | Charfield   |
-
+| Image            | image           | Null true, blank true| ImageField  |
+| Country          | country         | max_length 1000      | Charfield   |
+| Product_Artist   | product_artist  | Null true, blank true| Foreign Key | 
 
 **User Table**
 
@@ -307,9 +305,7 @@ This is currently an underutilised table - and will be updated as the site grows
 |Delivery Charge   |	delivery_charge |	max digits 5        |	DecimalField  | 
 |Grand total       |	grand_total     |	max digits 10       |	DecimalField  |
 
-
-
-
+---
 
 ## Technology Used
 
@@ -341,7 +337,7 @@ Validation:
 
 ## Testing
 
-The project was tested during the process of creating it and errors were fixed along the way during the creation of the site, except for the Contact page which worked and then at a later point failed to work. As such it was decided to leave this and continue on with the overall functionality. Unfortunately this, some CSS elements which were not displaying correctly and more thorough testing did not go ahead after deployment due to time constraints.
+The project was tested during the process of creating it and errors were fixed along the way during the creation of the site. Here is a list of a number of the errors which were dealt with during the creation of Studio Gallery. 
 
 ---
 * issue: url not linking correctly to contacts page
@@ -389,7 +385,6 @@ The project was tested during the process of creating it and errors were fixed a
 * resolution: amend links to deployed site path for products filtering and note that dev site will not link correctly, but deployed site will.
 ---
 
-A significant amount of time was spent trying to get the models in the artists app working. Despite various attempts at different solutions, ultimately it was decided to create links on the all artists page which would take the user to the products for each artist, and at a later date the artist_detail page (already created) would be utilised once the source of the exact issue is found and a solution created.
 
 # Deployment
 
