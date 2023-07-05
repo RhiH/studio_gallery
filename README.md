@@ -90,8 +90,8 @@ A Contact Us page ensures that the customer can communicate if needed with the a
 **Artist Goals**
 
 14.	As an artist I want to be able to display my work to the public and sell prints of it at a price I can set myself.
-15.	As an artist I want to be able to have an account which enables me to log in.
-16.	As an artist I want to be able to edit, create and delete work when I want to do so.
+15.	As an artist I want there to be an account which enables an admin to log in and manage the site.
+16.	As an artist I want there to be an account that is able to edit, create and delete work that is not accessible to customers.
 
 I created a user story list in terms of priority, with all the goals in numerical order and then sorted in terms of priority.
 
@@ -128,16 +128,62 @@ The site home page is colourful as it does not display any artist's work, but is
 
 The image is of a working artist studio, hence it has equipment and supplies ready to use by the artist. Also gap in the wall close to the socket subtly shows the viewer that this is a place where creativity is allowed and the artist does not need to be too precious about their surroundings. This is not a posed image - this is a real studio.
 
-
-
-
 ![Studio_Gallery](media/site_images/mobile_home.png)
+
+The mobile version of the site also shows the artist studio image, with the burger icon allowing the user to navigate around the site, ensuring the design is responsive.
+
 ![Studio_Gallery](media/site_images/mobile_products.png)
 
+The mobile version of the site enables the viewer to see the products in  a different row format to the larger screen versions of the site making the design reponsive.
+
+User stories: [2](#site-user-goals), [3](#site-user-goals)
+
+**Site Navigation**
+
+![Studio_Gallery](media/site_images/all_products.png)
+
+Clicking on the all products drop down enables the visitor to the site to see all the products at once. There is also the option to use the filter drop down to sort by price and by artist.
+
+![Studio_Gallery](media/site_images/artist_product_filter.png)
+Filtering products by artist (not logged in).
+
+![Studio_Gallery](media/site_images/product_sorted_price.png)
+Sorting products by price (low to high), with user not logged in.
+
+![Studio_Gallery](media/site_images/all_artists.png)
+All artists page, with information about where the artist is from, and for some where they are currently based with tags to take the user to each artist’s filtered work.
+
+User stories: [4](#site-user-goals), [5](#site-user-goals),  [6](#site-user-goals) and [7](#site-user-goals)
 
 
-![Studio_Gallery](media/site_images/logged_in_user_previous_order.png)
-Logged in profile with saved address and previous order history.
+![Studio_Gallery](media/site_images/contact_us_page)
+Contact us page for customers to send queries or comments about the site directly to the site admin.
+User stories: [13](#site-user-goals),
+
+![Studio_Gallery](media/site_images/product_detail.png)
+Viewing the art and selecting more than 1 item.
+
+![Studio_Gallery](media/site_images/update_shopping_bag.png)
+Bag quantity was 4 items.
+
+![Studio_Gallery](media/site_images/item_added_to_bag_message.png)
+User stories: [8](#site-user-goals),
+
+
+![Studio_Gallery](media/site_images/checkout_page_not_logged_in.png)
+Checkout option – not logged in.
+Users can choose to pay without registering, as can be seen on the checkout page. There is an option to register their details. As the site uses Stripe for payment this meets the critical criteria of secure payments.
+
+User stories: [2](#site-user-goals),[12](#site-user-goals),
+
+![Studio_Gallery](media/site_images/register.png)
+Creating a new account page.
+Customers can sign up to save their details. This includes a prompt for email verification which is required before accessing the site. 
+
+![Studio_Gallery](media/site_images/verify_email_message.png)
+Sign up verification notice – reminding new users to verify their email address.
+User stories: [9](#site-user-goals),
+
 
 ![Studio_Gallery](media/site_images/order_success_page.png)
 Notification success of adding items to basket.
@@ -145,42 +191,36 @@ Notification success of adding items to basket.
 ![Studio_Gallery](media/site_images/profile_update_page.png)
 Order confirmation information for logged in user.
 
-![Studio_Gallery](media/site_images/checkout_page_not_logged_in.png)
-Checkout option – not logged in.
+![Studio_Gallery](media/site_images/logged_in_user_previous_order.png)
+Logged in profile with saved address and previous order history.
+User stories: [9](#site-user-goals),
 
-![Studio_Gallery](media/site_images/update_shopping_bag.png)
-Bag quantity is 3 items.
 
-![Studio_Gallery](media/site_images/item_added_to_bag_message.png)
 
-![Studio_Gallery](media/site_images/product_detail.png)
-Viewing the art and selecting more than 1 item.
+
+
+
+
+
+
 
 ![Studio_Gallery](media/site_images/logged_in_superuser_edit_option.png)
 Filtering products by artist, with biography text underneath artist friendly tag (surname) for logged in superuser.
 
 ![Studio_Gallery](media/site_images/product_management.png)
 Adding product page with drop down list for selecting the artist for logged in superuser. 
+User stories: [4](#site-user-goals),
 
 
-![Studio_Gallery](media/site_images/verify_email_message.png)
-Sign up verification notice – reminding new users to verify their email address.
-
-![Studio_Gallery](media/site_images/register.png)
-Creating a new account page. 
-
-![Studio_Gallery](media/site_images/all_artists.png)
-All artists page, with information about where the artist is from, and for some where they are currently based with tags to take the user to each artist’s filtered work.!
-
-![Studio_Gallery](media/site_images/contact_us_page)
-Contact us page for customers to send queries or comments about the site directly to the site admin.
 
 
-![Studio_Gallery](media/site_images/artist_product_filter.png)
-Filtering products by artist (not logged in).
 
-![Studio_Gallery](media/site_images/product_sorted_price.png)
-Sorting products by price (low to high), with user not logged in.
+
+
+
+
+
+
 
 
 ![Studio_Gallery](media/site_images/product_sorted_price_with_edit.png)
