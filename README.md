@@ -28,40 +28,70 @@ Users are also able to create a profile for faster purchasing and to see their p
 
 ## Project Goals
 
-The overall project goal is to ensure that consumers can easily purchase printed art direct from the artists themselves, cutting out the need for artists to involve third parties who would charge commission, sometimes as much as 60% of the overall price. The art needs to be displayed in a simple manner so as not to distract the customer when thinking of making a purchase.
+UX
 
-**Artist Goals**
+The Problem.
 
-* As an artist I want to be able to display my work to the public and sell prints of it at a price I can set myself.
-* As an artist I want to be able to sell affordable pieces to increase my revenue streams.
-* As an artist I want to be able to create new income streams by displaying my work alongside other artists.
-* As an artist I want to be able to set the prices to the RRP so I can have the full benefit of sales of my work rather than have any commission taken, other than running costs for the site itself, which I can share with other artists.
-* As an artist I want to be able to have an account which enables me to log in, edit, create and delete work when I want to do so.
-* As an artist I want to be able to control the numbers of prints I sell.
+Artists can find it difficult to have a regular income if they solely rely on large expensive pieces of work selling to a small audience who can afford to buy and have enough space to display works of art. 
 
-**Customer Goals**
+In addition, if selling via a gallery, the gallery will take a commission – usually between 40 – 60% of the RRP of the piece, meaning an artist must consider this when pricing their work. This increases the overall cost of their piece, potentially shrinking their audience further.
 
-* As a buyer I want to be able to view all the art at once.
-* As a buyer I want to bw able to learn more about the artists and their work.
-* As a buyer I want to be able to filter the work to see each artists' individual work.
-* As a buyer I want to be able to sort the prints by price.
-* As a buyer I want to be able to login to make repeat purchases.
-* As a buyer I want to be able to see my previous purchases in my account.
-* As a buyer I want to be able to update my details in my account.
-* As a buyer I want to be able to make a purchase without logging in.
-* As a buyer I want to be able to purchase more than one print of the same picture.
-* As a buyer I want to be able to buy art at affordable prices.
-* As a buyer I want to be able to support the artists directly.
-* As a buyer I want to be able to amend the items in my basket.
-* As a buyer I want to be able to remove items from my basket.
+If the artist has an agent for representation, they also tend to work on a commission basis and again, the artist must factor this in when pricing their work, although having a good agent can ensure the artist has new opportunities. 
+
+Most artists who are not household names do not tend to be represented by galleries or agents, although they may show their work for a short term in a gallery space. Consequently, many artists must supplement their income with paid work, which can have an impact on the amount of time and energy available to create new pieces and promote their work to appeal to a wider audience.
+
+The Concept Solution.
+
+Create a space online for artists to showcase their work directly to the public and enable the public to purchase print versions of the artists’ work.
+
+Prints can be produced in different quantities, artists can choose to have them pre-printed prior to sales, as they may already have a stock of work ready to sell; or can choose to have an approach similar to print on demand with their preferred local print shop.
+
+Prints can appeal to a wider market, who may not wish to invest in the original piece or who cannot afford to purchase one but would like to have a copy of the artwork they admire and also support the artist, much like the just a card initiative. (LINK)
+
+A collective group of artists would appeal to a wider range of customers, rather than a single artist website, and costs of the site could be split across the group making it a cost effective way of being on a website without having to pay as much as if it was their own site, which would not receive as much traffic as a shared site.
+
+Marketing costs could also be shared by the collective, and potentially the collective could work together to host real life events such as exhibitions, which they could use the website to drive footfall to the exhibition to increase sales, and also in a circular fashion, drive traffic to the website during the exhibition to increase sales and awareness of their collective work.
+
+Whilst there are already a number of sites such as Etsy and Redbubble who showcase artists and provide a space for makers to sell their work directly, these are large sites and very often a consumer might say they bought it on Etsy, rather than the name of the artist or crafter who made the work in question. Within the selected group of artists on the site it would be easier to find a specific artist, rather than hunting across a much larger website with significantly more competition. 
+
+
+Target Audience Examples:
+
+Marsha and Chris, well-travelled early retirees who appreciate going away on a whim. The appreciate good wine, good books and good art. Marsha in particular loves sending things she finds beautiful to their wide circle of friends and has often recommended new and up-coming artists to her circle.
+
+Katie – single, early thirties. She enjoys decorating her home with her own style, dislikes the current trend on colouring all spaces at home in grey. Likes unusual art and enjoys supporting artists when she can, does not have a large disposable income.
+
+Marketing:
+
+The main goal of the site is to assist artists to increase their income while reducing overheads associated with running a website where you can purchase products.
+
+Having a shared site, allows the artists to promote themselves and each other, increasing the potential audience for their work, and as the site does not have a large number of artists, this improves the opportunities of the customer remembering the site and the artist name, meaning they are more likely to revisit in future and promote the site by word of mouth.
+
+A Contact Us page ensures that the customer can communicate if needed with the artists, and the information about each artist, their practice and their pieces means the site has more interest than just a site which displays the work alone.
 
 **Site User Goals**
 
-* To be able to view art and purchase prints of the art and have confirmation of my order sent to me.
-* To be able to amend the quantities of my basket prior to checkout.
-* To be able to view an individual's art on the same page.
-* To be able to purchase multiple prints and get free delivery.
-* To have my info saved so I can make easier purchases and look up past purchases.
+1 As a user I expect the site to be accesible
+2 As a user I expect my purchases to be secure
+3 As a user I expect the site to be responsive.
+
+**User Goals**
+4.	As a user I want to be able to view all the art to see what’s available.
+5.	As a user I want to be able to learn more about the artists and their work.
+6.	As a user I want to be able to filter the work to see each artists' individual work.
+7.	As a user I want to be able to sort the prints by price.
+8.	As a user I want to be able to purchase more than one print of the same picture.
+9.	As a user I want to be able to have my own login.
+10.	As a user I want to be able to amend the items in my basket.
+11.	As a user I want to be able to remove items from my basket.
+12.	As a user I want to be able to pay by card.
+13. As a user I want to be able to use a contact page if I have a question.
+
+**Artist Goals**
+14.	As an artist I want to be able to display my work to the public and sell prints of it at a price I can set myself.
+15.	As an artist I want to be able to have an account which enables me to log in.
+16.	As an artist I want to be able to edit, create and delete work when I want to do so.
+
 
 ## Design Choices
 
@@ -150,15 +180,6 @@ This is currently an underutilised table - and will be updated as the site grows
 
 
 
-## Future Goals
-
-**Product growth options:
-
-As the site currently only offers prints of artists' work, more options of the type of products could be available. This could vary between original pieces to canvas, textile and other products such as phone cases or notebooks could be printed with the art and shipped to the customer. This could be linked via services which already offer this business model, meaning the work could be sold globally and be created within the country/region to ensure shipping times and taxes would be kept to a minimum, whilst increasing the returns for the artists at a low cost.
-
-**Site growth options:
-
-In terms of what the site offers, increasing the number of artists, and artworks are the simplest way of growing the site.  Also improving search functionality to consider colour or theme as search options to increase the level of customer satisfaction. Adding in other options such as a sign up newsletter utilising a marketing automation platform such as Mailchimp, creating a featured artist of the month with an interview of the artist - perhaps including a short videoclip of them talking about their processes could help customer engagement. 
 
 ## Technology Used
 
@@ -335,16 +356,52 @@ It is advised to select automatic deployment to ensure for each push to Github t
 
 When it is deployed, you can launch the site via the link in Heroku.
 
+# Future Goals
+
+**Product growth options:
+
+As the site currently only offers prints of artists' work, more options of the type of products could be available. This could vary between original pieces to canvas, textile and other products such as phone cases or notebooks could be printed with the art and shipped to the customer. This could be linked via services which already offer this business model, meaning the work could be sold globally and be created within the country/region to ensure shipping times and taxes would be kept to a minimum, whilst increasing the returns for the artists at a low cost.
+
+**Site growth options:
+
+In terms of what the site offers, increasing the number of artists, and artworks are the simplest way of growing the site.  Also improving search functionality to consider colour or theme as search options to increase the level of customer satisfaction. Adding in other options such as a sign up newsletter utilising a marketing automation platform such as Mailchimp, creating a featured artist of the month with an interview of the artist - perhaps including a short videoclip of them talking about their processes could help customer engagement. 
+
+The site could offer artists stock management options, should artists wish to offer limited edition/one-off pieces, with higher costs. Different delivery options could also be offered as standard, especially for higher price point items, where insurance would be advisable. 
+
 
 # Credits
 
-Images were sourced from kaggle.com, all artist names, biographies, artwork names and descriptions are my own invention.
+**Media
 
-This work was based on the Boutique Ado project by Code Institute, without which this project would not have gotten as far as it did.
+Art images were sourced from [kaggle](https://www.kaggle.com/datasets "Link to Kaggle datasets")
+
+Artist images were sourced from Google Images search.
+
+Tyra Goodley https://www.artsyshark.com/2013/01/27/artists-at-work/
+Andrew F https://natureinart.org.uk/artistinresidence/
+Tom Werner https://www.liveabout.com/what-do-artists-do-1122810
+Unnamed male artist by Unsplash https://www.shopify.com/blog/211990409-how-to-sell-art-online
+Unnamed female artist by Gorodenkoff https://stock.adobe.com/images/talented-innovative-female-artist-draws-with-her-hands-on-the-large-canvas-using-fingers-she-creates-colorful-emotional-sensual-oil-painting-contemporary-painter-creating-abstract-modern-art/298117629
+Unnamed Female standing in front of artwork 
+
+All artist names, biographies, artwork names and descriptions are my own invention.
+
+**Code 
+
+This work was based on the Boutique Ado project by Code Institute, and references from 
+
+Python
+Django
+Bootstrap
+
+
+# Acknowledgements
 
 A huge thank you to my mentor Richard without whom I would have not managed to submit anything. 
 
-Communities on Slack, Stack Overflow and various other websites - too many to recall without whom I would have failed to get anything working at various points.
+Communities on Slack and Stack Overflow were invaluable for assisting with technical problems. I consulted both regularly throughout the project.
+
+A massive thank you to my colleagues, friends and family - who have cheered me on throughout my course. A special thanks to Hayley and Carrie for thoroughly testing my site.
 
 All mistakes are very much my own.
 
