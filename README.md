@@ -9,9 +9,7 @@ Users are also able to create a profile for faster purchasing and to see their p
 
 ## Table of Contents
 
-- [Project Goals](#project-goals)
-- [Artist Goals](#artist-goals)
-- [Customer Goals](#customer-goals)
+- [UX](#ux)
 - [Site User Goals](#site-user-goals)
 - [Design Choices](#design-choices)
 - [Wireframes](#wireframes)
@@ -26,11 +24,10 @@ Users are also able to create a profile for faster purchasing and to see their p
 
 - [Credits](#credits)
 
-## Project Goals
 
-UX
+## UX
 
-The Problem.
+**The Scenario**
 
 Artists can find it difficult to have a regular income if they solely rely on large expensive pieces of work selling to a small audience who can afford to buy and have enough space to display works of art. 
 
@@ -40,7 +37,7 @@ If the artist has an agent for representation, they also tend to work on a commi
 
 Most artists who are not household names do not tend to be represented by galleries or agents, although they may show their work for a short term in a gallery space. Consequently, many artists must supplement their income with paid work, which can have an impact on the amount of time and energy available to create new pieces and promote their work to appeal to a wider audience.
 
-The Concept Solution.
+**The Concept Solution**
 
 Create a space online for artists to showcase their work directly to the public and enable the public to purchase print versions of the artists’ work.
 
@@ -54,14 +51,13 @@ Marketing costs could also be shared by the collective, and potentially the coll
 
 Whilst there are already a number of sites such as Etsy and Redbubble who showcase artists and provide a space for makers to sell their work directly, these are large sites and very often a consumer might say they bought it on Etsy, rather than the name of the artist or crafter who made the work in question. Within the selected group of artists on the site it would be easier to find a specific artist, rather than hunting across a much larger website with significantly more competition. 
 
-
-Target Audience Examples:
+**Target Audience Examples:**
 
 Marsha and Chris, well-travelled early retirees who appreciate going away on a whim. The appreciate good wine, good books and good art. Marsha in particular loves sending things she finds beautiful to their wide circle of friends and has often recommended new and up-coming artists to her circle.
 
 Katie – single, early thirties. She enjoys decorating her home with her own style, dislikes the current trend on colouring all spaces at home in grey. Likes unusual art and enjoys supporting artists when she can, does not have a large disposable income.
 
-Marketing:
+**Marketing:**
 
 The main goal of the site is to assist artists to increase their income while reducing overheads associated with running a website where you can purchase products.
 
@@ -69,32 +65,39 @@ Having a shared site, allows the artists to promote themselves and each other, i
 
 A Contact Us page ensures that the customer can communicate if needed with the artists, and the information about each artist, their practice and their pieces means the site has more interest than just a site which displays the work alone.
 
-**Site User Goals**
+## Site User Goals
 
 1 As a user I expect the site to be accesible
 2 As a user I expect my purchases to be secure
 3 As a user I expect the site to be responsive.
 
-**User Goals**
-4.	As a user I want to be able to view all the art to see what’s available.
-5.	As a user I want to be able to learn more about the artists and their work.
-6.	As a user I want to be able to filter the work to see each artists' individual work.
-7.	As a user I want to be able to sort the prints by price.
-8.	As a user I want to be able to purchase more than one print of the same picture.
-9.	As a user I want to be able to have my own login.
-10.	As a user I want to be able to amend the items in my basket.
-11.	As a user I want to be able to remove items from my basket.
-12.	As a user I want to be able to pay by card.
-13. As a user I want to be able to use a contact page if I have a question.
+**Visitor Goals**
+
+4.	As a visitor I want to be able to view all the art to see what’s available.
+5.	As a visitor  I want to be able to learn more about the artists and their work.
+6.	As a visitor I want to be able to filter the work to see each artists' individual work.
+7.	As a visitor I want to be able to sort the prints by price.
+
+**Customer Goals**
+
+8.	As a customer I want to be able to purchase more than one print of the same picture.
+9.	As a customer I want to be able to have my own login.
+10.	As a customer I want to be able to amend the items in my basket.
+11.	As a customer I want to be able to remove items from my basket.
+12.	As a customer I want to be able to pay by card.
+13. As a customer I want to be able to use a contact page if I have a question.
 
 **Artist Goals**
+
 14.	As an artist I want to be able to display my work to the public and sell prints of it at a price I can set myself.
 15.	As an artist I want to be able to have an account which enables me to log in.
 16.	As an artist I want to be able to edit, create and delete work when I want to do so.
 
-I created a user story list in terms of priority, 
+I created a user story list in terms of priority, with all the goals in numerical order and then sorted in terms of priority.
 
 ![Studio_Gallery](media/site_images/user_story_list.png)
+
+
 
 ## Wireframes
 
