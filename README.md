@@ -28,7 +28,35 @@ Users are also able to create a profile for faster purchasing and to see their p
 
 ## Project Goals
 
-The overall project goal is to ensure that consumers can easily purchase printed art direct from the artists themselves, cutting out the need for artists to involve third parties who would charge commission, sometimes as much as 60% of the overall price. The art needs to be displayed in a simple manner so as not to distract the customer when thinking of making a purchase.
+UX
+
+The Problem.
+
+Artists can find it difficult to have a regular income if they solely rely on large expensive pieces of work selling to a small audience who can afford to buy and have enough space to display works of art. 
+
+In addition, if selling via a gallery, the gallery will take a commission – usually between 40 – 60% of the RRP of the piece, meaning an artist must consider this when pricing their work. This increases the overall cost of their piece, potentially shrinking their audience further.
+
+If the artist has an agent for representation, they also tend to work on a commission basis and again, the artist must factor this in when pricing their work, although having a good agent can ensure the artist has new opportunities. 
+
+Most artists who are not household names do not tend to be represented by galleries or agents, although they may show their work for a short term in a gallery space. Consequently, many artists must supplement their income with paid work, which can have an impact on the amount of time and energy available to create new pieces and promote their work to appeal to a wider audience.
+
+The Concept Solution.
+
+Create a space online for artists to showcase their work directly to the public and enable the public to purchase print versions of the artists’ work.
+
+Prints can be produced in different quantities, artists can choose to have them pre-printed prior to sales, as they may already have a stock of work ready to sell; or can choose to have an approach similar to print on demand with their preferred local print shop.
+
+Prints can appeal to a wider market, who may not wish to invest in the original piece or who cannot afford to purchase one but would like to have a copy of the artwork they admire and also support the artist, much like the just a card initiative. (LINK)
+
+A collective group of artists would appeal to a wider range of customers, rather than a single artist website, and costs of the site could be split across the group making it a cost effective way of being on a website without having to pay as much as if it was their own site, which would not receive as much traffic as a shared site.
+
+Marketing costs could also be shared by the collective, and potentially the collective could work together to host real life events such as exhibitions, which they could use the website to drive footfall to the exhibition to increase sales, and also in a circular fashion, drive traffic to the website during the exhibition to increase sales and awareness of their collective work.
+
+Whilst there are already a number of sites such as Etsy and Redbubble who showcase artists and provide a space for makers to sell their work directly, these are large sites and very often a consumer might say they bought it on Etsy, rather than the name of the artist or crafter who made the work in question. Within the selected group of artists on the site it would be easier to find a specific artist, rather than hunting across a much larger website with significantly more competition. 
+
+
+![image](https://github.com/RhiH/studio_gallery/assets/92323494/eb92c64d-791b-4a6e-941a-e4f6c1a871ac)
+
 
 **Artist Goals**
 
