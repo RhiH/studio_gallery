@@ -67,14 +67,14 @@ A Contact Us page ensures that the customer can communicate if needed with the a
 
 ## Site User Goals
 
-1 As a user I expect the site to be accesible
-2 As a user I expect my purchases to be secure
-3 As a user I expect the site to be responsive.
+1. As a user I expect the site to be accesible
+2. As a user I expect my purchases to be secure
+3. As a user I expect the site to be responsive.
 
 **Visitor Goals**
 
 4.	As a visitor I want to be able to view all the art to see what’s available.
-5.	As a visitor  I want to be able to learn more about the artists and their work.
+5.	As a visitor I want to be able to learn more about the artists and their work.
 6.	As a visitor I want to be able to filter the work to see each artists' individual work.
 7.	As a visitor I want to be able to sort the prints by price.
 
@@ -97,7 +97,7 @@ I created a user story list in terms of priority, with all the goals in numerica
 
 ![Studio_Gallery](media/site_images/user_story_list.png)
 
-
+Critical items were seen as essential, these are the secure purchasing, followed by accessible and responsive design. Card payments, superuser login, CRUD functionality, a contact page and the ability to see the prices of the products were listed as needed for the site. The ability to remove, amend and edit items in the basket, along with the option to see all products at were classed as wanted, and finally customer login, sort by price, filter by artist and a way to view information about the artist was seen as nice to have.
 
 ## Wireframes
 
@@ -107,6 +107,8 @@ Wireframes were used to create an idea of how the site should look on different 
 ![Studio_Gallery](media/wireframes/product_desktop.png)
 ![Studio_Gallery](media/wireframes/tablet_wireframe.png)
 ![Studio_Gallery](media/wireframes/mobile_wireframe.png)
+
+User stories: [2](#2), [3](#3)
 
 ## Site Design
 
@@ -123,6 +125,10 @@ Hex codes as follows: white: # ffffff, black: # 000000, grey: #555555
 The site home page is colourful as it does not display any artist's work, but is a studio space. It was decided to have a colourful landing page as this was more enticing than having the artwork on the home page, and it meant that this could be a static image which could be updated when required, as opposed to featuring an image which might need to be changed at short notice if an artist no longer wished for their work to be displayed.
 
 ![Studio_Gallery](media/studio.jpg)
+
+The image is of a working artist studio, hence it has equipment and supplies ready to use by the artist. Also gap in the wall close to the socket subtly shows the viewer that this is a place where creativity is allowed and the artist does not need to be too precious about their surroundings. This is not a posed image - this is a real studio.
+
+
 
 ![Studio_Gallery](media/site_images/logged_in_user_previous_order.png)
 ![Studio_Gallery](media/site_images/order_success_page.png)
