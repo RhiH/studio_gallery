@@ -93,9 +93,6 @@ A Contact Us page ensures that the customer can communicate if needed with the a
 16.	As an artist I want to be able to edit, create and delete work when I want to do so.
 
 
-## Design Choices
-
-It was decided to keep the project as simple as possible, given this was the first time Django had been used. Ensuring things were kept as simple as possible meant that the focus could remain on the site as a whole. As the site is to display art in most appealing way, vivid colours were not used as these could easily detract from the work, and put off the consumer.
 
 ## Wireframes
 
@@ -105,6 +102,22 @@ Wireframes were used to create an idea of how the site should look on different 
 ![Studio_Gallery](media/wireframes/product_desktop.png)
 ![Studio_Gallery](media/wireframes/tablet_wireframe.png)
 ![Studio_Gallery](media/wireframes/mobile_wireframe.png)
+
+## Site Design
+
+**Design Choices**
+
+It was decided to keep the project as simple as possible, given this was the first time Django had been used. Ensuring things were kept as simple as possible meant that the focus could remain on the site as a whole. As the site is to display art in most appealing way, vivid colours were not used as these could easily detract from the work, and put off the consumer. 
+
+The colour scheme was kept simple, with sticking to a white background with black text. Grey text weas also used to give the site a slightly softer feeling.
+
+![Studio_Gallery}(media/site_images/colour_scheme.png)
+
+
+
+
+
+
 
 ### Information Architecture
 
