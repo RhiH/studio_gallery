@@ -128,6 +128,9 @@ The site home page is colourful as it does not display any artist's work, but is
 
 The image is of a working artist studio, hence it has equipment and supplies ready to use by the artist. Also gap in the wall close to the socket subtly shows the viewer that this is a place where creativity is allowed and the artist does not need to be too precious about their surroundings. This is not a posed image - this is a real studio.
 
+![Studio_Gallery](media/site_images/mobile_home.png)
+![Studio_Gallery](media/site_images/mobile_products.png)
+
 
 
 ![Studio_Gallery](media/site_images/logged_in_user_previous_order.png)
