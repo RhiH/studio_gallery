@@ -1,6 +1,6 @@
 [{
     "pk": 1,
-    "model": "products.category",
+    "model": "products.artist",
     "fields": {
         "identifier": "FH",
         "name": "Fredrica Handy",
@@ -9,7 +9,7 @@
     }
 }, {
     "pk": 2,
-    "model": "products.category",
+    "model": "products.artist",
     "fields": {
         "identifier": "JP",
         "name": "Jared Pottle",
@@ -18,7 +18,7 @@
     }
 }, {
     "pk": 3,
-    "model": "products.category",
+    "model": "products.artist",
     "fields": {
         "identifier": "CL",
         "name": "Ceris Lightler",
@@ -27,7 +27,7 @@
     }
 }, {
     "pk": 4,
-    "model": "products.category",
+    "model": "products.artist",
     "fields": {
         "identifier": "LD",
         "name": "Luc Drir",
@@ -36,7 +36,7 @@
     }
 }, {
     "pk": 5,
-    "model": "products.category",
+    "model": "products.artist",
     "fields": {
         "identifier": "AB",
         "name": "Alan 'Red' Bushe",
@@ -45,7 +45,7 @@
     }
 }, {
     "pk": 6,
-    "model": "products.category",
+    "model": "products.artist",
     "fields": {
         "identifier": "PT",
         "name": "Portia Towe",
@@ -54,7 +54,7 @@
     }
 }, {
     "pk": 7,
-    "model": "products.category",
+    "model": "products.artist",
     "fields": {
         "identifier": "BF",
         "name": "Bethany Floode",
