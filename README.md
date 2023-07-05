@@ -67,7 +67,7 @@ A Contact Us page ensures that the customer can communicate if needed with the a
 
 ## Site User Goals
 
-1. As a user I expect the site to be accesible
+1. As a user I expect the site to be accessible
 2. As a user I expect my purchases to be secure
 3. As a user I expect the site to be responsive.
 
@@ -127,6 +127,9 @@ The site home page is colourful as it does not display any artist's work, but is
 ![Studio_Gallery](media/studio.jpg)
 
 The image is of a working artist studio, hence it has equipment and supplies ready to use by the artist. Also gap in the wall close to the socket subtly shows the viewer that this is a place where creativity is allowed and the artist does not need to be too precious about their surroundings. This is not a posed image - this is a real studio.
+
+
+
 
 ![Studio_Gallery](media/site_images/mobile_home.png)
 ![Studio_Gallery](media/site_images/mobile_products.png)
