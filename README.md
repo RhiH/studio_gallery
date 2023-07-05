@@ -168,6 +168,7 @@ User stories: [4](#site-user-goals), [5](#site-user-goals),  [6](#site-user-goal
 
 ![Studio_Gallery](media/site_images/contact_us_page.png)
 Contact us page for customers to send queries or comments about the site directly to the site admin.
+
 User stories: [13](#site-user-goals)
 
 ---
