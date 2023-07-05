@@ -54,10 +54,6 @@ Marketing costs could also be shared by the collective, and potentially the coll
 
 Whilst there are already a number of sites such as Etsy and Redbubble who showcase artists and provide a space for makers to sell their work directly, these are large sites and very often a consumer might say they bought it on Etsy, rather than the name of the artist or crafter who made the work in question. Within the selected group of artists on the site it would be easier to find a specific artist, rather than hunting across a much larger website with significantly more competition. 
 
-
-![image](https://github.com/RhiH/studio_gallery/assets/92323494/eb92c64d-791b-4a6e-941a-e4f6c1a871ac)
-
-
 **Artist Goals**
 
 * As an artist I want to be able to display my work to the public and sell prints of it at a price I can set myself.
