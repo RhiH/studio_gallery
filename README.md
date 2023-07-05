@@ -244,7 +244,7 @@ User stories: [15](#site-user-goals) and [16](#site-user-goals)
 |------------------|-----------------|----------------------|-------------|
 | Product ID       | SKU             | No Validation        | Primary Key |
 | Product Name     | name            | max_length 254       | Charfield   |
-| Product Category | category        | max_length 254       | Charfield   |
+| Product_Artist   | artist          | Null true, blank true| Foreign Key |
 | Price            | price           | decimal places 2     | Decimalfield|
 | Image            | image           | Null True, blank True| ImageField  |
 | Description      | description     | max_length 1000      | Charfield   |
@@ -253,7 +253,7 @@ User stories: [15](#site-user-goals) and [16](#site-user-goals)
 
 | Title            | Key In Database | Form Validation      | Data Type   |
 |------------------|-----------------|----------------------|-------------|
-| Category ID      | name            | No Validation        | Primary Key |
+| Name             | name            | No Validation        | Primary Key |
 | Friendly Name    | friendly_name   | max_length 254       | Charfield   |
 | Identifier       | identifier      | max_length 5         | Charfield   |
 | Biography        | biography       | max_length 1000      | Charfield   |
@@ -262,11 +262,10 @@ User stories: [15](#site-user-goals) and [16](#site-user-goals)
 
 | Title            | Key In Database | Form Validation      | Data Type   |
 |------------------|-----------------|----------------------|-------------|
-| Category ID      | PK              | No Validation        | Primary Key |
-| Name             | name            | max_length 254       | Charfield   |
+| Name             | name            | max_length 254       | Primary Key |
 | Image            | image           | Null true, blank true| ImageField  |
 | Country          | country         | max_length 1000      | Charfield   |
-| Product_Artist   | product_artist  | Null true, blank true| Foreign Key | 
+| ProductArtist    | product_artist  | Null true, blank true| Foreign Key | 
 
 **User Table**
 
