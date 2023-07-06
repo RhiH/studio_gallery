@@ -344,7 +344,7 @@ Stripe functionality was added to the site, however any testing should use the b
 | Expiration date     | any future date     | 
 | CVC                 | any three-digits    |
 | Postcode or zipcode | any five-digits     | 
-|---------------------|---------------------|  
+ 
 
 The project was tested during the process of creating it and errors were fixed along the way during the creation of the site. Here is a list of a number of the errors which were dealt with during the creation of Studio Gallery. 
 
@@ -415,11 +415,11 @@ pip3 install -r requirements.txt
 ```
 5. Create an `env.py` based on the `sample-env.py` file.
    
-1. Create and add a [Django secret key](https://django-secret-key-generator.netlify.app/).
-2. If you'd like to test checkout payments, you'll need a [Stripe account](https://stripe.com/en-gb).
-3. If you'd like to test newsletter functionality, you'll need a [Mailchimp account](https://mailchimp.com/).
+6. Create and add a [Django secret key](https://django-secret-key-generator.netlify.app/).
 
-7. Make migrations to prepare the database. This will create a `db.sqlite3` in the root. 
+7. If you'd like to test checkout payments, you'll need a [Stripe account](https://stripe.com/en-gb).
+
+8. Make migrations to prepare the database. This will create a `db.sqlite3` in the root. 
 ```
 python3 manage.py makemigrations --dry-run
 python3 manage.py migrate --plan
@@ -432,11 +432,9 @@ python3 manage.py createsuperuser
 ```
 python3 manage.py runserver
 ```
-
 Deployment Requirements
 
 - A [Heroku account](https://signup.heroku.com/).
-- [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli).
 - An [AWS account](https://aws.amazon.com/).
 - An [ElephantSQL account](https://www.elephantsql.com/)
 
@@ -445,22 +443,56 @@ For full functionality:
 - A [Stripe account](https://stripe.com/en-gb) for the payment gateway.
 - A [Gmail account](https://www.google.com/intl/en-GB/gmail/about/) for email SMTP.
 
-- ElephantSQL:
 
-- Sign up/Log in to ElephantSQL
-- From the main ElephantSQL dashboard, navigate to the dropdown box in the top right and select 'Create New Instance'.
-- Choose a name for your database and select a Plan type.
-- In region, choose the most appropriate option and click 'Review'.
-- On the next screen, click 'Create Database'.
-- On the Instances screen, select the name of database you have just created.
-- In 'Details', copy the URL. This will be needed for Heroku
+### **ElephantSQL Database:**
+
+   - Sign up or Log in to [ElephantSQL](https://www.elephantsql.com/)
+   - From the main ElephantSQL dashboard, navigate to the dropdown box in the top right and select 'Create New Instance'.
+   - Choose a name for your Postgres database and select a Plan type.
+   - In Region, select the closest Data center relevant to your location and click 'Review'.
+   - On the next screen, click 'Create Database'.
+   - On the Instances screen, select the name of the Postgres Database you have just created.
+   - In 'Details', copy (ctrl + c) the URL to your clipboard. Keep this to hand as this is required for Heroku.
+### **Amazon AWS Storage:**
+
+#### **Creating a bucket**
+
+   - Sign up or Log in to [Amazon AWS](https://aws.amazon.com/)
+   - Navigate to services and select 'S3'
+   - From the dashboard click the 'Create Bucket', this will be where our static and media files are stored.
+   - Choose a name for your bucket and select the region closest to you from the dropdown box.
+   - Uncheck 'block all public access' and click 'create bucket'.
+   - In the properties tab, select 'static website hosting' and enable this to host your site.
+   - Enter index.html and error.html for the index and error documents.
+   - In the permissions tab, select 'CORS Configuration' and enter the following:
+
+          [
+            {
+                  "AllowedHeaders": [
+                     "Authorization"
+                  ],
+                  "AllowedMethods": [
+                     "GET"
+                  ],
+                  "AllowedOrigins": [
+                     "*"
+                  ],
+                  "ExposeHeaders": []
+            }
+          ]
+      
+   - In Bucket Policy, select 'policy generator'.
+   - Select 'S3 Bucket Policy' as the type, for Principal enter *, now select 'GetObject' for the Actions and paste in the Amazon ARN from the top of the Permissions tab in Amazon S3.
+   - Click 'Add Statement' then 'Generate Policy' and copy the code generated into your bucket policy editor on S3.
+   - In Object Ownership, select 'ACLs Enabled' and check 'Bucket Owner preferred'.
+   - In Access Control List, check 'List' under 'Everyone (public access).
 
 ## Deployment to Heroku
 
 - In the development environment, make sure the requirements are up to date with `pip3 freeze --local > requirements.txt`.
 - Also check that the `.gitignore` file lists everything that should not be pushed to production, such as `env.py`.
+- Complete your Key values. The below are required.
 
-```
  Key	Value
 ```
 AWS_ACCESS_KEY_ID	[your value]
@@ -474,74 +506,22 @@ STRIPE_PUBLIC_KEY	[your value]
 STRIPE_SECRET_KEY	[your value]
 STRIPE_WH_SECRET [your value]
 USE_AWS	TRUE
-
-
-import os
 ```
-os.environ["SECRET_KEY"] = "[Your Secret Key]"
-os.environ["DEV"] = "1"
-os.environ["HOSTNAME"] = "0.0.0.0"
-os.environ["STRIPE_PUBLIC_KEY"] = "[Your Stripe Key]"
-os.environ["STRIPE_SECRET_KEY"] = "[Your Stripe Secret Key]"
-os.environ["DATABASE_URL"] = "[Your DB URL]"
+You may need to make migrations before running migrate again. Remove the flags when happy to proceed.
 ```
-Database Setup
-
-To set up your database you will first need to run the following command. 
+run python3 manage.py makemigrations --dry-run
+run python3 manage.py migrate --plan
 ```
-python3 manage.py migrate
-```
-To create a super user to allow you to access the admin panel run the following command in your terminal and complete the required information as prompted
+When the deployment has succeeded, you can optionally create a new superuser:
 ```
 python3 manage.py createsuperuser
-```
-From there you should now be able to run the server using the following command
-```
-python3 manage.py runserver
-```
-For deployment the following will be required:
-```
-
-
-AWS:
-- Sign up/Log in to AWS
-- Choose a name for your bucket and select the region closest to you from the dropdown box.
-- Uncheck 'block all public access' and click 'create bucket'.
-- Select 'static website hosting' and enable this to host your site.
-- Enter index.html and error.html for the index and error documents.
-- Set up AWS with necessary S3 bucket - ACLs enabled.
-- Object Ownership should be Bucket owner preferred.
-- On the properties tab, static website hosting can now be found by scrolling down to the bottom.
-- Paste the following into the Cross-origin resource sharing (CORS) section.
-
-
-```
+    ```
+You can also optionally import the database if you've made any changes:
+ ```
 python3 manage.py loaddata products/fixtures/products.json
 python3 manage.py loaddata products/fixtures/product_artists.json
 python3 manage.py loaddata artists/fixtures/artist_info.json
 ```
-
-In Settings.py, ensure the following are at the top of your file.
-
-from pathlib import Path
-import os
-import dj_database_url
-
-In 'DATABASES' and comment out the default code and enter the following:
-
-DATABASES = {
-'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-} 
-Replace the default 'SECRET KEY' with the following:
-
-SECRET_KEY = os.environ.get('SECRET_KEY')
-
-Run migrations for the new database using the command:
-
-python3 manage.py makemigrations
-python3 manage.py migrate
-
-When it is deployed, you can launch the site via the link in Heroku.
 
 # Future Goals
 
