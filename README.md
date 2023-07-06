@@ -10,9 +10,16 @@ Users are also able to create a profile for faster purchasing and to see their p
 ## Table of Contents
 
 - [UX](#ux)
+  -[The Scenario](#scenario)
+  -[The Concept Solution](#concept-solution)
+  -[Target Audience](target-audience)
+  -[Marketing](#marketing)
 - [Site User Goals](#site-user-goals)
-- [Design Choices](#design-choices)
+  -[User Story Priority](#user-story-priority)
 - [Wireframes](#wireframes)
+- [Site Design](#site-design)
+  - [Design Choices](#design-choices)
+  - [Mobile Version](#mobile-version)   
 - [Information Architecture](#information-architecture)
 - [Future Goals](#future-goals)
 
@@ -27,7 +34,7 @@ Users are also able to create a profile for faster purchasing and to see their p
 
 ## UX
 
-**The Scenario**
+### The Scenario
 
 Artists can find it difficult to have a regular income if they solely rely on large expensive pieces of work selling to a small audience who can afford to buy and have enough space to display works of art. 
 
@@ -37,13 +44,13 @@ If the artist has an agent for representation, they also tend to work on a commi
 
 Most artists who are not household names do not tend to be represented by galleries or agents, although they may show their work for a short term in a gallery space. Consequently, many artists must supplement their income with paid work, which can have an impact on the amount of time and energy available to create new pieces and promote their work to appeal to a wider audience.
 
-**The Concept Solution**
+### The Concept Solution
 
 Create a space online for artists to showcase their work directly to the public and enable the public to purchase print versions of the artists’ work.
 
 Prints can be produced in different quantities, artists can choose to have them pre-printed prior to sales, as they may already have a stock of work ready to sell; or can choose to have an approach similar to print on demand with their preferred local print shop.
 
-Prints can appeal to a wider market, who may not wish to invest in the original piece or who cannot afford to purchase one but would like to have a copy of the artwork they admire and also support the artist, much like the just a card initiative. (LINK)
+Prints can appeal to a wider market, who may not wish to invest in the original piece or who cannot afford to purchase one but would like to have a copy of the artwork they admire and also support the artist, much like the [Just A Card](https://www.justacard.org/) initiative.
 
 A collective group of artists would appeal to a wider range of customers, rather than a single artist website, and costs of the site could be split across the group making it a cost effective way of being on a website without having to pay as much as if it was their own site, which would not receive as much traffic as a shared site.
 
@@ -65,20 +72,22 @@ Having a shared site, allows the artists to promote themselves and each other, i
 
 A Contact Us page ensures that the customer can communicate if needed with the artists, and the information about each artist, their practice and their pieces means the site has more interest than just a site which displays the work alone.
 
+---
+
 ## Site User Goals
 
 1. As a user I expect the site to be accessible
 2. As a user I expect my purchases to be secure
 3. As a user I expect the site to be responsive.
 
-**Visitor Goals**
+### Visitor Goals
 
 4.	As a visitor I want to be able to view all the art to see what’s available.
 5.	As a visitor I want to be able to learn more about the artists and their work.
 6.	As a visitor I want to be able to filter the work to see each artists' individual work.
 7.	As a visitor I want to be able to sort the prints by price.
 
-**Customer Goals**
+### Customer Goals
 
 8.	As a customer I want to be able to purchase more than one print of the same picture.
 9.	As a customer I want to be able to have my own login.
@@ -87,11 +96,15 @@ A Contact Us page ensures that the customer can communicate if needed with the a
 12.	As a customer I want to be able to pay by card.
 13. As a customer I want to be able to use a contact page if I have a question.
 
-**Artist Goals**
+### Artist Goals
 
 14.	As an artist I want to be able to display my work to the public and sell prints of it at a price I can set myself.
 15.	As an artist I want there to be an account which enables an admin to log in and manage the site.
 16.	As an artist I want there to be an account that is able to edit, create and delete work that is not accessible to customers.
+
+---
+
+### User Story Priority
 
 I created a user story list in terms of priority, with all the goals in numerical order and then sorted in terms of priority.
 
@@ -115,7 +128,7 @@ User stories: [1](#site-user-goals), [3](#site-user-goals)
 
 ## Site Design
 
-**Design Choices**
+### Design Choices
 
 It was decided to keep the project as simple as possible, given this was the first time Django had been used. Ensuring things were kept as simple as possible meant that the focus could remain on the site as a whole. As the site is to display art in most appealing way, vivid colours were not used as these could easily detract from the work, and put off the consumer. 
 
@@ -132,7 +145,7 @@ The site home page is colourful as it does not display any artist's work, but is
 The image is of a working artist studio, hence it has equipment and supplies ready to use by the artist. Also gap in the wall close to the socket subtly shows the viewer that this is a place where creativity is allowed and the artist does not need to be too precious about their surroundings. This is not a posed image - this is a real studio.
 
 ---
-**Mobile Version**
+### Mobile Version
 
 ![Studio_Gallery](media/site_images/mobile_home.png)
 
