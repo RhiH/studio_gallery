@@ -72,11 +72,11 @@ A collective group of artists would appeal to a wider range of customers, rather
 
 Marketing costs could also be shared by the collective, and potentially the collective could work together to host real life events such as exhibitions, which they could use the website to drive footfall to the exhibition to increase sales, and also in a circular fashion, drive traffic to the website during the exhibition to increase sales and awareness of their collective work.
 
-Whilst there are already a number of sites such as Etsy and Redbubble who showcase artists and provide a space for makers to sell their work directly, these are large sites and very often a consumer might say they bought it on Etsy, rather than the name of the artist or crafter who made the work in question. Within the selected group of artists on the site it would be easier to find a specific artist, rather than hunting across a much larger website with significantly more competition. 
+Whilst there are already a number of sites such as [Etsy](https://www.etsy.com/uk) and [Redbubble](https://www.redbubble.com/) who showcase artists and provide a space for makers to sell their work directly, these are large sites and very often a consumer might say they bought it on Etsy, rather than the name of the artist or crafter who made the work in question. Within the selected group of artists on the site it would be easier to find a specific artist, rather than hunting across a much larger website with significantly more competition. 
 
 **Target Audience Examples:**
 
-Marsha and Chris, well-travelled early retirees who appreciate going away on a whim. The appreciate good wine, good books and good art. Marsha in particular loves sending things she finds beautiful to their wide circle of friends and has often recommended new and up-coming artists to her circle.
+Marsha and Chris, well-travelled early retirees who appreciate going away on a whim. They appreciate good wine, good books and good art. Marsha in particular loves sending things she finds beautiful to their wide circle of friends and has often recommended new and up-coming artists to her circle.
 
 Katie – single, early thirties. She enjoys decorating her home with her own style, dislikes the current trend on colouring all spaces at home in grey. Likes unusual art and enjoys supporting artists when she can, does not have a large disposable income.
 
@@ -84,7 +84,7 @@ Katie – single, early thirties. She enjoys decorating her home with her own st
 
 The main goal of the site is to assist artists to increase their income while reducing overheads associated with running a website where you can purchase products.
 
-Having a shared site, allows the artists to promote themselves and each other, increasing the potential audience for their work, and as the site does not have a large number of artists, this improves the opportunities of the customer remembering the site and the artist name, meaning they are more likely to revisit in future and promote the site by word of mouth.
+Having a shared site allows the artists to promote themselves and each other, increasing the potential audience for their work. As the site does not have a large number of artists, this improves the opportunities of the customer remembering the site and the artist's name, meaning they are more likely to revisit in future and promote the site by word of mouth.
 
 A Contact Us page ensures that the customer can communicate if needed with the artists, and the information about each artist, their practice and their pieces means the site has more interest than just a site which displays the work alone.
 
@@ -125,7 +125,8 @@ A Contact Us page ensures that the customer can communicate if needed with the a
 I created a user story list in terms of priority, with all the goals in numerical order and then sorted in terms of priority.
 
 ![Studio_Gallery](media/site_images/user_story_list.png)
-Critical items were seen as essential, these are the secure purchasing, followed by accessible and responsive design. Card payments, superuser login, CRUD functionality, a contact page and the ability to see the prices of the products were listed as needed for the site. The ability to remove, amend and edit items in the basket, along with the option to see all products at were classed as wanted, and finally customer login, sort by price, filter by artist and a way to view information about the artist was seen as nice to have.
+
+Critical items were seen as essential: secure purchasing, followed by accessible and responsive design. Card payments, superuser login, CRUD functionality, a contact page and the ability to see the prices of the products were listed as needed for the site. The ability to remove, amend and edit items in the basket, along with the option to see all products at were classed as wanted, and finally customer login, sort by price, filter by artist and a way to view information about the artist was seen as nice to have.
 
 ---
 
@@ -138,7 +139,7 @@ Wireframes were used to create an idea of how the site should look on different 
 ![Studio_Gallery](media/wireframes/tablet_wireframe.png)
 ![Studio_Gallery](media/wireframes/mobile_wireframe.png)
 
-User stories: [1](#site-user-goals), [3](#site-user-goals)
+User stories: [2](#site-user-goals), [3](#site-user-goals)
 
 ---
 
@@ -337,10 +338,10 @@ User stories: [15](#site-user-goals) and [16](#site-user-goals)
 
 ## Technology Used
 
-* HTML
-* CSS
-* Javascript
-* Python
+* [HTML](https://en.wikipedia.org/wiki/HTML)
+* [CSS](https://en.wikipedia.org/wiki/CSS)
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 ## Tools
 
@@ -426,6 +427,7 @@ The project was tested during the process of creating it and errors were fixed a
 * issue: users testing the site on mobile noted the artist biography was not responsive.
 * cause: the formatting as not set up to be responsive for the text.
 * resolution: removal of the box around the text, the text s now responsive and the site itself looks better.
+---
   
 ## Deployment
 
@@ -486,7 +488,7 @@ For full functionality:
    - In Region, select the closest Data center relevant to your location and click 'Review'.
    - On the next screen, click 'Create Database'.
    - On the Instances screen, select the name of the Postgres Database you have just created.
-   - In 'Details', copy (ctrl + c) the URL to your clipboard. Keep this to hand as this is required for Heroku.
+   - In 'Details', copy (ctrl + c) the URL to your clipboard. Keep this as this is required for Heroku.
 
 #### Heroku
 
@@ -508,7 +510,7 @@ STRIPE_SECRET_KEY	[your value]
 STRIPE_WH_SECRET [your value]
 USE_AWS	TRUE
 ```
-You may need to make migrations before running migrate again. Remove the flags when happy to proceed.
+You may need to make migrations before running migrate again. 
 ```
 run python3 manage.py makemigrations --dry-run
 run python3 manage.py migrate --plan
@@ -526,14 +528,14 @@ python3 manage.py loaddata artists/fixtures/artist_info.json
 
 #### Amazon AWS Storage:
 
-   - Sign up or Log in to [Amazon AWS](https://aws.amazon.com/)
-   - Navigate to services and select 'S3'
-   - From the dashboard click the 'Create Bucket', this will be where our static and media files are stored.
-   - Choose a name for your bucket and select the region closest to you from the dropdown box.
-   - Uncheck 'block all public access' and click 'create bucket'.
-   - In the properties tab, select 'static website hosting' and enable this to host your site.
-   - Enter index.html and error.html for the index and error documents.
-   - In the permissions tab, select 'CORS Configuration' and enter the following:
+- Sign up or Log in to [Amazon AWS](https://aws.amazon.com/)
+- Navigate to services and select 'S3'
+- From the dashboard click the 'Create Bucket', this will be where our static and media files are stored.
+- Choose a name for your bucket and select the region closest to you from the dropdown box.
+- Uncheck 'block all public access' and click 'create bucket'.
+- In the properties tab, select 'static website hosting' and enable this to host your site.
+- Enter index.html and error.html for the index and error documents.
+- In the permissions tab, select 'CORS Configuration' and enter the following:
 
           [
             {
@@ -550,11 +552,11 @@ python3 manage.py loaddata artists/fixtures/artist_info.json
             }
           ]
       
-   - In Bucket Policy, select 'policy generator'.
-   - Select 'S3 Bucket Policy' as the type, for Principal enter *, now select 'GetObject' for the Actions and paste in the Amazon ARN from the top of the Permissions tab in Amazon S3.
-   - Click 'Add Statement' then 'Generate Policy' and copy the code generated into your bucket policy editor on S3.
-   - In Object Ownership, select 'ACLs Enabled' and check 'Bucket Owner preferred'.
-   - In Access Control List, check 'List' under 'Everyone (public access).
+- In Bucket Policy, select 'policy generator'.
+- Select 'S3 Bucket Policy' as the type.
+- Click 'Add Statement' then 'Generate Policy' and copy the code generated into your bucket policy editor on S3.
+- In Object Ownership, select 'ACLs Enabled' and check 'Bucket Owner preferred'.
+- In Access Control List, check 'List' under 'Everyone (public access).
 
 ---
 
