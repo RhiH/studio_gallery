@@ -407,25 +407,28 @@ python3 -m venv env
 . env/bin/activate
 ```
 3. Install the Python dependencies from `requirements.txt`.
-   ```
-   pip3 install -r requirements.txt
-   ```
-4. Create an `env.py` based on the `sample-env.py` file.
-   1. Create and add a [Django secret key](https://django-secret-key-generator.netlify.app/).
-   2. If you'd like to test checkout payments, you'll need a [Stripe account](https://stripe.com/en-gb).
-   3. If you'd like to test newsletter functionality, you'll need a [Mailchimp account](https://mailchimp.com/).
-5. Make migrations to prepare the database. This will create a `db.sqlite3` in the root. 
-   ```
-   python3 manage.py makemigrations --dry-run
-   python3 manage.py migrate --plan
-   ```
+```
+pip3 install -r requirements.txt
+```
+5. Create an `env.py` based on the `sample-env.py` file.
+   
+1. Create and add a [Django secret key](https://django-secret-key-generator.netlify.app/).
+2. If you'd like to test checkout payments, you'll need a [Stripe account](https://stripe.com/en-gb).
+3. If you'd like to test newsletter functionality, you'll need a [Mailchimp account](https://mailchimp.com/).
+
+7. Make migrations to prepare the database. This will create a `db.sqlite3` in the root. 
+```
+python3 manage.py makemigrations --dry-run
+python3 manage.py migrate --plan
+```
 6. Create a new superuser.
-   ```
-   python3 manage.py createsuperuser
-   ```
+```
+python3 manage.py createsuperuser
+```
 7. Run the site locally.
-   ```
-   python3 manage.py runserver
+```
+python3 manage.py runserver
+```
 
 Deployment Requirements
 
@@ -508,7 +511,6 @@ AWS:
 - On the properties tab, static website hosting can now be found by scrolling down to the bottom.
 - Paste the following into the Cross-origin resource sharing (CORS) section.
 
-```
 
 ```
 python3 manage.py loaddata products/fixtures/products.json
