@@ -338,10 +338,10 @@ Validation:
 
 Stipe functionality was added to the site, however any testing should use the below information, as the site is not set up to sell any of the art shown here.
 
-Card number - 4242 4242 4242 4242
-Expiration date - any future date
-CVC - any three-digits
-Postcode or zipcode - any five-digits
+| Card number         | 4242 4242 4242 4242 |
+| Expiration date     | any future date    | 
+| CVC                 | any three-digits    |
+| Postcode or zipcode | any five-digits     | 
 
 The project was tested during the process of creating it and errors were fixed along the way during the creation of the site. Here is a list of a number of the errors which were dealt with during the creation of Studio Gallery. 
 
