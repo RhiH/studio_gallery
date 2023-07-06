@@ -1,6 +1,6 @@
 from django.db import models
 
-from products.models import ProductArtist, Product
+from products.models import ProductArtist
 
 # Create your models here.
 
