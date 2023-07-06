@@ -28,6 +28,15 @@ Users are also able to create a profile for faster purchasing and to see their p
   - [Ordering as a Registered User](#ordering-as-a-registered-user)
   - [Using the site as a Superuser](#using-the-site-as-a-superuser)
 - [Information Architecture](#information-architecture)
+- [Techology Used](#technology-used)
+- [Tools](#tools)
+- [Testing](#testing)
+- [Deployment](#deployment)
+  - [Local Deployment](#local-deployment)
+  - [Deployment Requirements](#deployment-requirements)
+    - [Elephant SQL Database](#elephant-sql-database)
+    - [Heroku](#heroku)
+    - [Amazon AWS Storage](#amazon-aws-storage)    
 - [Future Goals](#future-goals)
 
 - [Technology Used](#technology-used)
@@ -256,7 +265,7 @@ User stories: [15](#site-user-goals) and [16](#site-user-goals)
 
 ---
 
-### Information Architecture
+## Information Architecture
 
 **Product Data**
 
@@ -346,6 +355,7 @@ User stories: [15](#site-user-goals) and [16](#site-user-goals)
 - [Heroku](https://heroku.com)
 - [AWS](https://aws.amazon.com/)
 - [ElephantSQL](https://www.elephantsql.com/)
+- [Stripe](https://stripe.com/)
 
 
 Validation:
@@ -417,7 +427,9 @@ The project was tested during the process of creating it and errors were fixed a
 * cause: the formatting as not set up to be responsive for the text.
 * resolution: removal of the box around the text, the text s now responsive and the site itself looks better.
   
-# Deployment
+## Deployment
+
+### Local Deployment
 
 1. Clone the Github repo to the desired location on your computer.
 ```
@@ -452,7 +464,9 @@ python3 manage.py createsuperuser
 ```
 python3 manage.py runserver
 ```
-Deployment Requirements
+---
+
+### Deployment Requirements
 
 - A [Heroku account](https://signup.heroku.com/).
 - An [AWS account](https://aws.amazon.com/).
@@ -464,7 +478,7 @@ For full functionality:
 - A [Gmail account](https://www.google.com/intl/en-GB/gmail/about/) for email SMTP.
 
 
-### **ElephantSQL Database:**
+#### ElephantSQL Database:
 
    - Sign up or Log in to [ElephantSQL](https://www.elephantsql.com/)
    - From the main ElephantSQL dashboard, navigate to the dropdown box in the top right and select 'Create New Instance'.
@@ -473,9 +487,44 @@ For full functionality:
    - On the next screen, click 'Create Database'.
    - On the Instances screen, select the name of the Postgres Database you have just created.
    - In 'Details', copy (ctrl + c) the URL to your clipboard. Keep this to hand as this is required for Heroku.
-### **Amazon AWS Storage:**
 
-#### **Creating a bucket**
+#### Heroku
+
+- In the development environment, make sure the requirements are up to date with `pip3 freeze --local > requirements.txt`.
+- Also check that the `.gitignore` file lists everything that should not be pushed to production, such as `env.py`.
+- Complete your Key values. The below are required.
+
+ Key	Value
+```
+AWS_ACCESS_KEY_ID	[your value]
+AWS_SECRET_ACCESS_KEY	[your value]
+SECRET_KEY	[your value]
+DATABASE_URL [your value]
+DEFAULT_FROM_EMAIL [your value]
+EMAIL_HOST_PASS [your value]
+EMAIL_HOST_USER [your value]
+STRIPE_PUBLIC_KEY	[your value]
+STRIPE_SECRET_KEY	[your value]
+STRIPE_WH_SECRET [your value]
+USE_AWS	TRUE
+```
+You may need to make migrations before running migrate again. Remove the flags when happy to proceed.
+```
+run python3 manage.py makemigrations --dry-run
+run python3 manage.py migrate --plan
+```
+When the deployment has succeeded, you can optionally create a new superuser:
+```
+python3 manage.py createsuperuser
+```
+You can also optionally import the database if you've made any changes:
+ ```
+python3 manage.py loaddata products/fixtures/products.json
+python3 manage.py loaddata products/fixtures/product_artists.json
+python3 manage.py loaddata artists/fixtures/artist_info.json
+```
+
+#### Amazon AWS Storage:
 
    - Sign up or Log in to [Amazon AWS](https://aws.amazon.com/)
    - Navigate to services and select 'S3'
@@ -507,82 +556,47 @@ For full functionality:
    - In Object Ownership, select 'ACLs Enabled' and check 'Bucket Owner preferred'.
    - In Access Control List, check 'List' under 'Everyone (public access).
 
-## Deployment to Heroku
+---
 
-- In the development environment, make sure the requirements are up to date with `pip3 freeze --local > requirements.txt`.
-- Also check that the `.gitignore` file lists everything that should not be pushed to production, such as `env.py`.
-- Complete your Key values. The below are required.
+## Future Goals
 
- Key	Value
-```
-AWS_ACCESS_KEY_ID	[your value]
-AWS_SECRET_ACCESS_KEY	[your value]
-SECRET_KEY	[your value]
-DATABASE_URL [your value]
-DEFAULT_FROM_EMAIL [your value]
-EMAIL_HOST_PASS [your value]
-EMAIL_HOST_USER [your value]
-STRIPE_PUBLIC_KEY	[your value]
-STRIPE_SECRET_KEY	[your value]
-STRIPE_WH_SECRET [your value]
-USE_AWS	TRUE
-```
-You may need to make migrations before running migrate again. Remove the flags when happy to proceed.
-```
-run python3 manage.py makemigrations --dry-run
-run python3 manage.py migrate --plan
-```
-When the deployment has succeeded, you can optionally create a new superuser:
-```
-python3 manage.py createsuperuser
-    ```
-You can also optionally import the database if you've made any changes:
- ```
-python3 manage.py loaddata products/fixtures/products.json
-python3 manage.py loaddata products/fixtures/product_artists.json
-python3 manage.py loaddata artists/fixtures/artist_info.json
-```
-
-# Future Goals
-
-**Product growth options:
+### Product growth options:
 
 As the site currently only offers prints of artists' work, more options of the type of products could be available. This could vary between original pieces to canvas, textile and other products such as phone cases or notebooks could be printed with the art and shipped to the customer. This could be linked via services which already offer this business model, meaning the work could be sold globally and be created within the country/region to ensure shipping times and taxes would be kept to a minimum, whilst increasing the returns for the artists at a low cost.
 
-**Site growth options:
+### Site growth options:
 
 In terms of what the site offers, increasing the number of artists, and artworks are the simplest way of growing the site.  Also improving search functionality to consider colour or theme as search options to increase the level of customer satisfaction. Adding in other options such as a sign up newsletter utilising a marketing automation platform such as Mailchimp, creating a featured artist of the month with an interview of the artist - perhaps including a short videoclip of them talking about their processes could help customer engagement. 
 
 The site could offer artists stock management options, should artists wish to offer limited edition/one-off pieces, with higher costs. Different delivery options could also be offered as standard, especially for higher price point items, where insurance would be advisable. 
 
 
-# Credits
+## Credits
 
-**Media
+### Media
 
 Art images were sourced from [kaggle](https://www.kaggle.com/datasets "Link to Kaggle datasets")
 
-Artist images were sourced from Google Images search.
+Artist images were sourced from Google Images search and all bar one were manipulated in Photoshop to include the art images. The following are sources: 
 
-Tyra Goodley https://www.artsyshark.com/2013/01/27/artists-at-work/
-Andrew F https://natureinart.org.uk/artistinresidence/
-Tom Werner https://www.liveabout.com/what-do-artists-do-1122810
-Unnamed male artist by Unsplash https://www.shopify.com/blog/211990409-how-to-sell-art-online
-Unnamed female artist by Gorodenkoff https://stock.adobe.com/images/talented-innovative-female-artist-draws-with-her-hands-on-the-large-canvas-using-fingers-she-creates-colorful-emotional-sensual-oil-painting-contemporary-painter-creating-abstract-modern-art/298117629
-Unnamed Female standing in front of artwork 
+[Tyra Goodley](https://www.artsyshark.com/2013/01/27/artists-at-work/)
+[Andrew F](https://natureinart.org.uk/artistinresidence/)
+[Tom Werner](https://www.liveabout.com/what-do-artists-do-1122810)
+[Unnamed male artist by Unsplash](https://www.shopify.com/blog/211990409-how-to-sell-art-online)
+[Unnamed female artist by Gorodenkoff](https://stock.adobe.com/images/talented-innovative-female-artist-draws-with-her-hands-on-the-large-canvas-using-fingers-she-creates-colorful-emotional-sensual-oil-painting-contemporary-painter-creating-abstract-modern-art/298117629)
+[Unnamed Female standing in front of artwork] 
 
 All artist names, biographies, artwork names and descriptions are my own invention.
 
-**Code 
+### Code 
 
-This work was based on the Boutique Ado project by Code Institute, and references from 
+This work was based on the Boutique Ado project by Code Institute, and references from: 
 
 Python
 Django
 Bootstrap
 
-
-# Acknowledgements
+## Acknowledgements
 
 A huge thank you to my mentor Richard without whom I would have not managed to submit anything. 
 
