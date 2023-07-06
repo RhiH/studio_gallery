@@ -397,15 +397,15 @@ The project was tested during the process of creating it and errors were fixed a
 # Deployment
 
 1. Clone the Github repo to the desired location on your computer.
-   ```
-   git clone git@github.com:rhih/studio_gallery.git
-   cd studio_gallery
-   ```
+```
+git clone git@github.com:rhih/studio_gallery.git
+cd studio_gallery
+ ```
 2. Create and run a Python virtual environment in terminal.
-   ```
-   python3 -m venv env
-   . env/bin/activate
-   ```
+```
+python3 -m venv env
+. env/bin/activate
+```
 3. Install the Python dependencies from `requirements.txt`.
    ```
    pip3 install -r requirements.txt
