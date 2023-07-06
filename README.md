@@ -10,16 +10,23 @@ Users are also able to create a profile for faster purchasing and to see their p
 ## Table of Contents
 
 - [UX](#ux)
-  -[The Scenario](#scenario)
-  -[The Concept Solution](#concept-solution)
-  -[Target Audience](target-audience)
-  -[Marketing](#marketing)
+  - [The Scenario](#scenario)
+  - [The Concept Solution](#concept-solution)
+  - [Target Audience](target-audience)
+  - [Marketing](#marketing)
 - [Site User Goals](#site-user-goals)
-  -[User Story Priority](#user-story-priority)
+  - [User Story Priority](#user-story-priority)
 - [Wireframes](#wireframes)
 - [Site Design](#site-design)
   - [Design Choices](#design-choices)
-  - [Mobile Version](#mobile-version)   
+  - [Mobile Version](#mobile-version)
+  - [Site Navigation](#site-navigation)
+  - [Contact Page](#contact-page)
+  - [Shopping on the Site](#shopping-on-the-site)
+  - [Checkout Process](#checkout-process)
+  - [Registering for an Account](#registering-for-an-account)
+  - [Ordering as a Registered User](#ordering-as-a-registered-user)
+  - [Using the site as a Superuser](#using-the-site-as-a-superuser)
 - [Information Architecture](#information-architecture)
 - [Future Goals](#future-goals)
 
@@ -159,7 +166,7 @@ User stories: [2](#site-user-goals), [3](#site-user-goals)
 
 ---
 
-**Site Navigation**
+### Site Navigation
 
 ![Studio_Gallery](media/site_images/all_products.png)
 
@@ -177,7 +184,7 @@ All artists page, with information about where the artist is from, and for some 
 User stories: [4](#site-user-goals), [5](#site-user-goals),  [6](#site-user-goals), [7](#site-user-goals) and [14](#site-user-goals)
 
 ---
-**Contact Page**
+### Contact Page
 
 ![Studio_Gallery](media/site_images/contact_us_page.png)
 Contact us page for customers to send queries or comments about the site directly to the site admin.
@@ -185,7 +192,7 @@ Contact us page for customers to send queries or comments about the site directl
 User stories: [13](#site-user-goals)
 
 ---
-**Shopping on the Site**
+### Shopping on the Site
 
 ![Studio_Gallery](media/site_images/product_detail.png)
 Viewing the art and selecting more than 1 item.
@@ -200,7 +207,7 @@ User stories: [6](#site-user-goals), [7](#site-user-goals), [8](#site-user-goals
 
 ---
 
-**Checkout Process**
+### Checkout Process
 
 ![Studio_Gallery](media/site_images/checkout_page_not_logged_in.png)
 Checkout option – not logged in.
@@ -211,7 +218,7 @@ Notification success of purchase.
 User stories: [2](#site-user-goals), [12](#site-user-goals)
 
 ---
-**Registering for an Account**
+### Registering for an Account
 
 ![Studio_Gallery](media/site_images/register.png)
 Creating a new account page.
@@ -222,7 +229,7 @@ Sign up verification notice – reminding new users to verify their email addres
 User stories: [9](#site-user-goals),
 
 ---
-**Ordering as a Registered User**
+### Ordering as a Registered User
 
 ![Studio_Gallery](media/site_images/profile_update_page.png)
 Order confirmation information for logged in user.
@@ -232,7 +239,7 @@ Logged in profile with saved address and previous order history.
 User stories: [9](#site-user-goals)
 
 ---
-**Using Site as a Superuser**
+### Using Site as a Superuser
 
 ![Studio_Gallery](media/site_images/logged_in_superuser_edit_option.png)
 Filtering products by artist, with biography text underneath artist friendly tag (surname) for logged in superuser.
