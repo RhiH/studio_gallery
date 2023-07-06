@@ -18,7 +18,9 @@
                 {% for c in current_artists %}
                     <a class="artist-badge text-decoration-none" href="{% url 'products' %}?artist={{ c.name }}">
                         <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
-                        <p><span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.biography }}</span></p>
+                        <p>
+                        <p><span class="p-2 mt-2 text-black">{{ c.biography }}</span></p>
+                        </p>
                     </a>
                 {% endfor %}
                 <hr class="w-50 mb-1">
