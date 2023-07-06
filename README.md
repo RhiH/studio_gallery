@@ -389,21 +389,22 @@ The project was tested during the process of creating it and errors were fixed a
 
 Deployment Requirements
 
-This site was developed using a [GitPod](https://gitpod.io/ "Link to GitPod") workspace. The code was commited to [Git](https://git-scm.com/ "Link to Git") and pushed to [GitHub](https://github.com/ "Link to GitHub") using the terminal. Django was used throughout the project. It is necessary to install Django to create the apps required to run the site. Nb python3 was the command used here, please choose the most appropriate for you.
+This site was developed using a [GitPod](https://gitpod.io/ "Link to GitPod") workspace. The code was commited to [Git](https://git-scm.com/ "Link to Git") and pushed to [GitHub](https://github.com/ "Link to GitHub") using the terminal. Django was used throughout the project. It is necessary to install Django to create the apps required to run the site. Python3 was the command used here, please choose the most appropriate for you.
 ```
 Python3 
 PIP package installer
 Stripe Payment infrastructure
 ```
-Deploying Locally
+Cloning the Repository
 
-Clone a copy of the repository by clicking code at the top of the page and selecting 'Download Zip' when this has downloaded, extract the files to your folder of choice. Alternatively if you have git installed on your client you can run the following command from the terminal.
+Clone a copy of the repository by clicking code at the top of the page and selecting 'Download Zip' when this has downloaded, extract the files to your folder of choice.
 
 Open up your local IDE and open the working folder.
 
 Ideally you will want to work within a virtual environment to allow all packages to be kept within the project, this can be installed using the following command (please note some IDE's require pip3 instead of pip, please check with the documentation for your chosen IDE)
 
 Create a new folder within the root dir called env.py. Within this file add the following lines to set up the environmental variables.
+
 import os
 ```
 os.environ["SECRET_KEY"] = "[Your Secret Key]"
@@ -413,7 +414,7 @@ os.environ["STRIPE_PUBLIC_KEY"] = "[Your Stripe Key]"
 os.environ["STRIPE_SECRET_KEY"] = "[Your Stripe Secret Key]"
 os.environ["DATABASE_URL"] = "[Your DB URL]"
 ```
-Database setup
+Database Setup
 
 To set up your database you will first need to run the following command. 
 ```
@@ -427,30 +428,62 @@ From there you should now be able to run the server using the following command
 ```
 python3 manage.py runserver
 ```
-Next close the server in your terminal using ctrl+c (cmd+c on mac) and run the following commands to populate the database
-```
-python3 manage.py loaddata products/fixtures/categories.json
-python3 manage.py loaddata products/fixtures/products.json
-python3 manage.py loaddata artists/fixtures/artist_categories.json
-```
 For deployment the following will be required:
 ```
 Elephant SQL
 Heroku
 AWS
 ```
-Link Elephant SQL with Heroku project area. 
+ElephantSQL:
 
-Set up AWS with necessary S3 bucket for static files, policy, group, user and link with appropriate keys to heroku.
+- Sign up/Log in to ElephantSQL
+- From the main ElephantSQL dashboard, navigate to the dropdown box in the top right and select 'Create New Instance'.
+- Choose a name for your database and select a Plan type.
+- In region, choose the most appropriate option and click 'Review'.
+- On the next screen, click 'Create Database'.
+- On the Instances screen, select the name of database you have just created.
+- In 'Details', copy the URL. This will be needed for Heroku
 
-Deploying to Heroku
+AWS:
+- Sign up/Log in to AWS
+- Choose a name for your bucket and select the region closest to you from the dropdown box.
+- Uncheck 'block all public access' and click 'create bucket'.
+- Select 'static website hosting' and enable this to host your site.
+- Enter index.html and error.html for the index and error documents.
+- Set up AWS with necessary S3 bucket - ACLs enabled.
+- Object Ownership should be Bucket owner preferred.
+- On the properties tab, static website hosting can now be found by scrolling down to the bottom.
+- Paste the following into the Cross-origin resource sharing (CORS) section.
 
-To run this application in an online environment you will need to deploy the code to Heroku. Before moving on to this section please ensure you have followed the instructions for local deployment and this has been successfu
+```
+[
+   {
+         "AllowedHeaders": [
+            "Authorization"
+         ],
+         "AllowedMethods": [
+            "GET"
+         ],
+         "AllowedOrigins": [
+            "*"
+         ],
+         "ExposeHeaders": []
+   }
+ ]
+```
+- Select 'policy generator'.
+- Select 'S3 Bucket Policy', for Principal enter *, now select 'GetObject' for the Actions and paste in the Amazon ARN from the top of the Permissions tab in Amazon S3.
+- Click 'Add Statement' then 'Generate Policy' and copy the code generated into your bucket policy editor on S3
+- Choose 'Everyone (public access) for access.
 
-in the settings tab select Reveal Config Vars and copy the pre populated DATABASE_URL into your settings.py file in your project
-in the Config Vars in Heroku you will need to populate with the following keys
+Heroku:
 
-Ensure all necessary keys - secret and public are stored in config vars on Heroku.
+- Sign up/Log in to Heroku
+- On your Heroku dashboard, use the correct dropdown box and select 'New' and 'Create New App'.
+- Choose a name for your app, select your region and then click 'Create New App'.
+- From your heroku dashboard, navigate to the 'Settings' tab and select 'Reveal Config Vars'. You can now paste your ElephantSQL URL.
+
+Heroku should have the following Key values:
 
 Key	Value
 ```
@@ -467,16 +500,38 @@ STRIPE_WH_SECRET [your value]
 USE_AWS	TRUE
 ```
 
-Now this has been configured you will now migrate the local database to the cloud database using the migrate command as below
+In your terminal enter the following commands:
 ```
+pip3 install dj_databse_url
+pip3 install psycopg2-binary
+pip3 freeze --local > requirements.txt
+```
+Run the following commands to populate the database
+```
+python3 manage.py loaddata products/fixtures/products.json
+python3 manage.py loaddata products/fixtures/product_artists.json
+python3 manage.py loaddata artists/fixtures/artist_info.json
+```
+
+In Settings.py, ensure the following are at the top of your file.
+
+from pathlib import Path
+import os
+import dj_database_url
+
+In 'DATABASES' and comment out the default code and enter the following:
+
+DATABASES = {
+'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+} 
+Replace the default 'SECRET KEY' with the following:
+
+SECRET_KEY = os.environ.get('SECRET_KEY')
+
+Run migrations for the new database using the command:
+
+python3 manage.py makemigrations
 python3 manage.py migrate
-```
-Next you will need to create a super user and populate the database as described in the database set up section
-When the migrations and data has been loaded, in your Heroku dashboard select the Deploy tab
-
-From here select the Github option and connect the repository from GitHub and select the branch (Master) to deploy from.
-
-It is advised to select automatic deployment to ensure for each push to Github the hosted version is up to date.
 
 When it is deployed, you can launch the site via the link in Heroku.
 
@@ -528,12 +583,3 @@ Communities on Slack and Stack Overflow were invaluable for assisting with techn
 A massive thank you to my colleagues, friends and family - who have cheered me on throughout my course. A special thanks to Hayley and Carrie for thoroughly testing my site.
 
 All mistakes are very much my own.
-
-
-
-
-
-
-
-
-
