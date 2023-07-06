@@ -336,74 +336,139 @@ Validation:
 
 ## Testing
 
+Stipe functionality was added to the site, however any testing should use the below information, as the site is not set up to sell any of the art shown here.
+
+Card number - 4242 4242 4242 4242
+Expiration date - any future date
+CVC - any three-digits
+Postcode or zipcode - any five-digits
+
 The project was tested during the process of creating it and errors were fixed along the way during the creation of the site. Here is a list of a number of the errors which were dealt with during the creation of Studio Gallery. 
 
 ---
-* issue: url not linking correctly to contacts page
-* cause: url not correctly formatted
-* resolution: url updated, link working
+* issue: url not linking correctly to contacts page.
+* cause: url not correctly formatted.
+* resolution: url updated, link working.
 ---
-* issue: artist page not generating properly
-* cause: under investigation
-* resolution: temporary 'all artists biographies' page created as holding page until issue is discovered and resolved
+* issue: artist page not generating properly.
+* cause: under investigation.
+* resolution: temporary 'all artists biographies' page created as holding page until issue is discovered and resolved.
 ---
-* issue: font is difficult to read on most pages
-* cause: Lato slim chosen as font, combined with text-muted, creating text that is difficult to see
-* resolution: text-muted replaced with text-black, Lato slim replaced with Lato regular
+* issue: font is difficult to read on most pages.
+* cause: Lato slim chosen as font, combined with text-muted, creating text that is difficult to see.
+* resolution: text-muted replaced with text-black, Lato slim replaced with Lato regular.
 ---
-* issue: artist model not working
-* cause: under investigation
-* resolution: amendment to model not successful - ongoing
+* issue: artist model not working.
+* cause: under investigation.
+* resolution: amendment to model not successful - ongoing.
 ---
-* contact page not sending emails
-* cause: fault caused by line not removed for default setting for emails in settings.py
-* resolution: settings.py updated - emails now successfully sending
+* contact page not sending emails.
+* cause: fault caused by line not removed for default setting for emails in settings.py.
+* resolution: settings.py updated - emails now successfully sending.
 ---
-* issue: artist model still not updating correctly
-* cause: under investigation
-* resolution: delete migrations and re migrate model. Not successful - ongoing
+* issue: artist model still not updating correctly.
+* cause: under investigation.
+* resolution: delete migrations and re migrate model. Not successful - ongoing.
 ---
-* issue: artist model still not updating correctly
-* cause: under investigation
-* resolution: temporary links added to temporary all artist biographies page to link to products while investigation is ongoing
+* issue: artist model still not updating correctly.
+* cause: under investigation.
+* resolution: temporary links added to temporary all artist biographies page to link to products while investigation is ongoing.
 ---
-* issue: artist model not updating correctly
-* cause: under investigation - table not added correctly
-* resolution: delete dbsqlite3 and remake all migrations. Not successful - followed steps to step back to previous commit
+* issue: artist model not updating correctly.
+* cause: under investigation - table not added correctly.
+* resolution: delete dbsqlite3 and remake all migrations. Not successful - followed steps to step back to previous commit.
 ---
-* issue: redeployment retains old database not current database
-* cause: elephantsql retains original database
+* issue: redeployment retains old database not current database and errors are occurring when amendments are made.
+* cause: elephantsql retains original database and is not updating as it should.
 * resolution: create new instance, loaddata to new database, site deployed successfully
 ---
-* issue: site failing at deployment after redeployment
+* issue: site failing at deployment after redeployment.
 * cause: answer found on stack overflow - backports info issue.
 * resolution: add python_version<"3.9" to requirements.txt file
 ---
-* issue: linking to products via all artist page not working on deployed site, but working on development site
-* cause: observation showed that deployed site converts link whereas development site does not
+* issue: linking to products via all artist page not working on deployed site, but working on development site.
+* cause: observation showed that deployed site converts link whereas development site does not.
 * resolution: amend links to deployed site path for products filtering and note that dev site will not link correctly, but deployed site will.
 ---
-
-
+* issue: users testing the site on mobile noted the artist biography was not responsive.
+* cause: the formatting as not set up to be responsive for the text.
+* resolution: removal of the box around the text, the text s now responsive and the site itself looks better.
+  
 # Deployment
+
+1. Clone the Github repo to the desired location on your computer.
+   ```
+   git clone git@github.com:rhih/studio_gallery.git
+   cd studio_gallery
+   ```
+2. Create and run a Python virtual environment in terminal.
+   ```
+   python3 -m venv env
+   . env/bin/activate
+   ```
+3. Install the Python dependencies from `requirements.txt`.
+   ```
+   pip3 install -r requirements.txt
+   ```
+4. Create an `env.py` based on the `sample-env.py` file.
+   1. Create and add a [Django secret key](https://django-secret-key-generator.netlify.app/).
+   2. If you'd like to test checkout payments, you'll need a [Stripe account](https://stripe.com/en-gb).
+   3. If you'd like to test newsletter functionality, you'll need a [Mailchimp account](https://mailchimp.com/).
+5. Make migrations to prepare the database. This will create a `db.sqlite3` in the root. 
+   ```
+   python3 manage.py makemigrations --dry-run
+   python3 manage.py migrate --plan
+   ```
+6. Create a new superuser.
+   ```
+   python3 manage.py createsuperuser
+   ```
+7. Run the site locally.
+   ```
+   python3 manage.py runserver
 
 Deployment Requirements
 
-This site was developed using a [GitPod](https://gitpod.io/ "Link to GitPod") workspace. The code was commited to [Git](https://git-scm.com/ "Link to Git") and pushed to [GitHub](https://github.com/ "Link to GitHub") using the terminal. Django was used throughout the project. It is necessary to install Django to create the apps required to run the site. Python3 was the command used here, please choose the most appropriate for you.
+- A [Heroku account](https://signup.heroku.com/).
+- [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli).
+- An [AWS account](https://aws.amazon.com/).
+- An [ElephantSQL account](https://www.elephantsql.com/)
+
+For full functionality:
+
+- A [Stripe account](https://stripe.com/en-gb) for the payment gateway.
+- A [Gmail account](https://www.google.com/intl/en-GB/gmail/about/) for email SMTP.
+
+- ElephantSQL:
+
+- Sign up/Log in to ElephantSQL
+- From the main ElephantSQL dashboard, navigate to the dropdown box in the top right and select 'Create New Instance'.
+- Choose a name for your database and select a Plan type.
+- In region, choose the most appropriate option and click 'Review'.
+- On the next screen, click 'Create Database'.
+- On the Instances screen, select the name of database you have just created.
+- In 'Details', copy the URL. This will be needed for Heroku
+
+## Deployment to Heroku
+
+- In the development environment, make sure the requirements are up to date with `pip3 freeze --local > requirements.txt`.
+- Also check that the `.gitignore` file lists everything that should not be pushed to production, such as `env.py`.
+
 ```
-Python3 
-PIP package installer
-Stripe Payment infrastructure
+ Key	Value
 ```
-Cloning the Repository
+AWS_ACCESS_KEY_ID	[your value]
+AWS_SECRET_ACCESS_KEY	[your value]
+SECRET_KEY	[your value]
+DATABASE_URL [your value]
+DEFAULT_FROM_EMAIL [your value]
+EMAIL_HOST_PASS [your value]
+EMAIL_HOST_USER [your value]
+STRIPE_PUBLIC_KEY	[your value]
+STRIPE_SECRET_KEY	[your value]
+STRIPE_WH_SECRET [your value]
+USE_AWS	TRUE
 
-Clone a copy of the repository by clicking code at the top of the page and selecting 'Download Zip' when this has downloaded, extract the files to your folder of choice.
-
-Open up your local IDE and open the working folder.
-
-Ideally you will want to work within a virtual environment to allow all packages to be kept within the project, this can be installed using the following command (please note some IDE's require pip3 instead of pip, please check with the documentation for your chosen IDE)
-
-Create a new folder within the root dir called env.py. Within this file add the following lines to set up the environmental variables.
 
 import os
 ```
@@ -430,19 +495,7 @@ python3 manage.py runserver
 ```
 For deployment the following will be required:
 ```
-Elephant SQL
-Heroku
-AWS
-```
-ElephantSQL:
 
-- Sign up/Log in to ElephantSQL
-- From the main ElephantSQL dashboard, navigate to the dropdown box in the top right and select 'Create New Instance'.
-- Choose a name for your database and select a Plan type.
-- In region, choose the most appropriate option and click 'Review'.
-- On the next screen, click 'Create Database'.
-- On the Instances screen, select the name of database you have just created.
-- In 'Details', copy the URL. This will be needed for Heroku
 
 AWS:
 - Sign up/Log in to AWS
@@ -456,57 +509,7 @@ AWS:
 - Paste the following into the Cross-origin resource sharing (CORS) section.
 
 ```
-[
-   {
-         "AllowedHeaders": [
-            "Authorization"
-         ],
-         "AllowedMethods": [
-            "GET"
-         ],
-         "AllowedOrigins": [
-            "*"
-         ],
-         "ExposeHeaders": []
-   }
- ]
-```
-- Select 'policy generator'.
-- Select 'S3 Bucket Policy', for Principal enter *, now select 'GetObject' for the Actions and paste in the Amazon ARN from the top of the Permissions tab in Amazon S3.
-- Click 'Add Statement' then 'Generate Policy' and copy the code generated into your bucket policy editor on S3
-- Choose 'Everyone (public access) for access.
 
-Heroku:
-
-- Sign up/Log in to Heroku
-- On your Heroku dashboard, use the correct dropdown box and select 'New' and 'Create New App'.
-- Choose a name for your app, select your region and then click 'Create New App'.
-- From your heroku dashboard, navigate to the 'Settings' tab and select 'Reveal Config Vars'. You can now paste your ElephantSQL URL.
-
-Heroku should have the following Key values:
-
-Key	Value
-```
-AWS_ACCESS_KEY_ID	[your value]
-AWS_SECRET_ACCESS_KEY	[your value]
-SECRET_KEY	[your value]
-DATABASE_URL [your value]
-DEFAULT_FROM_EMAIL [your value]
-EMAIL_HOST_PASS [your value]
-EMAIL_HOST_USER [your value]
-STRIPE_PUBLIC_KEY	[your value]
-STRIPE_SECRET_KEY	[your value]
-STRIPE_WH_SECRET [your value]
-USE_AWS	TRUE
-```
-
-In your terminal enter the following commands:
-```
-pip3 install dj_databse_url
-pip3 install psycopg2-binary
-pip3 freeze --local > requirements.txt
-```
-Run the following commands to populate the database
 ```
 python3 manage.py loaddata products/fixtures/products.json
 python3 manage.py loaddata products/fixtures/product_artists.json
