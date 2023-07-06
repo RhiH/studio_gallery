@@ -482,13 +482,13 @@ For full functionality:
 
 #### ElephantSQL Database:
 
-   - Sign up or Log in to [ElephantSQL](https://www.elephantsql.com/)
-   - From the main ElephantSQL dashboard, navigate to the dropdown box in the top right and select 'Create New Instance'.
-   - Choose a name for your Postgres database and select a Plan type.
-   - In Region, select the closest Data center relevant to your location and click 'Review'.
-   - On the next screen, click 'Create Database'.
-   - On the Instances screen, select the name of the Postgres Database you have just created.
-   - In 'Details', copy (ctrl + c) the URL to your clipboard. Keep this as this is required for Heroku.
+- Sign up or Log in to [ElephantSQL](https://www.elephantsql.com/)
+- From the main ElephantSQL dashboard, navigate to the dropdown box in the top right and select 'Create New Instance'.
+- Choose a name for your Postgres database and select a Plan type.
+- In Region, select the closest Data center relevant to your location and click 'Review'.
+- On the next screen, click 'Create Database'.
+- On the Instances screen, select the name of the Postgres Database you have just created.
+- In 'Details', copy (ctrl + c) the URL to your clipboard. Keep this as this is required for Heroku.
 
 #### Heroku
 
@@ -564,14 +564,17 @@ python3 manage.py loaddata artists/fixtures/artist_info.json
 
 ### Product growth options:
 
-As the site currently only offers prints of artists' work, more options of the type of products could be available. This could vary between original pieces to canvas, textile and other products such as phone cases or notebooks could be printed with the art and shipped to the customer. This could be linked via services which already offer this business model, meaning the work could be sold globally and be created within the country/region to ensure shipping times and taxes would be kept to a minimum, whilst increasing the returns for the artists at a low cost.
+As the site currently only offers prints of artists' work there is scope to increase options of the type of products that could be made available. This could vary between original pieces on canvas, to textile and other products such as phone cases or notebooks, which could be printed with the art and shipped to the customer. This could be linked via print on demand services which already offer this business model, meaning the work could be sold globally and be created within the country/region to ensure shipping times and taxes would be kept to a minimum, whilst increasing the returns for the artists at a low cost.
 
 ### Site growth options:
 
 In terms of what the site offers, increasing the number of artists, and artworks are the simplest way of growing the site.  Also improving search functionality to consider colour or theme as search options to increase the level of customer satisfaction. Adding in other options such as a sign up newsletter utilising a marketing automation platform such as Mailchimp, creating a featured artist of the month with an interview of the artist - perhaps including a short videoclip of them talking about their processes could help customer engagement. 
 
-The site could offer artists stock management options, should artists wish to offer limited edition/one-off pieces, with higher costs. Different delivery options could also be offered as standard, especially for higher price point items, where insurance would be advisable. 
+Should there be interest from overseas customers then creating an app to convert the prices to a different currency would be something to consider.
 
+One update that would be helpful, is that artists should also be able to manage their own work with logins specifically for them, where they cannot amend other artists' work in error.
+
+The site could offer artists stock management, should artists wish to offer limited edition/one-off pieces, with higher costs. Different delivery options could also be offered as standard, especially for higher price point items, where insurance would be advisable. 
 
 ## Credits
 
@@ -579,7 +582,7 @@ The site could offer artists stock management options, should artists wish to of
 
 Art images were sourced from [Kaggle](https://www.kaggle.com/datasets "Link to Kaggle datasets")
 
-Artist images were sourced from Google Images search and all bar one were manipulated in Photoshop to include the art images. The following are sources: 
+Artist images were sourced from Google Images search and most were edited in Photoshop by myself to include the art images. The following are sources for the images of artists: 
 
 - Portia Towe [Tyra Goodley](https://www.artsyshark.com/2013/01/27/artists-at-work/)
 - Alan Bushe [Andrew F](https://natureinart.org.uk/artistinresidence/)
@@ -595,9 +598,9 @@ All artist names, biographies, artwork names and descriptions are my own inventi
 
 This work was based on the Boutique Ado project by Code Institute, and references from: 
 
-Python
-Django
-Bootstrap
+*[Python](https://www.python.org/)
+*[Django](https://www.djangoproject.com/)
+*[Bootstrap](https://getbootstrap.com/)
 
 ## Acknowledgements
 
@@ -605,6 +608,6 @@ A huge thank you to my mentor Richard without whom I would have not managed to s
 
 Communities on Slack and Stack Overflow were invaluable for assisting with technical problems. I consulted both regularly throughout the project.
 
-A massive thank you to my colleagues, friends and family - who have cheered me on throughout my course. A special thanks to Hayley and Carrie for thoroughly testing my site.
+A massive thank you to my colleagues, friends and family - who have cheered me on throughout my course. A special thanks to Hayley, Carrie, Ceri & Siôn for thoroughly testing my site.
 
 All mistakes are very much my own.
