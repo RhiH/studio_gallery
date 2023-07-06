@@ -575,16 +575,17 @@ The site could offer artists stock management options, should artists wish to of
 
 ### Media
 
-Art images were sourced from [kaggle](https://www.kaggle.com/datasets "Link to Kaggle datasets")
+Art images were sourced from [Kaggle](https://www.kaggle.com/datasets "Link to Kaggle datasets")
 
 Artist images were sourced from Google Images search and all bar one were manipulated in Photoshop to include the art images. The following are sources: 
 
-[Tyra Goodley](https://www.artsyshark.com/2013/01/27/artists-at-work/)
-[Andrew F](https://natureinart.org.uk/artistinresidence/)
-[Tom Werner](https://www.liveabout.com/what-do-artists-do-1122810)
-[Unnamed male artist by Unsplash](https://www.shopify.com/blog/211990409-how-to-sell-art-online)
-[Unnamed female artist by Gorodenkoff](https://stock.adobe.com/images/talented-innovative-female-artist-draws-with-her-hands-on-the-large-canvas-using-fingers-she-creates-colorful-emotional-sensual-oil-painting-contemporary-painter-creating-abstract-modern-art/298117629)
-[Unnamed Female standing in front of artwork] 
+- Portia Towe [Tyra Goodley](https://www.artsyshark.com/2013/01/27/artists-at-work/)
+- Alan Bushe [Andrew F](https://natureinart.org.uk/artistinresidence/)
+- Jared Pottle [Tom Werner](https://www.liveabout.com/what-do-artists-do-1122810)
+- Luc Drir [Unnamed male artist by Unsplash](https://www.shopify.com/blog/211990409-how-to-sell-art-online)
+- Fredrica Handy [Unnamed female artist by Gorodenkoff](https://stock.adobe.com/images/talented-innovative-female-artist-draws-with-her-hands-on-the-large-canvas-using-fingers-she-creates-colorful-emotional-sensual-oil-painting-contemporary-painter-creating-abstract-modern-art/298117629)
+- Bethany Floode [Unnamed female artist](https://www.gettyimages.co.uk/detail/photo/female-artist-painting-large-wall-mural-royalty-free-image/1406946497)
+- Ceris Lightler [Unnamed female artist](https://www.gettyimages.co.uk/detail/photo/smiling-portrait-on-young-asia-female-artist-she-royalty-free-image/1409999941)
 
 All artist names, biographies, artwork names and descriptions are my own invention.
 
