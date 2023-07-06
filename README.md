@@ -338,6 +338,7 @@ Validation:
 
 Stripe functionality was added to the site, however any testing should use the below information, as the site is not set up to sell any of the art shown here.
 
+|Card Section         |	Card Info to enter  |
 |---------------------|---------------------|
 | Card number         | 4242 4242 4242 4242 |
 | Expiration date     | any future date     | 
